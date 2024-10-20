@@ -1,8 +1,15 @@
 /*BODY ETC.*/
 
+body {
+         background-color: black;
+}
 
-
-
+header {
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+}
 
 
 
