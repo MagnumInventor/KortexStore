@@ -1,1 +1,51 @@
+BODY ETC.
 
+
+
+
+
+
+
+
+          MAIN SECTION 
+
+
+
+
+
+
+
+
+
+          FOOTER
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+footer h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+footer p {
+    margin: 5px 0;
+    color: #666;
+}
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer .footer-links {
+    margin-top: 15px;
+}
+footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
