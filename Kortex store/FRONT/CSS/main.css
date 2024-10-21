@@ -1,0 +1,165 @@
+/*BODY ETC.*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: green;
+
+    font-family: "Rethink Sans";
+}
+
+header .logo {
+    font-size: 24px;
+    font-family: "Kanit";
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header .social-icons a {
+    margin-left: 10px;
+    color: white;
+}
+
+
+    /* MAIN SECTION */
+
+
+    .main-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        background-color: black;
+    }
+    
+    .banner-content {
+        text-align: center;
+        font-family: "Dela Gothic One";
+    }
+    
+    .main-banner h1 {
+        font-size: 3rem;
+        color: white;
+    }
+    
+    .stars {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    
+    .coming-soon-animation {
+        margin-top: 20px;
+
+        font-size: 2rem;
+        font-family: "Dela Gothic One";
+
+        color: white;
+        animation: rotateText 5s linear infinite;
+    }
+    
+    /* Animation for rotating text */
+    @keyframes rotateText {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    /* Sale Section */
+    .sale-section {
+        background: linear-gradient(green, #000000);
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .sale-banner {
+        
+        background-color: #333;
+
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        font-family: "Asset", sans-serif;
+
+        width: auto;
+        height: auto;
+    }
+    
+    .products {
+        display: flex;
+        justify-content: space-around;
+
+        text-align: center;
+        flex: 1;
+        padding: 10px;
+
+        font-family: "Rethink Sans";
+    }
+    
+    .product img {
+        width: 150px;
+        height: auto;
+    }
+    
+    .product .price {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    /* FOOTER */
+
+footer {
+background-color: #000000;
+padding: 20px;
+text-align: center;
+border-top: 2px solid #ddd;
+}
+footer h3 {
+margin-bottom: 10px;
+color: #333;
+}
+footer p {
+margin: 5px 0;
+color: #666;
+}
+footer a {
+color: #ffffff;
+text-decoration: none;
+margin: 0 10px;
+}
+footer a:hover {
+text-decoration: underline;
+}
+footer .footer-links {
+margin-top: 15px;
+}
+footer .copyright {
+margin-top: 20px;
+font-size: 14px;
+color: #888;
+}
