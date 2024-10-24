@@ -43,6 +43,11 @@ header .social-icons a {
     color: white;
 }
 
+.menu-cat {
+    background: green;
+}
+
+
 .green-line {
     background-color: green;
     height: 5px;
