@@ -28,16 +28,35 @@ header .logo {
     font-family: "Kanit";
 }
 
-header nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
+nav {
+    background-color: #ffffff;
+    padding: 10px 0;
 }
 
-header nav ul li {
-    display: inline-block;
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #002D72;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    color: #FF4500;
+}
 header .social-icons a {
     margin-left: 10px;
     color: white;
