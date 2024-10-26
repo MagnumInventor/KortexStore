@@ -9,6 +9,6 @@ FONTS:
 - Quick sand
 - Montserrat
 - Bebas Neue
-- IBM Flex Mono
+- IBM Plex Mono
 - Michroma
 - Nova Flat
