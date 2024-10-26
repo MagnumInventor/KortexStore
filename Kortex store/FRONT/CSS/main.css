@@ -84,6 +84,8 @@ header .social-icons a {
     .banner-content {
         text-align: center;
         font-family: "Dela Gothic One";
+        margin: 100px, 1px, 1px, 50px;
+        
     }
     
     .main-banner h1 {
