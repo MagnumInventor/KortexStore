@@ -61,6 +61,12 @@ header .social-icons a {
     color: white;
 }
 
+.logo {
+    font-family: "IBM Plex Mono";
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
 .menu-cat {
     background: green;
 }
