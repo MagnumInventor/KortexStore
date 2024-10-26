@@ -89,7 +89,8 @@ header .social-icons a {
     .banner-content {
         text-align: center;
         font-family: "Dela Gothic One";
-        margin: 100px, 1px, 1px, 50px;
+        margin-top: 100px;
+        margin-left: 30px;
         
     }
     
@@ -136,12 +137,12 @@ header .social-icons a {
     
     .sale-banner {
         
-        background-color: #333;
+        background-color: #0e0f0f;
 
         font-size: 1.5rem;
         color: white;
         text-align: center;
-        font-family: "Michroma", sans-serif;
+        font-family: "Bebas Neue";
 
         width: auto;
         height: auto;
@@ -175,6 +176,8 @@ background-color: #000000;
 padding: 20px;
 text-align: center;
 border-top: 2px solid #ddd;
+
+font-family: "Nova Flat";
 }
 footer h3 {
 margin-bottom: 10px;
