@@ -17,9 +17,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px; /* Видалено зайві вертикальні відступи */
     background-color: rgb(0, 0, 0);
-
+    height: 60px; /* Фіксована висота для рівномірного розміщення */
     font-family: "Rethink Sans";
 }
 
@@ -29,20 +29,18 @@ header .logo {
 }
 
 nav {
-    background-color: rgba(62, 173, 63, 0.5);
+    background-color: transparent; /* Немає фону для навігації */
 }
 
 nav ul {
-    background-color: rgba(62, 173, 63, 0.5);
     list-style: none;
-    text-align: center;
+    display: flex; /* Вирівнює пункти меню горизонтально */
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 10px; /* Зменшено відступи між пунктами меню */
 }
 
 nav ul li a {
@@ -51,12 +49,17 @@ nav ul li a {
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 10px 15px; /* Внутрішні відступи для посилань */
+    background-color: rgba(62, 173, 63, 0.5); /* Напівпрозорий зелений фон */
+    border-radius: 5px; /* Заокруглення для посилань */
+    transition: background-color 0.3s, color 0.3s; /* Плавний перехід */
 }
 
 nav ul li a:hover {
-    color: rgba(62, 173, 63, 1);
+    background-color: rgba(62, 173, 63, 1); /* Непрозорий зелений фон */
+    color: black; /* Змінює текст на чорний при наведенні */
 }
+
 header .social-icons a {
     margin-left: 10px;
     color: white;
