@@ -29,8 +29,7 @@ header .logo {
 }
 
 nav {
-    background-color: #ffffff;
-    padding: 10px 0;
+    background-color: rgba(62, 173, 63, 1, 0.5);
 }
 
 nav ul {
@@ -47,7 +46,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #002D72;
+    color: rgba(0, 0, 0, 1);
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -55,7 +54,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FF4500;
+    color: rgba(62, 173, 63, 1);
 }
 header .social-icons a {
     margin-left: 10px;
