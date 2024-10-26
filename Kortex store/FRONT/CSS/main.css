@@ -17,9 +17,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Видалено зайві вертикальні відступи */
+    padding: 0 20px; /* Горизонтальні відступи без зайвих вертикальних */
     background-color: rgb(0, 0, 0);
-    height: 60px; /* Фіксована висота для рівномірного розміщення */
+    height: 60px; /* Висота для вирівнювання */
     font-family: "Rethink Sans";
 }
 
@@ -29,7 +29,7 @@ header .logo {
 }
 
 nav {
-    background-color: transparent; /* Немає фону для навігації */
+    background-color: transparent; /* Фон навігації залишається прозорим */
 }
 
 nav ul {
@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px; /* Зменшено відступи між пунктами меню */
+    margin: 0; /* Прибрано зовнішні відступи */
 }
 
 nav ul li a {
@@ -49,21 +49,24 @@ nav ul li a {
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 15px; /* Внутрішні відступи для посилань */
+    padding: 20px 15px; /* Внутрішні відступи для всього меню */
     background-color: rgba(62, 173, 63, 0.5); /* Напівпрозорий зелений фон */
-    border-radius: 5px; /* Заокруглення для посилань */
     transition: background-color 0.3s, color 0.3s; /* Плавний перехід */
+    display: flex;
+    align-items: center;
+    height: 60px; /* Висота посилань для вирівнювання */
 }
 
 nav ul li a:hover {
     background-color: rgba(62, 173, 63, 1); /* Непрозорий зелений фон */
-    color: black; /* Змінює текст на чорний при наведенні */
+    color: black; /* Текст змінюється на чорний при наведенні */
 }
 
 header .social-icons a {
     margin-left: 10px;
     color: white;
 }
+
 
 .logo {
     font-family: "IBM Plex Mono";
