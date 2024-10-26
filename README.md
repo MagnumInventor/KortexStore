@@ -1,6 +1,8 @@
 # KortexStore
 Самий ніщий ресейл
 
+URL:
+https://magnuminventor.github.io/KortexStore/
 
 FONTS:
 - Kanit
