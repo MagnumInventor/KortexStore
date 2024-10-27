@@ -10,6 +10,15 @@ body {
     font-family: Kanit;
     background-color: black;
     color: white;
+    max-width: 1200px;
+    width: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
 }
 
 /* Header styling */
