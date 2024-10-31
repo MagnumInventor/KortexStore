@@ -362,9 +362,9 @@ color: #888;
 
 .product-card {
     background-color: #111;
-    border: 1px solid #333;
+    border: 2.5px solid #333;
     border-radius: 10px;
-    width: 200px;
+    width: 400px;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -398,6 +398,7 @@ color: #888;
 .delivery-info {
     margin-top: 20px;
     font-size: 1.2em;
+    font-family: Kanit;
 }
 
 
