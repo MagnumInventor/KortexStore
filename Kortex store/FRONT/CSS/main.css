@@ -336,3 +336,70 @@ color: #888;
 }
 
 
+
+                /* STOCK */
+
+
+.products-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.product-name, .product-price {
+    margin: 0;
+}
+
+.order-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.delivery-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+
+
+
