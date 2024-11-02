@@ -238,16 +238,21 @@ header .social-icons a {
 .product-title {
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: "Montserrat";
+    font-weight: bold;
 }
 
 .product-description ul {
     list-style-type: disc;
     margin-left: 20px;
+    font-family: "IBM Plex Mono";
 }
 
 .product-price {
     font-size: 24px;
     font-weight: bold;
+    font-family: "Montserrat";
+
     margin: 20px 0;
 }
 
@@ -261,6 +266,7 @@ header .social-icons a {
     display: flex;
     align-items: center;
     margin-right: 20px;
+    font-family: "Montserrat";
 }
 
 .color {
@@ -291,7 +297,11 @@ header .social-icons a {
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
+
+    font-family: "Montserrat";
     font-size: 18px;
+    font-weight: bold;
+
     cursor: pointer;
 }
 
