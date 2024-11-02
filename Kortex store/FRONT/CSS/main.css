@@ -395,6 +395,8 @@ font-family: "IBM Plex Mono";
     padding: 10px 20px;
     cursor: pointer;
     color: #ffffff;
+
+    font-family: "IBM Plex Mono";
 }
 
 .delivery-info {
