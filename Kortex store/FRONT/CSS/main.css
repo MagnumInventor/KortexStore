@@ -407,6 +407,11 @@ font-family: "IBM Plex Mono";
     color: #ffffff;
 
     font-family: "IBM Plex Mono";
+    transition: background-color 0.3s;
+}
+
+.order-button:hover {
+    background-color: gray; /* Колір фону при наведенні */
 }
 
 .delivery-info {
