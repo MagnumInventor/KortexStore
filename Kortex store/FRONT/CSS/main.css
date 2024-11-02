@@ -415,6 +415,42 @@ font-family: "IBM Plex Mono";
     font-family: IBM Plex Mono;
 }
 
+                    /* CATALOGUE */
 
+                    .search-filter-bar {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 20px 0;
+                        background-color: #1c1c1c; /* чорний фон */
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                    
+                    .search-input {
+                        flex-grow: 1;
+                        margin-right: 10px;
+                        padding: 8px;
+                        border: none;
+                        border-radius: 5px;
+                        outline: none;
+                    }
+                    
+                    .filter-button,
+                    .sort-button {
+                        background-color: #32cd32; /* зелений колір */
+                        color: white;
+                        border: none;
+                        padding: 8px 12px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+                    }
+                    
+                    .filter-button:hover,
+                    .sort-button:hover {
+                        background-color: #28a428; /* темніший зелений */
+                    }
+                    
 
-
+        /* CATALOGUE */
