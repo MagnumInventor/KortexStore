@@ -367,7 +367,12 @@ font-family: "IBM Plex Mono";
 
 .section-title {
     font-size: 2em;
-    margin-bottom: 20px;
+
+    text-align: left;
+    margin-bottom: 12.5px;
+
+    font-family: "Montserrat";
+
 }
 
 .product-grid {
