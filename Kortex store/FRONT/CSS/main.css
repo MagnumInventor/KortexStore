@@ -21,6 +21,12 @@ body {
   display: flex;
 }
 
+.h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: "Montserrat";
+}
+
 /* Header styling */
 header {
     display: flex;
