@@ -430,7 +430,9 @@ font-family: "IBM Plex Mono";
 }
 
 .delivery-info {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
     font-size: 1.2em;
     font-family: IBM Plex Mono;
 }
