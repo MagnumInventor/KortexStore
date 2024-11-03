@@ -184,6 +184,14 @@ header .social-icons a {
 
         font-family: "Rethink Sans";
     }
+
+    .product {
+        display: flex;
+        flex-direction: column; /* Встановлює вертикальне розташування елементів */
+        align-items: center; /* Вирівнює елементи по центру по горизонталі */
+        text-align: center;
+        margin: 10px;
+    }
     
     .product img {
         width: 150px;
@@ -192,7 +200,7 @@ header .social-icons a {
     
     .product .price {
         font-size: 1.2rem;
-        margin-top: 10px;
+        margin: 10px, 0;
     }
 
                         /* ITEMS PAGE */
