@@ -157,6 +157,7 @@ header .social-icons a {
         background: linear-gradient(green, #000000);
         padding: 40px 20px;
         text-align: center;
+        justify-content: center;
     }
     
     .sale-banner {
