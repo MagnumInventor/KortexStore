@@ -417,6 +417,9 @@ font-family: "IBM Plex Mono";
     cursor: pointer;
     color: #ffffff;
 
+    width: 100px;
+    height: 50px;
+
     font-family: "IBM Plex Mono";
     transition: background-color 0.3s;
 }
