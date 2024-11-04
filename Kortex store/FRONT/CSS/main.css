@@ -221,12 +221,12 @@ header .social-icons a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 
 .product-image {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .arrow-btn {
