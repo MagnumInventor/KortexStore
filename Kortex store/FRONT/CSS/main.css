@@ -257,6 +257,10 @@ header .social-icons a {
     font-weight: bold;
 }
 
+.product-description {
+    padding-bottom: 50px;
+}
+
 .product-description ul {
     list-style-type: disc;
     margin-left: 20px;
