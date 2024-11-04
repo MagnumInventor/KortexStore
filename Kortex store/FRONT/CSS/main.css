@@ -273,6 +273,8 @@ header .social-icons a {
 
 .product-options {
     display: flex;
+    display: block;
+
     align-items: center;
     margin-bottom: 20px;
 }
