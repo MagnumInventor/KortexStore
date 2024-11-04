@@ -262,6 +262,9 @@ header .social-icons a {
     margin-left: 20px;
     font-family: "IBM Plex Mono";
 }
+.product-description p {
+    font-family: "IBM Plex Mono";
+}
 
 .product-price {
     font-size: 24px;
