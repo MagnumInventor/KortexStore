@@ -193,10 +193,13 @@ header .social-icons a {
         margin: 10px;
     }
     
-    /*.product img {
+    .product img {
         width: 150px;
         height: auto;
-    }*/
+
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
 
     .sale-product-image {
         max-width: 100%;
