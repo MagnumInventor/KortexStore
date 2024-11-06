@@ -191,6 +191,9 @@ header .social-icons a {
         align-items: center; /* Вирівнює елементи по центру по горизонталі */
         text-align: center;
         margin: 10px;
+
+        border-radius: 5px;
+        border-color: #666;
     }
     
     .product img {
