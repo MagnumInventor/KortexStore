@@ -212,7 +212,8 @@ header .social-icons a {
     
     .product .price {
         font-size: 1.2rem;
-        margin: 10px, 0;
+        
+        padding: 10px;
     }
 
                         /* ITEMS PAGE */
