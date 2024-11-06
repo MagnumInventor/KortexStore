@@ -305,6 +305,9 @@ header .social-icons a {
 .green { background-color: green; }
 .red { background-color: red; }
 .orange { background-color: orange; }
+.black { background-color: rgb(19, 19, 19); }
+.grey { background-color: grey; }
+.white { background-color: white; }
 
 .size-btn {
     background-color: #333;
