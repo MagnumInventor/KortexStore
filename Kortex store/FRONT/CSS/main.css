@@ -454,8 +454,8 @@ font-family: "IBM Plex Mono";
 }
 
 .order-button {
-    justify-content: center;
-    text-align: center;
+
+    text-align: left;
 
     background-color: transparent;
     border: 1.5px solid #929292;
