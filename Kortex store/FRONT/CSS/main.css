@@ -263,6 +263,8 @@ header .social-icons a {
 
         margin-bottom: 10px;
         margin-top: 10px;
+
+        padding-top: 10px;
     }
     
     .product .price {
@@ -392,6 +394,7 @@ header .social-icons a {
     border: inset;
 
     margin-bottom: 10px;
+    padding-bottom: 10px;
     padding: 10px 20px;
     border-radius: 10px;
 
