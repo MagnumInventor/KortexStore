@@ -480,6 +480,7 @@ font-family: "IBM Plex Mono";
     font-size: 16px;
 
     transition: background-color 0.3s;
+    transition: font-size 0.3s;
 }
 
 .order-button:hover {
