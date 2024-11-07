@@ -193,15 +193,15 @@ header .social-icons a {
         margin: 10px;
 
         border-radius: 5px;
-        border-color: #666;
+        border-color: #888;
 
-        background: #333;
+        background-color: #333;
 
-        transition: 0.3ms;
+        transition: background-color 0.3s;
     }
 
     .product :hover {
-
+        background-color: #666;
     }
     
     .product img {
