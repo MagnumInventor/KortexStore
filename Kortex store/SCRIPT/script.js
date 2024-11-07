@@ -1,6 +1,6 @@
 
 
-
+  // SHOPPING
 
 $(document).ready(function() {
  
@@ -13,3 +13,18 @@ $(document).ready(function() {
   });
  
 });
+
+
+      // CAROUSEL
+
+// Зупинка анімації при наведенні на карусель
+const carousel = document.querySelector('.carousel');
+
+carousel.addEventListener('mouseover', () => {
+  carousel.style.animationPlayState = 'paused';
+});
+
+carousel.addEventListener('mouseleave', () => {
+  carousel.style.animationPlayState = 'running';
+});
+
