@@ -164,6 +164,8 @@ header .social-icons a {
                 overflow: hidden; /* Сховує все, що виходить за межі контейнера */
                 width: 100vw; /* Задає ширину каруселі на всю ширину вікна */
                 position: relative;
+
+                margin-bottom: 25px;
               }
               
               .carousel {
