@@ -152,6 +152,46 @@ header .social-icons a {
         }
     }
     
+            /* CAROUSEL */
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+              }
+              
+              .carousel-container {
+                overflow: hidden; /* Сховує все, що виходить за межі контейнера */
+                width: 100vw; /* Задає ширину каруселі на всю ширину вікна */
+                position: relative;
+              }
+              
+              .carousel {
+                display: flex; /* Розташовує картинки в ряд */
+                width: max-content; /* Ширина каруселі буде автоматично визначатися по вмісту */
+                animation: scroll 20s linear infinite; /* Анімація прокрутки */
+              }
+              
+              .carousel img {
+                width: 200px; /* Встановлюємо фіксовану ширину для картинок */
+                height: auto;
+                margin-right: 10px; /* Між картинками невеликий проміжок */
+                border-radius: 7.5px;
+              }
+              
+              /* Анімація для руху каруселі */
+              @keyframes scroll {
+                0% {
+                  transform: translateX(0); /* Початкова позиція */
+                }
+                100% {
+                  transform: translateX(-100%); /* Остання позиція (проворочує всю карусель вліво) */
+                }
+              }              
+
+/* CAROUSEL */
+
+
     /* Sale Section */
     .sale-section {
         background: linear-gradient(green, #000000);
