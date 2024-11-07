@@ -476,6 +476,7 @@ font-family: "IBM Plex Mono";
 
 .order-button:hover {
     background-color: gray; /* Колір фону при наведенні */
+    font-size: 20px;
 }
 
 .delivery-info {
