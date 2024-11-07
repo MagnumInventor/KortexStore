@@ -194,6 +194,7 @@ header .social-icons a {
 
         border-radius: 5px;
         border-color: #888;
+        border: inset;
 
         background-color: #333;
 
