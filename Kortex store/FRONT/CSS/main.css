@@ -196,6 +196,12 @@ header .social-icons a {
         border-color: #666;
 
         background: #333;
+
+        transition: 0.3ms;
+    }
+
+    .product :hover {
+
     }
     
     .product img {
