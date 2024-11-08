@@ -395,17 +395,24 @@ header .social-icons a {
     background-color: #f1f1f1;
     color: #333;
     border: inset;
-
-    margin-bottom: 10px;
-    padding-bottom: 10px;
     padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border-radius: 10px;
 
     font-family: "Montserrat";
     font-size: 22px;
     font-weight: bold;
 
+    text-decoration: none; /* Прибрати підкреслення */
+    text-align: center; /* Вирівнювання тексту по центру */
+    display: flex; /* Встановити flex-контейнер */
+    justify-content: center; /* Вирівнювання по горизонталі */
+    align-items: center; /* Вирівнювання по вертикалі */
+
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: font-size 0.3s ease;
 }
 
 .order-btn :hover {
