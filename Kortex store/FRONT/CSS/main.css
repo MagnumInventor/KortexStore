@@ -233,12 +233,12 @@ header .social-icons a {
         margin: 20px; /* Додає зовнішні відступи */
 
         border-radius: 5px;
-        border: 3px solid #888;
+        border: 3px solid #494646;
         background-color: #333;
         
         transition: transform 0.3s ease-in-out;
         cursor: pointer;
-        padding: 20px; /* Внутрішній відступ для продукту */
+        padding: 10px; /* Внутрішній відступ для продукту */
     }
 
     .product :hover {
