@@ -236,13 +236,12 @@ header .social-icons a {
         border: 3px solid #888;
         background-color: #333;
         
-        transition: transform 0.3s ease-in-out, background-color 0.3s;
+        transition: transform 0.3s ease-in-out;
         cursor: pointer;
         padding: 20px; /* Внутрішній відступ для продукту */
     }
 
     .product :hover {
-        background-color: #666;
         transform: scale(1.35);
     }
     
