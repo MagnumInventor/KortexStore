@@ -376,9 +376,11 @@ header .social-icons a {
 }
 
 .order-btn {
+
     background-color: #f1f1f1;
     color: #333;
     border: inset;
+
     padding: 10px 20px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -393,6 +395,15 @@ header .social-icons a {
     display: flex; /* Встановити flex-контейнер */
     justify-content: center; /* Вирівнювання по горизонталі */
     align-items: center; /* Вирівнювання по вертикалі */
+
+    /* Обмежуємо ширину кнопки */
+    width: fit-content;
+    text-align: center;
+
+    /* Вирівнювання тексту по центру */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     cursor: pointer;
     transition: background-color 0.3s ease;
