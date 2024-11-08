@@ -233,8 +233,8 @@ header .social-icons a {
         margin: 20px; /* Додає зовнішні відступи */
 
         border-radius: 5px;
-        border: 3px solid #494646;
-        background-color: #333;
+        border: 3px solid #252323;
+        background-color: #181818;
         
         transition: transform 0.3s ease-in-out;
         cursor: pointer;
