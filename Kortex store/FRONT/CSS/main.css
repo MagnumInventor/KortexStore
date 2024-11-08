@@ -247,7 +247,7 @@ header .social-icons a {
     .product img {
         width: 150px;
         height: auto;
-        
+
         border-radius: 5px;
         margin-bottom: 15px; /* Відступ між зображенням і текстом */
     }
@@ -262,10 +262,11 @@ header .social-icons a {
         padding-top: 10px;
     }
     
-    .product .price {
+    .price {
         font-size: 1.2rem;
         
         padding: 10px;
+        margin-bottom: 10px; /* Відступ перед кнопкою */
     }
 
                         /* ITEMS PAGE */
