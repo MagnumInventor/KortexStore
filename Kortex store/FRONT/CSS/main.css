@@ -382,8 +382,8 @@ header .social-icons a {
     border: inset;
 
     padding: 10px 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 1px;
+    margin-bottom: 1px;
     border-radius: 10px;
 
     font-family: "Montserrat";
