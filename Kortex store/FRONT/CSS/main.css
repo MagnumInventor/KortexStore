@@ -241,7 +241,10 @@ header .social-icons a {
         background-color: #333;
 
         transition: background-color 0.3s;
-        transition: transform 0.3s ease-in-out;
+        
+        display: inline-block; /* Щоб елемент поводився як один блок */
+        transition: transform 0.3s ease-in-out; /* Плавне збільшення */
+        cursor: pointer; /* Змінює курсор при наведенні */
     }
 
     .product :hover {
