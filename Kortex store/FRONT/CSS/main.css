@@ -375,14 +375,11 @@ header .social-icons a {
 }
 
 .order-btn {
-
     background-color: #f1f1f1;
     color: #333;
     border: inset;
-
     padding: 10px 20px;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin: 1px 0;
     border-radius: 10px;
 
     font-family: "Montserrat";
@@ -390,25 +387,15 @@ header .social-icons a {
     font-weight: bold;
 
     text-decoration: none; /* Прибрати підкреслення */
-    text-align: center; /* Вирівнювання тексту по центру */
     display: flex; /* Встановити flex-контейнер */
     align-items: center; /* Вирівнювання по вертикалі */
-
-    /* Обмежуємо ширину кнопки */
-    width: fit-content;
-    text-align: center;
-
-    /* Вирівнювання тексту по центру */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    justify-content: center; /* Вирівнювання по горизонталі */
+    
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    transition: font-size 0.3s ease;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
 }
 
-.order-btn :hover {
+.order-btn:hover {
     background-color: #888;
     font-size: larger;
 }
