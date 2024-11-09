@@ -27,6 +27,15 @@ body {
     font-family: "Montserrat";
 }
 
+a img {
+    transition: transform 0.3s ease;
+}
+
+a img:hover {
+    transform: scale(1.1); /* Збільшує зображення при наведенні */
+}
+
+
 /* Header styling */
 header {
     display: flex;
