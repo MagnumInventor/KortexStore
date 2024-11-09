@@ -504,37 +504,31 @@ font-family: "IBM Plex Mono";
 }
 
 .order-button {
-
-    text-align: left;
-
     background-color: transparent;
     border: 1.5px solid #929292;
     border-radius: 5px;
     padding: 10px 20px;
-    cursor: pointer;
     color: #ffffff;
-
-    text-align: center;
-    justify-content: center;
-    text-decoration: none; /* Прибрати підкреслення */
-
-        /* Обмежуємо ширину кнопки */
-        width: fit-content;
-        text-align: center;
-
-    width: 100px;
-    height: 50px;
-
+    
     font-family: "Montserrat";
     font-weight: bold;
     font-size: 16px;
 
-    transition: background-color 0.3s;
-    transition: font-size 0.3s;
+    text-decoration: none; /* Прибрати підкреслення */
+    display: flex; /* Встановити flex-контейнер */
+    align-items: center; /* Вирівнювання по вертикалі */
+    justify-content: center; /* Вирівнювання по горизонталі */
+
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+
+    /* Фіксована ширина для кнопки */
+    width: 100px;
+    height: 50px;
 }
 
 .order-button:hover {
-    background-color: gray; /* Колір фону при наведенні */
+    background-color: gray;
     font-size: 20px;
 }
 
