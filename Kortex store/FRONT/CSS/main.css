@@ -393,7 +393,6 @@ header .social-icons a {
     text-decoration: none; /* Прибрати підкреслення */
     text-align: center; /* Вирівнювання тексту по центру */
     display: flex; /* Встановити flex-контейнер */
-    justify-content: center; /* Вирівнювання по горизонталі */
     align-items: center; /* Вирівнювання по вертикалі */
 
     /* Обмежуємо ширину кнопки */
@@ -528,6 +527,14 @@ font-family: "IBM Plex Mono";
     padding: 10px 20px;
     cursor: pointer;
     color: #ffffff;
+
+    text-align: center;
+    justify-content: center;
+    text-decoration: none; /* Прибрати підкреслення */
+
+        /* Обмежуємо ширину кнопки */
+        width: fit-content;
+        text-align: center;
 
     width: 100px;
     height: 50px;
