@@ -15,10 +15,25 @@ $(document).ready(function() {
 });
 
 
-      // CAROUSEL
 
+            // CAROUSEL
+
+    //BRANDS
 // Зупинка анімації при наведенні на карусель
 const carousel = document.querySelector('.carousel');
+
+carousel.addEventListener('mouseover', () => {
+  carousel.style.animationPlayState = 'paused';
+});
+
+carousel.addEventListener('mouseleave', () => {
+  carousel.style.animationPlayState = 'running';
+});
+
+
+    //SALE PRODUCTS
+// Зупинка анімації при наведенні на карусель
+const product = document.querySelector('.products');
 
 carousel.addEventListener('mouseover', () => {
   carousel.style.animationPlayState = 'paused';
