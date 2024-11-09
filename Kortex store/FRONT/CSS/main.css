@@ -225,25 +225,24 @@ header .social-icons a {
         gap: 20px; /* Відступи між продуктами */
     }
 
+
     .product {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 20px; /* Додає зовнішні відступи */
+        margin: 10px;
 
-        border-radius: 5px;
+        border-radius: 10px;
         border: 3px solid #252323;
-        background-color: #181818;
-        
-        transition: transform 0.3s ease-in-out;
-        cursor: pointer;
-        padding: 10px; /* Внутрішній відступ для продукту */
-    }
 
-    .product :hover {
-        transform: scale(1.1);
+        background-color: #181818;
+        padding: 10px;
+
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
     }
+    
     
     .product img {
         width: 150px;
