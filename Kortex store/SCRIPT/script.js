@@ -28,3 +28,23 @@ carousel.addEventListener('mouseleave', () => {
   carousel.style.animationPlayState = 'running';
 });
 
+
+
+  // PRODUCT SCALLING
+
+  // Отримуємо всі елементи з класом 'product'
+const products = document.querySelectorAll('.product');
+
+products.forEach(product => {
+    // Додаємо слухач події для наведення миші
+    product.addEventListener('mouseenter', () => {
+        product.style.transform = 'scale(1.1)';
+    });
+
+    // Додаємо слухач події для виходу миші
+    product.addEventListener('mouseleave', () => {
+        product.style.transform = 'scale(1)';
+    });
+});
+
+
