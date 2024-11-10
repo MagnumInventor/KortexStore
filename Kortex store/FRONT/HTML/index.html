@@ -14,6 +14,7 @@
 </head>
 <body>
 
+
     <!-- Header -->
     <header>
         <div href="Kortex store/FRONT/HTML/index.html" class="logo">Kortex Store</div>
@@ -61,6 +62,7 @@
 
     <!-- Sale Section -->
     <div class="sale-banner">SALE</div>
+    
     <section class="sale-section">
         <div class="products">
             
@@ -108,5 +110,29 @@
         </div>
     </footer>
     
+
+
+
+    <script>
+        // Отримуємо елемент, під який потрібно підлаштуватися
+        const productsElement = document.querySelector('.products');
+    
+        // Встановлюємо ширину сторінки відповідно до ширини елемента
+        function adjustPageWidth() {
+            if (productsElement) {
+                const elementWidth = productsElement.offsetWidth;
+                document.body.style.width = `${elementWidth}px`;
+            }
+        }
+    
+        // Викликаємо функцію для встановлення ширини при завантаженні сторінки
+        window.addEventListener('load', adjustPageWidth);
+    
+        // Викликаємо функцію при зміні розміру вікна
+        window.addEventListener('resize', adjustPageWidth);
+    </script>
+    
+
+
 </body>
 </html>
