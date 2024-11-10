@@ -204,6 +204,41 @@ header .social-icons a {
 
 
     /* Sale Section */
+
+/*NEW CAR*/
+
+.sale-carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sale-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*NEW CAR*/
+
     .sale-section {
         background: linear-gradient(green, #000000);
         padding: 40px 20px;
