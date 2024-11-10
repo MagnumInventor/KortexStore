@@ -34,7 +34,7 @@ carousel.addEventListener('mouseleave', () => {
     //SALE PRODUCTS
 // Зупинка анімації при наведенні на карусель
 const salecarousel = document.querySelector('.carousel');
-const products = document.querySelectorAll('.product');
+const saleproducts = document.querySelectorAll('.product');
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
 
