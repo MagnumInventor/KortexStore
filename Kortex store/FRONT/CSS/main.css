@@ -309,7 +309,7 @@ header .social-icons a {
     align-items: center;
     justify-content: center;
     background-color: #000;
-    padding: 20px;
+    padding: 10px;
     color: #fff;
 }
 
@@ -389,7 +389,10 @@ header .social-icons a {
 .color-options, .size-options {
     display: flex;
     align-items: center;
+
     margin-right: 20px;
+    padding-bottom: 10px;
+
     font-family: "Montserrat";
 }
 
@@ -427,7 +430,7 @@ header .social-icons a {
     border-radius: 10px;
 
     font-family: "Montserrat";
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 
     text-decoration: none; /* Прибрати підкреслення */
