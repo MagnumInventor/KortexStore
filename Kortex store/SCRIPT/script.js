@@ -33,15 +33,44 @@ carousel.addEventListener('mouseleave', () => {
 
     //SALE PRODUCTS
 // Зупинка анімації при наведенні на карусель
-const product = document.querySelector('.products');
+const salecarousel = document.querySelector('.carousel');
+const products = document.querySelectorAll('.product');
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
 
-carousel.addEventListener('mouseover', () => {
-  carousel.style.animationPlayState = 'paused';
+let currentIndex = 0;
+
+function updateCarousel() {
+    const slideWidth = products[0].clientWidth;
+    carousel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+nextButton.addEventListener('click', () => {
+    if (currentIndex < products.length - 1) {
+        currentIndex++;
+    } else {
+        currentIndex = 0;
+    }
+    updateCarousel();
 });
 
-carousel.addEventListener('mouseleave', () => {
-  carousel.style.animationPlayState = 'running';
+prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+    } else {
+        currentIndex = products.length - 1;
+    }
+    updateCarousel();
 });
+
+// Автоматичне переключення слайдів
+setInterval(() => {
+    nextButton.click();
+}, 3000);
+
+// Підлаштовування під ширину екрана при зміні розміру
+window.addEventListener('resize', updateCarousel);
+
 
 
 
