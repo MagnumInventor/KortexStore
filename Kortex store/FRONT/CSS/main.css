@@ -247,6 +247,8 @@ header .social-icons a {
         padding: 40px 20px;
         text-align: center;
         justify-content: center;
+    
+        flex-wrap: wrap;
     }
     
     .sale-banner {
