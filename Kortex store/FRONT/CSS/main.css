@@ -308,10 +308,20 @@ header .social-icons a {
     }
     
     .price {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
 
         padding: 10px;
         margin-bottom: 10px; /* Відступ перед кнопкою */
+    }
+
+    .discount {
+        font-size: 1.1rem;
+        text-decoration: line-through; /* Перекреслений текст */
+        color: rgba(255, 0, 0, 0.692);
+
+        padding: 10px;
+        margin-left: 5px;
+        margin-bottom: 10px;
     }
 
                         /* ITEMS PAGE */
