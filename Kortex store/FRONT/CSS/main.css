@@ -299,8 +299,9 @@ header .social-icons a {
     
     
     .product img {
-        width: 150px;
+        max-width: 100%;
         height: auto;
+        object-fit: cover;
 
         border-radius: 5px;
         margin-bottom: 15px; /* Відступ між зображенням і текстом */
