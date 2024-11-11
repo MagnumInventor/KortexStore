@@ -448,6 +448,10 @@ header .social-icons a {
     display: flex; /* Встановити flex-контейнер */
     align-items: center; /* Вирівнювання по вертикалі */
     justify-content: center; /* Вирівнювання по горизонталі */
+
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
     
     cursor: pointer;
     transition: background-color 0.3s ease, font-size 0.3s ease;
