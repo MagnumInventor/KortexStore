@@ -33,6 +33,8 @@ carousel.addEventListener('mouseleave', () => {
 
     //SALE PRODUCTS
 // Зупинка анімації при наведенні на карусель
+
+/*
 const salecarousel = document.querySelector('.carousel');
 const saleproducts = document.querySelectorAll('.product');
 const nextButton = document.querySelector('.next');
@@ -90,5 +92,5 @@ products.forEach(product => {
         product.style.transform = 'scale(1)';
     });
 });
-
+*/
 
