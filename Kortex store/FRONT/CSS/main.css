@@ -266,7 +266,10 @@ header .social-icons a {
         display: flex;
         justify-content: space-around;
         text-align: center;
+
+        max-width: 1200px;
         flex: 1;
+        flex-wrap: wrap;
 
         padding: 20px; /* Додано відступ для секції продуктів */
         gap: 20px; /* Відступи між продуктами */
