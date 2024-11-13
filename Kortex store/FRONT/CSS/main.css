@@ -309,12 +309,16 @@ header .social-icons a {
     
     .price {
         font-size: 1.3rem;
+        text-decoration: none;
+        color: whitesmoke;
 
         padding: 10px;
         margin-bottom: 10px; /* Відступ перед кнопкою */
     }
 
     .discount {
+        color: red;
+
         font-size: 1.1rem;
         text-decoration: line-through; /* Перекреслений текст */
 
@@ -552,7 +556,7 @@ font-family: "IBM Plex Mono";
 
     border: 2px solid #bababa;
     border-radius: 8px;
-    
+
     width: 400px;
     padding: 20px;
 
