@@ -317,7 +317,6 @@ header .social-icons a {
     .discount {
         font-size: 1.1rem;
         text-decoration: line-through; /* Перекреслений текст */
-        color: rgba(255, 0, 0, 0.692);
 
         padding: 10px;
         margin-left: 5px;
