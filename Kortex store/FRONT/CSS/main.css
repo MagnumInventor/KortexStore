@@ -576,7 +576,7 @@ font-family: "IBM Plex Mono";
 
 .order-button {
     background-color: transparent;
-    border: 1.5px solid #929292;
+    border: 1.5px solid #e4e4e4;
     border-radius: 5px;
     padding: 10px 20px;
     color: #ffffff;
@@ -594,8 +594,8 @@ font-family: "IBM Plex Mono";
     transition: background-color 0.3s ease, font-size 0.3s ease;
 
     /* Фіксована ширина для кнопки */
-    width: 100px;
-    height: 50px;
+    width: 200px;
+    height: 60px;
 }
 
 .order-button:hover {
