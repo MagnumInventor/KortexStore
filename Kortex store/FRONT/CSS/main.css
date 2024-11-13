@@ -542,15 +542,15 @@ font-family: "IBM Plex Mono";
 
 .product-grid {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .product-card {
-    background-color: #111;
-    border: 2.5px solid #333;
-    border-radius: 10px;
+    background-color: #0b0b0b;
+    border: 2.5px solid #d8d8d8;
+    border-radius: 8px;
     width: 400px;
     padding: 20px;
     text-align: center;
