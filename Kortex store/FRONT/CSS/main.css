@@ -320,7 +320,6 @@ header .social-icons a {
         color: red;
 
         font-size: 1.1rem;
-        text-decoration: line-through; /* Перекреслений текст */
 
         padding: 10px;
         margin-left: 5px;
