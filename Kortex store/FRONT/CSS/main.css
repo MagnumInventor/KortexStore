@@ -589,7 +589,7 @@ font-family: "IBM Plex Mono";
     
     font-family: "Montserrat";
     font-weight: bold;
-    font-size: 16px;
+    font-size: 19px;
 
     text-decoration: none; /* Прибрати підкреслення */
     display: flex; /* Встановити flex-контейнер */
@@ -606,7 +606,7 @@ font-family: "IBM Plex Mono";
 
 .order-button:hover {
     background-color: gray;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .delivery-info {
