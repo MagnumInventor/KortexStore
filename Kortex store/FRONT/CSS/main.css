@@ -633,6 +633,8 @@ font-family: "IBM Plex Mono";
                     
                     .search-input {
                         flex-grow: 1;
+                        font-size: larger;
+
                         margin-right: 10px;
                         padding: 8px;
                         border: none;
@@ -644,9 +646,13 @@ font-family: "IBM Plex Mono";
                     .sort-button {
                         background-color: #32cd32; /* зелений колір */
                         color: white;
+
+                        font-size: 16px;
                         border: none;
+
                         padding: 8px 12px;
                         border-radius: 5px;
+
                         cursor: pointer;
                         transition: background-color 0.3s;
                     }
@@ -654,6 +660,7 @@ font-family: "IBM Plex Mono";
                     .filter-button:hover,
                     .sort-button:hover {
                         background-color: #28a428; /* темніший зелений */
+                        font-weight: bolder;
                     }
                     
                     /*SEARCH BAR*/
