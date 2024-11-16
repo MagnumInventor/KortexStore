@@ -8,7 +8,7 @@
 
 body {
     font-family: Kanit;
-    background-color: black;
+    background-color: rgb(41, 41, 41);
     color: white;
 
     max-width: 3200px;
@@ -40,24 +40,36 @@ a img:hover {
 
 
 /* Header styling */
+
 header {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
+
     padding: 0 20px; /* Горизонтальні відступи без зайвих вертикальних */
-    background-color: rgb(0, 0, 0);
+    background-color: #2f3030;
     height: 60px; /* Висота для вирівнювання */
+    border-radius: 10px;
+
     font-family: "Rethink Sans";
     width: auto;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-header .logo {
-    font-size: 24px;
-    font-family: "Kanit";
+.nav-text {
+    display: inline;
+    margin-left: 100px;
+
+    font-size: 20px;
+    font-family: "Rethink Sans";
 }
 
 nav {
     background-color: transparent; /* Фон навігації залишається прозорим */
+    
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 nav ul {
@@ -73,32 +85,51 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 1);
+    color: rgb(221, 230, 221);
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    
     padding: 20px 15px; /* Внутрішні відступи для всього меню */
-    background-color: rgba(62, 173, 63, 0.5); /* Напівпрозорий зелений фон */
+    background-color: rgba(90, 99, 94, 0.5); /* Напівпрозорий зелений фон */
     transition: background-color 0.3s, color 0.3s; /* Плавний перехід */
+
     display: flex;
     align-items: center;
     height: 60px; /* Висота посилань для вирівнювання */
 }
 
 nav ul li a:hover {
-    background-color: rgba(62, 173, 63, 1); /* Непрозорий зелений фон */
+    background-color: rgb(50, 85, 63); /* Непрозорий зелений фон */
     color: black; /* Текст змінюється на чорний при наведенні */
 }
 
-header .social-icons a {
+.social-icons {
+    display: inherit;
     margin-left: 10px;
-    color: white;
+    margin-right: 10px;
+
+    gap: 15px;
 }
 
-
 .logo {
-    font-family: "IBM Plex Mono";
-    font-size: 1.4rem;
+    font-size: 24px;
+    font-family: "Kanit";
+    font-weight: 400;
+
+    color: #e9f0eb;  /* Колір самого тексту */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5),    /* Легке світіння */
+        0 0 10px rgba(255, 255, 255, 0.5),   /* Більше світіння */
+        0 0 15px rgba(255, 255, 255, 0.5),   /* Ще більше світіння */
+        0 0 20px rgba(255, 255, 255, 0.5);   /* Найсильніше світіння */
+    animation: glow 1.5s ease-in-out infinite; /* Анімація для пульсуючого ефекту */
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5); }
+    50% { text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.6); }
+    100% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5); }
 }
 
 .green-line {
@@ -107,22 +138,47 @@ header .social-icons a {
     width: auto;
 }
 
+.black-line {
+    background-color: li rgb(0, 0, 0);
+
+    height: 3px;
+    width: auto;
+}
+
     /* MAIN SECTION */
 
     .main-banner {
-        display: flex;
         justify-content: left;
         align-items: left;
-        height: 60vh;
-        background-color: black;
+        height: 40vh;
+
+        background-color: #242724;
+        border-radius: 10px;
+
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+        margin-right: 45px;
+        margin-left: 45px;
+
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     
     .banner-content {
+
+        max-height: 600px;
+        max-width: 2000px;
+
+        width: 100%;
+        height: 100%;
+
+        background-image: linear-gradient(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
+
         text-align: center;
         font-family: "Dela Gothic One";
-        margin-top: 100px;
-        margin-left: 30px;
-        
+
+        border-radius: 7.5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     
     .main-banner h1 {
@@ -138,31 +194,6 @@ header .social-icons a {
         display: inline;
     }
 
-    .social-icons {
-        width: 50px;
-        height: 50px;
-    }
-    
-    /*.coming-soon-animation {
-        margin-top: 20px;
-        justify-content: right;
-
-        font-size: 2rem;
-        font-family: "Dela Gothic One";
-
-        color: white;
-        animation: rotateText 5s linear infinite;
-    }
-    
-     Animation for rotating text 
-    @keyframes rotateText {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
     
             /* CAROUSEL */
 
@@ -243,7 +274,8 @@ header .social-icons a {
 /*NEW CAR*/
 
     .sale-section {
-        background: linear-gradient(green, #000000);
+        background: radial-gradient(rgba(68, 146, 107, 1), rgba(65, 65, 65, 1));
+
         padding: 40px 20px;
         text-align: center;
         justify-content: center;
@@ -253,15 +285,17 @@ header .social-icons a {
     
     .sale-banner {
         
-        background-color: #0e0f0f;
+        background-color: #2f3030;
 
-        font-size: 2rem;
-        color: white;
+        font-size: 3rem;
+        color: rgb(241, 247, 243);
         text-align: center;
-        font-family: "Bebas Neue";
+        font-family: "Montserrat";
 
         width: auto;
         height: auto;
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     
     .products {
@@ -665,6 +699,11 @@ font-family: "IBM Plex Mono";
                         background-color: #28a428; /* темніший зелений */
                         font-weight: bolder;
                     }
+                    
+                    /*SEARCH BAR*/
+
+        /* CATALOGUE */
+
                     
                     /*SEARCH BAR*/
 
