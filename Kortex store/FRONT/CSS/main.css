@@ -49,7 +49,6 @@ header {
     padding: 0 20px; /* Горизонтальні відступи без зайвих вертикальних */
     background-color: #2f3030;
     height: 60px; /* Висота для вирівнювання */
-    border-radius: 10px;
 
     font-family: "Rethink Sans";
     width: auto;
@@ -57,12 +56,42 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.nav-text {
+.nav-text-bef {
     display: inline;
-    margin-left: 100px;
+    margin-left: 111px;
 
     font-size: 20px;
+    font-weight: 499;
     font-family: "Rethink Sans";
+
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+.nav-text-mid {
+    display: inline;
+    margin-right: 15px;
+
+    font-size: 20px;
+    font-weight: 499;
+    font-family: "Rethink Sans";
+
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+.nav-text-aft {
+    display: inline;
+    margin-right: 111px;
+
+    font-size: 20px;
+    font-weight: 499;
+    font-family: "Rethink Sans";
+
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.nav-text-aft:hover, .nav-text-mid:hover, .nav-text-bef:hover {
+    border-bottom: 2px solid #e9f0ee; /* Колір підкреслення при наведенні */
 }
 
 nav {
@@ -101,16 +130,17 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: rgb(50, 85, 63); /* Непрозорий зелений фон */
-    color: black; /* Текст змінюється на чорний при наведенні */
+    color: rgb(33, 34, 34); /* Текст змінюється на чорний при наведенні */
 }
 
 .social-icons {
     display: inherit;
-    margin-left: 10px;
+    margin-left: 75px;
     margin-right: 10px;
 
-    gap: 15px;
+    gap: 25px;
 }
+
 
 .logo {
     font-size: 24px;
