@@ -9,14 +9,27 @@
 body {
     font-family: Kanit;
     background-color: rgb(41, 41, 41);
-    color: white;
+    color: rgb(228, 235, 232);
 
-    max-width: 3200px;
-    width: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 
-    overflow-x: hidden
+    overflow-x: hidden; /* Приховуємо горизонтальну прокрутку */
+    display: block;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 60px;
+
+    background-color: #2f3030;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -38,49 +51,14 @@ a img:hover {
     transform: scale(1.1); /* Збільшує зображення при наведенні */
 }
 
-
-/* Header styling */
-
-header {
-    display: flex;
-    /*justify-content: space-between;*/
-    align-items: center;
-
-    padding: 0 20px; /* Горизонтальні відступи без зайвих вертикальних */
-    background-color: #2f3030;
-    height: 60px; /* Висота для вирівнювання */
-
-    font-family: "Rethink Sans";
-    width: auto;
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.nav-points {
+    display: inline;
 }
 
-.nav-text-bef {
+.nav-text-bef, .nav-text-mid, .nav-text-aft {
     display: inline;
-    margin-left: 111px;
-
-    font-size: 20px;
-    font-weight: 499;
-    font-family: "Rethink Sans";
-
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
-}
-.nav-text-mid {
-    display: inline;
+    margin-left: 15px;
     margin-right: 15px;
-
-    font-size: 20px;
-    font-weight: 499;
-    font-family: "Rethink Sans";
-
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
-}
-.nav-text-aft {
-    display: inline;
-    margin-right: 111px;
 
     font-size: 20px;
     font-weight: 499;
@@ -103,9 +81,11 @@ nav {
 
 nav ul {
     list-style: none;
-    display: flex; /* Вирівнює пункти меню горизонтально */
+    display: flex;
     padding: 0;
     margin: 0;
+    width: 100%; /* Задаємо ширину 100% для навігації */
+    justify-content: space-between; /* Вирівнюємо елементи */
 }
 
 nav ul li {
@@ -137,15 +117,28 @@ nav ul li a:hover {
     display: inherit;
     margin-left: 75px;
     margin-right: 10px;
+    padding-top: 3.75px;
 
     gap: 25px;
 }
 
+.header-content {
+    font-family: "Kanit";
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 15px;
+}
 
 .logo {
-    font-size: 24px;
+    font-size: 30px;
     font-family: "Kanit";
     font-weight: 400;
+
+    margin-left: 25px;
+    margin-top: 15px;
 
     color: #e9f0eb;  /* Колір самого тексту */
     text-shadow: 
@@ -169,33 +162,167 @@ nav ul li a:hover {
 }
 
 .black-line {
-    background-color: li rgb(0, 0, 0);
-
-    height: 3px;
-    width: auto;
+    background-color: transparent;
 }
+
+.burger-menu {
+    display: none;
+    margin-right: 20px;
+    margin-top: 15px;
+
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #dae7e2;
+    transition: all 0.3s ease;
+}
+
+/* MEDIA REQUEST */
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; /* Робимо header вертикальним на малих екранах */
+        width: 100%;
+        height: fit-content;
+    }
+
+        .header-content {
+            width: 100%;
+        }
+    .logo {
+        margin-left: 30px;
+    }
+    .burger-menu {
+        display: flex;
+    }
+
+    .logo {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    nav {
+        display: none;
+    }
+            nav.active {
+                display: flex;
+            }
+
+    nav ul {
+        display: flex;
+        flex-direction: grid; 
+        width: 100%; /* Ширина ul займає 100% доступної ширини */
+    }
+
+    nav ul li {
+        width: 100%; /* Кожен елемент li займає 100% ширини контейнера */
+        display: block; /* Робимо li блочним елементом */
+    }
+
+    nav ul li a {
+        display: block; /* Перетворюємо a на блочний елемент */
+        width: 100%; /* Ширина кожного посилання також 100% */
+       
+        text-align: center; /* Текст по центру */
+        background-color: inherit; /* Зберігаємо фон li */
+
+        background-color: rgba(90, 99, 94, 0.2.5); /* Напівпрозорий зелений фон */
+        transition: background-color 0.3s, color 0.3s; /* Плавний перехід */
+    }
+        nav ul li a:hover {
+            background-color: rgb(50, 85, 63); /* Непрозорий зелений фон */
+            color: rgb(33, 34, 34); /* Текст змінюється на чорний при наведенні */
+        }
+
+    .nav-points {
+        display: none;
+    }
+            .nav-points.active {
+                display: grid;
+                justify-content: center;
+                text-align: center;
+        
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 100%; /* Займає всю доступну ширину */
+                max-width: none; /* Забираємо max-width, щоб не обмежувати ширину */
+            }
+
+    .social-icons {
+        display: none;
+    }
+
+    .black-line {
+        background-color: transparent;
+    }
+        .black-line.active {
+            background-color: #a1ada8;
+            height: 3px;
+            width: 100%;
+
+            margin: 0%;
+            padding: 0%;
+
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+    .burger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .burger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    /*MAIN SECTION*/
+
+    .sale-banner {
+        font-size: 18px; /* Зменшуємо розмір шрифта на малих екранах */
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px; /* Розміщуємо продукти в сітці */
+    }
+
+    .product {
+        text-align: center;
+    }
+}
+
+/* MEDIA REQUEST */
 
     /* MAIN SECTION */
 
     .main-banner {
-        justify-content: left;
-        align-items: left;
+        width: 100%;
         height: 40vh;
 
         background-color: #242724;
         border-radius: 10px;
 
-        margin-top: 15px;
+        margin-top: 20px;
         margin-bottom: 20px;
 
-        margin-right: 45px;
-        margin-left: 45px;
+        padding-left: 30px;
+        padding-right: 30px;
 
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     
     .banner-content {
-
         max-height: 600px;
         max-width: 2000px;
 
@@ -224,97 +351,27 @@ nav ul li a:hover {
         display: inline;
     }
 
-    
-            /* CAROUSEL */
 
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-              }
-              
-              .carousel-container {
-                overflow: hidden; /* Сховує все, що виходить за межі контейнера */
-                width: 100vw; /* Задає ширину каруселі на всю ширину вікна */
-                position: relative;
-
-                margin-bottom: 25px;
-              }
-              
-              .carousel {
-                display: flex; /* Розташовує картинки в ряд */
-                width: max-content; /* Ширина каруселі буде автоматично визначатися по вмісту */
-                animation: scroll 20s linear infinite; /* Анімація прокрутки */
-              }
-              
-              .carousel img {
-                width: 200px; /* Встановлюємо фіксовану ширину для картинок */
-                height: auto;
-                margin-right: 10px; /* Між картинками невеликий проміжок */
-                border-radius: 7.5px;
-              }
-              
-              /* Анімація для руху каруселі */
-              @keyframes scroll {
-                0% {
-                  transform: translateX(0); /* Початкова позиція */
-                }
-                100% {
-                  transform: translateX(-100%); /* Остання позиція (проворочує всю карусель вліво) */
-                }
-              }              
-
-/* CAROUSEL */
 
 
     /* Sale Section */
 
-/*NEW CAR*/
-
-.sale-carousel-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.sale-carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-/*NEW CAR*/
-
     .sale-section {
-        background: radial-gradient(rgba(68, 146, 107, 1), rgba(65, 65, 65, 1));
+        width: 100%;
+        background: linear-gradient(#2f3030, rgba(65, 107, 82, 1));
 
-        padding: 40px 20px;
+        padding: 0px 20px;
+        padding-bottom: 20px;
         text-align: center;
         justify-content: center;
     
         flex-wrap: wrap;
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     
     .sale-banner {
-        
+        width: 100%;
         background-color: #2f3030;
 
         font-size: 3rem;
@@ -324,8 +381,7 @@ nav ul li a:hover {
 
         width: auto;
         height: auto;
-
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 7.5px;
     }
     
     .products {
@@ -337,7 +393,6 @@ nav ul li a:hover {
         flex: 1;
         flex-wrap: wrap;
 
-        padding: 20px; /* Додано відступ для секції продуктів */
         gap: 20px; /* Відступи між продуктами */
     }
 
@@ -352,10 +407,9 @@ nav ul li a:hover {
         margin: 10px;
 
         border-radius: 10px;
-        border: 3px solid #252323;
-
+        border: 3px solid #3b3d3c;
         background-color: #181818;
-        padding: 10px;
+        box-shadow: 0px -5px 25px rgba(0, 0, 0, 0.4);
 
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
@@ -385,12 +439,14 @@ nav ul li a:hover {
 
         font-size: 1.1rem;
 
-        padding: 10px;
         margin-left: 5px;
         margin-bottom: 10px;
     }
 
+
+
                         /* ITEMS PAGE */
+
                     .product-container {
     display: flex;
     align-items: center;
@@ -543,7 +599,8 @@ nav ul li a:hover {
     /* FOOTER */
 
 footer {
-background-color: #000000;
+background-color: rgb(41, 41, 41);
+
 padding: 20px;
 text-align: center;
 border-top: 2px solid #ddd;
@@ -554,7 +611,7 @@ font-family: "Nova Flat";
 
 footer h3 {
 margin-bottom: 10px;
-color: #333;
+color: #e4ebe7;
 font-family: "IBM Plex Mono";
 }
 
@@ -711,7 +768,7 @@ font-family: "IBM Plex Mono";
                     
                     .filter-button,
                     .sort-button {
-                        background-color: #32cd32; /* зелений колір */
+                        background-color: #1f7a1f; /* зелений колір */
                         color: white;
 
                         font-size: 16px;
@@ -726,14 +783,9 @@ font-family: "IBM Plex Mono";
                     
                     .filter-button:hover,
                     .sort-button:hover {
-                        background-color: #28a428; /* темніший зелений */
+                        background-color: #1f7a1f; /* темніший зелений */
                         font-weight: bolder;
                     }
-                    
-                    /*SEARCH BAR*/
-
-        /* CATALOGUE */
-
                     
                     /*SEARCH BAR*/
 
