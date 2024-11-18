@@ -14,20 +14,36 @@
 </head>
 <body>
 
-    <!-- Header -->
+        <!-- Header -->
     <header>
+
+        <noscript>USE JS STUPID NIGGA!</noscript>
+
+    <div class="header-content">
         <div class="logo">Kortex Store</div>
-        <div class="nav-text-bef" href="/Kortex store/FRONT/HTML/contacts.html">Shipping</div>
-        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </div>
+
+<div class="black-line" id="black-line"></div>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="Kortex store/FRONT/HTML/catalogue.html">Catalogue</a></li>
                 <li><a href="Kortex store/FRONT/HTML/stock.html">Stock</a></li>
                 <li><a href="Kortex store/FRONT/HTML/contacts.html">Contacts</a></li>
+                <li><a href="Kortex store/FRONT/HTML/shipping.html">Shipping</a></li>
             </ul>
         </nav>
+<div class="black-line" id="second-black-line"></div>
+
+    <div class="nav-points" id="nav-points">
         <div class="nav-text-mid" href="/Kortex store/FRONT/HTML/contacts.html">Private and policy</div>
         <div class="nav-text-aft" href="/Kortex store/FRONT/HTML/contacts.html">Terms of use</div>
-            <div class="social-icons">
+    </div>
+            <div class="social-icons" id="social-icons">
                     <a href="/Kortex store/FRONT/HTML/registration.html">
                 <img src="Kortex store/MEDIA/Images/login_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="login" height="40" width="40">
                     </a>
@@ -37,6 +53,7 @@
             </div>
         
     </header>
+<!-- Header -->
 
     <!-- Main Banner -->
     <section class="main-banner">
@@ -96,7 +113,29 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+
+
+    <!--SCRIPT-->
+
+<script>
+
+        const burgerMenu = document.getElementById('burger-menu');
+    const navMenu = document.getElementById('nav-menu');
+    const navPoints = document.getElementById('nav-points');
+            const BlackLine = document.getElementById('black-line');
+            const SecondBlackLine = document.getElementById('second-black-line');
+    
+    burgerMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    navPoints.classList.toggle('active');
+    burgerMenu.classList.toggle('active');
+            BlackLine.classList.toggle('active');
+            SecondBlackLine.classList.toggle('active');
+});
+
+</script>
+ 
+    <!--SCRIPT-->
 
 </body>
 </html>
