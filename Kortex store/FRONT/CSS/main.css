@@ -339,8 +339,11 @@ nav ul li a:hover {
     }
     
     .main-banner h1 {
+        font-weight: 700;
         font-size: 3rem;
+        
         color: white;
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
     }
     
     .brands {
@@ -382,6 +385,8 @@ nav ul li a:hover {
         width: auto;
         height: auto;
         padding: 7.5px;
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     
     .products {
@@ -394,6 +399,7 @@ nav ul li a:hover {
         flex-wrap: wrap;
 
         gap: 20px; /* Відступи між продуктами */
+        
     }
 
 
@@ -413,8 +419,12 @@ nav ul li a:hover {
 
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
+        border: 1px solid rgba(102, 255, 204, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
     }
-    
+    .product {
+        box-shadow: 0px 4px 15px rgba(102, 255, 204, 0.6);
+    }
     
     .product img {
         max-width: 100%;
