@@ -374,7 +374,7 @@ nav ul li a:hover {
         text-align: center;
         font-family: "Montserrat";
 
-        width: auto;
+        width: auto; 
         height: auto;
         padding: 7.5px;
 
@@ -867,7 +867,7 @@ font-family: "IBM Plex Mono";
                                     color: #fff;
                                     outline: none;
                                     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.4);
-                                    transition: background 0.3s ease, box-shadow 0.3s ease;
+                                    transition: background-color 0.3s ease, box-shadow 0.3s ease;
                                 }
 
                                 .search-container input[type="text"]::placeholder {
@@ -891,7 +891,7 @@ font-family: "IBM Plex Mono";
                                     border: none;
                                     border-radius: 30px;
                                     cursor: pointer;
-                                    transition: background 0.3s ease, transform 0.2s ease;
+                                    transition: background-color 0.3s ease, transform 0.2s ease;
                                     box-shadow: 0px 4px 10px rgba(102, 255, 204, 0.5);
                                 }
 
@@ -914,6 +914,67 @@ font-family: "IBM Plex Mono";
                                         margin-top: 10px;
                                         width: 100%;
                                     }
-                                } 
+                                }
+
+                /* SEARCH RESULTS */
+
+            .products-section {
+                min-height: 200px;
+                height: auto;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                margin-top: 20px;
+                margin-bottom: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                border-radius: 10px;
+                border-color: #161616;
+    
+                color: #fff;
+                background-color: #212221;
+            }
+
+        .search-reminder {
+            font-family: "Kanit";
+            font-size: 1.5rem;
+
+
+        }
+
+    .results-container {
+        margin: 40px auto;
+        padding: 20px;
+        max-width: 800px;
+        background: #1a2822;
+        border-radius: 15px;
+        color: #fff;
+    }
+    
+    .results-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .results-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .results-list li {
+        padding: 10px 20px;
+        margin: 10px 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .results-list li:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
 
         /* CATALOGUE */
