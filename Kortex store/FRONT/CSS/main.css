@@ -138,7 +138,6 @@ nav ul li a:hover {
     font-weight: 400;
 
     margin-left: 25px;
-    margin-top: 15px;
 
     color: #e9f0eb;  /* Колір самого тексту */
     text-shadow: 
@@ -527,7 +526,6 @@ nav ul li a:hover {
     font-family: "Montserrat";
 
     margin: 12.5px, 0;
-    padding-bottom: 50px;
 }
 
 .product-options {
@@ -684,9 +682,9 @@ font-family: "IBM Plex Mono";
 }
 
 .product-card {
-    background-color: #0b0b0b;
+    background-color: #272727;
 
-    border: 2px solid #bababa;
+    border: 2px solid #414141;
     border-radius: 8px;
 
     width: 400px;
