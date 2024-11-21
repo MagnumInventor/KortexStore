@@ -837,12 +837,15 @@ font-family: "IBM Plex Mono";
                                 .search-container input[type="text"] {
                                     flex: 1;
                                     padding: 12px 20px;
-                                    font-size: 16px;
+                                    font-size: 20px;
+
                                     border: none;
                                     border-radius: 30px;
+
                                     background: rgba(255, 255, 255, 0.1);
                                     color: #fff;
                                     outline: none;
+
                                     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.4);
                                     transition: background-color 0.3s ease, box-shadow 0.3s ease;
                                 }
@@ -861,7 +864,7 @@ font-family: "IBM Plex Mono";
                                 .search-container button {
                                     padding: 12px 30px;
                                     margin-left: 10px;
-                                    font-size: 16px;
+                                    font-size: 20px;
                                     font-weight: bold;
 
                                     color: #fff;
@@ -870,7 +873,7 @@ font-family: "IBM Plex Mono";
                                     border: none;
                                     border-radius: 30px;
                                     cursor: pointer;
-                                    
+
                                     transition: background-color 0.3s ease, transform 0.2s ease;
                                     box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.8);
                                 }
