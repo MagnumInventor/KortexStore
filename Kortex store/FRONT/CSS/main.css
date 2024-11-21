@@ -69,7 +69,7 @@ a img:hover {
 }
 
 .nav-text-aft:hover, .nav-text-mid:hover, .nav-text-bef:hover {
-    border-bottom: 2px solid #e9f0ee; /* Колір підкреслення при наведенні */
+    border-bottom: 2px solid rgba(65, 107, 82, 1); /* Колір підкреслення при наведенні */
 }
 
 nav {
@@ -386,7 +386,7 @@ nav ul li a:hover {
         height: auto;
         padding: 7.5px;
 
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
     }
     
     .products {
