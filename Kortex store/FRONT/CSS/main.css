@@ -933,10 +933,10 @@ font-family: "IBM Plex Mono";
 
                 border-radius: 15px;
                 border-width: 10px;
-                border: 2px solid rgb(241, 247, 243);
+                border: 3.5px solid #181818;
     
                 color: #fff;
-                background-color: #212221;
+                background-color: #1b1b1b;
             }
 
             .search-section-title {
@@ -945,7 +945,7 @@ font-family: "IBM Plex Mono";
                 width: 30%;
                 height: auto;
 
-                background-color: #212221;
+                background-color: #1b1b1b;
         
                 font-size: 2.5rem;
                 color: rgb(241, 247, 243);
