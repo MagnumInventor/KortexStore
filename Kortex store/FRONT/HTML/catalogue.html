@@ -14,44 +14,67 @@
 </head>
 <body>
 
+        <!-- Header -->
+        <header>
+
+            <noscript>USE JS STUPID NIGGA!</noscript>
+    
+        <div class="header-content">
+            <div class="logo">Kortex Store</div>
+                <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </div>
+    
+    <div class="black-line" id="black-line"></div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="stock.html">Stock</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="shipping.html">Shipping</a></li>
+                </ul>
+            </nav>
+    <div class="black-line" id="second-black-line"></div>
+    
+        <div class="nav-points" id="nav-points">
+            <div class="nav-text-mid" href="/policy-costumer.html">Private and policy</div>
+            <div class="nav-text-aft" href="/terms-of-use.html">Terms of use</div>
+        </div>
+                <div class="social-icons" id="social-icons">
+                        <a href="/Kortex store/FRONT/HTML/registration.html">
+                    <img src="../../MEDIA/Images/login_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="login" height="40" width="40">
+                        </a>
+                        <a href="index.html">
+                    <img src="../../MEDIA/Images/public_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="social-icon" height="40" width="40">
+                        </a>
+                </div>
+            
+        </header>
     <!-- Header -->
-    <header>
-        <div href="index.html" class="logo">Kortex Store</div>
-        <nav class="menu-cat">
-            <ul>
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a href="stock.html">Stock</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-
-        <div class="social-icons">
-            <a href="registration.html">
-        <img src="../../MEDIA/Images/login_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="login" height="40" width="40">
-            </a>
-    </div>
-
-<div class="social-icons">
-        <a href="index.html">
-    <img src="../../MEDIA/Images/public_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="social-icon" height="40" width="40">
-        </a>
-</div>
-
-    </header>
-
-    <div class="green-line"></div>
 
     <!-- Main Banner -->
 
-    <section class="search-filter-bar">
-        <input type="text" placeholder="Введіть назву товару" class="search-input">
-        <button class="filter-button">Тип: Взуття</button>
-        <button class="sort-button">Сортувати: Від дорогих до дешевих</button>
+<main>
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" placeholder="Search for products, categories, or brands..." id="search-input">
+            <button type="button" id="search-button">Search</button>
+        </div>
     </section>
-    
-    <section class="products-section">
-        <h1 class="section-title">Рекомендоване:</h1>
-        <div class="product-grid">
+
+    <section class="results-section">
+        <div class="results-container">
+            <h2>Search Results</h2>
+            <ul class="results-list" id="results-list">
+                <!-- Динамічно додані результати -->
+            </ul>
+        </div>
+    </section>
+</main>
+
             <!-- Product Card 1 -->
             <div class="product-card">
                 <img src="../../FRONT/HTML/Product/Shoes/DV7513001_8.jpg" alt="Red nike tn" class="product-image">
@@ -94,28 +117,25 @@
         <div class="products">
             
             <div class="product">
-                <img src="Product/Upper/s-l400.jpg" alt="Sweater">
-                <a class="discount" style="text-decoration: line-through;">$30.00<<span class="price">$20.00</span></a>
-                <a class="order-btn" href="Product/Upper/Shirt1.html" >Замовити</a>
+                <img src="../HTML/Product/Upper/s-l400.jpg" alt="Sweater">
+                <a class="price">$26.00 -- <span class="discount" style="color: crimson; text-decoration: line-through;">$41.00</span></a>
+                <a class="order-btn" href="../HTML/Product/Upper/Shirt1.html" >Замовити</a>
             </div>
 
             <div class="product">
-                <img src="Product/Upper/carhartt-wip-demy-jacket-black-1000x1000.jpg" alt="Jacket">
-                <a class="discount" style="text-decoration: line-through;">$160.00<<span class="price">$140.00</span></a>
-                <a class="order-btn" href="Product/Upper/Jacket1.html" >Замовити</a>
+                <img src="../HTML/Product/Upper/carhartt-wip-demy-jacket-black-1000x1000.jpg" alt="Jacket">
+                <a class="price">$110.00 -- <span class="discount" style="color: crimson; text-decoration: line-through;">$160.00</span></a>
+                <a class="order-btn" href="../HTML/Product/Upper/Jacket1.html" >Замовити</a>
             </div> 
 
             <div class="product">
-                <img src="Product/Shoes/DV7513001_8.jpg" alt="Shoes">
-                <a class="discount" style="text-decoration: line-through;">$90.00<<span class="price">$60.00</span></a>
-                <a class="order-btn" href="Product/Shoes/Shoes1.html" >Замовити</a>
+                <img src="../HTML/Product/Shoes/DV7513001_8.jpg" alt="Shoes">
+                <a class="price">$60.00 -- <span class="discount" style="color: crimson; text-decoration: line-through;">$90.00</span></a>
+                <a class="order-btn" href="../HTML/Product/Shoes/Shoes1.html" >Замовити</a>
             </div>
 
         </div>
     </section>
-
-
-<div class="green-line" alt="green-line"></div>
 
     <footer>
         <div>

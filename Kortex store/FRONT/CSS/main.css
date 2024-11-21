@@ -758,8 +758,10 @@ font-family: "IBM Plex Mono";
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        
+                        
+
                         margin: 20px 0;
-                        background-color: #1c1c1c; /* чорний фон */
                         padding: 10px;
                         border-radius: 5px;
                     }
@@ -768,10 +770,15 @@ font-family: "IBM Plex Mono";
                         flex-grow: 1;
                         font-size: larger;
 
+                        background-color: rgb(41, 41, 41); /* чорний фон */
+                        border-color: white;
+                        color: rgb(234, 241, 238);
+
                         margin-right: 10px;
                         padding: 8px;
-                        border: none;
                         border-radius: 5px;
+
+                        border: none;
                         outline: none;
                     }
                     
@@ -797,5 +804,79 @@ font-family: "IBM Plex Mono";
                     }
                     
                     /*SEARCH BAR*/
+
+                    /* Загальний контейнер пошукової стрічки */
+                                .search-container {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: 40px auto;
+                                    padding: 10px 20px;
+                                    width: 80%;
+                                    max-width: 800px;
+                                    background: linear-gradient(145deg, #1a2822, #121c1a);
+                                    border-radius: 30px;
+                                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6), inset 0px 2px 8px rgba(255, 255, 255, 0.05);
+                                }
+
+                                /* Поле для введення тексту */
+                                .search-container input[type="text"] {
+                                    flex: 1;
+                                    padding: 12px 20px;
+                                    font-size: 16px;
+                                    border: none;
+                                    border-radius: 30px;
+                                    background: rgba(255, 255, 255, 0.1);
+                                    color: #fff;
+                                    outline: none;
+                                    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.4);
+                                    transition: background 0.3s ease, box-shadow 0.3s ease;
+                                }
+
+                                .search-container input[type="text"]::placeholder {
+                                    color: rgba(255, 255, 255, 0.6);
+                                }
+
+                                /* Ефект при фокусі на полі вводу */
+                                .search-container input[type="text"]:focus {
+                                    background: rgba(255, 255, 255, 0.2);
+                                    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.6), 0px 0px 5px rgba(102, 255, 204, 0.8);
+                                }
+
+                                /* Кнопка пошуку */
+                                .search-container button {
+                                    padding: 12px 30px;
+                                    margin-left: 10px;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    color: #fff;
+                                    background: #1e7745;
+                                    border: none;
+                                    border-radius: 30px;
+                                    cursor: pointer;
+                                    transition: background 0.3s ease, transform 0.2s ease;
+                                    box-shadow: 0px 4px 10px rgba(102, 255, 204, 0.5);
+                                }
+
+                                .search-container button:hover {
+                                    background: #66ffcc;
+                                    transform: scale(1.05);
+                                    box-shadow: 0px 6px 15px rgba(102, 255, 204, 0.8);
+                                }
+
+                                /* Адаптація для мобільних пристроїв */
+                                @media (max-width: 768px) {
+                                    .search-container {
+                                        flex-direction: column;
+                                        width: 90%;
+                                        padding: 20px;
+                                    }
+
+                                    .search-container button {
+                                        margin-left: 0;
+                                        margin-top: 10px;
+                                        width: 100%;
+                                    }
+                                } 
 
         /* CATALOGUE */
