@@ -380,7 +380,15 @@ nav ul li a:hover {
 
         text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
     }
-    
+    .sale-banner-other {
+        width: 100%;
+        background: linear-gradient(rgb(47, 48, 48, 0), #2f3030);
+
+        width: auto;
+        height: 40px;
+        padding-top: 7.5px;
+    }
+
     .products {
         display: flex;
         justify-content: space-around;
@@ -449,7 +457,7 @@ nav ul li a:hover {
 
                         /* ITEMS PAGE */
 
-                    .product-container {
+            .product-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -597,19 +605,6 @@ nav ul li a:hover {
 
                         /* ITEMS PAGE */
 
-    .stock-page {
-        font-family: "Kanit";
-        background-image: linear-gradient(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
-        color: rgb(228, 235, 232);
-    
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    
-        overflow-x: hidden; /* Приховуємо горизонтальну прокрутку */
-        display: block;
-    }
-
     /* FOOTER */
 
 footer {
@@ -660,26 +655,48 @@ font-family: "IBM Plex Mono";
                 /* STOCK */
 
 
-.products-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+                .stock-page {
+                    font-family: "Kanit";
+                    background-image: linear-gradient(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
+                    color: rgb(228, 235, 232);
+                
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                
+                    overflow-x: hidden; /* Приховуємо горизонтальну прокрутку */
+                    display: block;
+                }
 
-    margin-top: 20px;
-    margin-bottom: 30px;
 
-    color: #fff;
-}
+        .products-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-.section-title {
-    font-size: 2em;
+            margin-top: 20px;
+            margin-bottom: 30px;
 
-    text-align: left;
-    margin-bottom: 12.5px;
+            color: #fff;
+            background-color: #2f3030;
+        }
 
-    font-family: "Montserrat";
+    .section-title {
+        width: 100%;
+        background-color: #2f3030;
 
-}
+        font-size: 2.5rem;
+        color: rgb(241, 247, 243);
+        text-align: center;
+        font-family: "Montserrat";
+        font-weight: 450;
+
+        width: auto;
+        height: auto;
+        padding: 7.5px;
+
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    }
 
 .product-grid {
     display: flex;
