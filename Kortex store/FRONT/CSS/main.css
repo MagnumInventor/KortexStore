@@ -28,7 +28,7 @@ header {
     height: 60px;
 
     background-color: #2f3030;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 .container {
   max-width: 1200px;
@@ -322,7 +322,7 @@ nav ul li a:hover {
         width: 100%;
         height: 100%;
 
-        background-image: r-gradienlineat(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
+        background-image: linear-gradient(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
 
         text-align: center;
         font-family: "Dela Gothic One";
@@ -746,7 +746,18 @@ font-family: "IBM Plex Mono";
 
                     /* CATALOGUE */
 
-        catalo
+    body {
+        font-family: "Kanit";
+        background-image: linear-gradient(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
+        color: rgb(228, 235, 232);
+    
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    
+        overflow-x: hidden; /* Приховуємо горизонтальну прокрутку */
+        display: block;
+    }
 
         /*SEARCH BAR*/
 
