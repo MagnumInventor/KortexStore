@@ -864,8 +864,9 @@ font-family: "IBM Plex Mono";
                                 .search-container button {
                                     padding: 12px 30px;
                                     margin-left: 10px;
-                                    font-size: 20px;
-                                    font-weight: bold;
+                                    font-size: 22px;
+                                    font-weight: 500;
+                                    font-family: "Kanit";
 
                                     color: #fff;
                                     background: #1e7745;
