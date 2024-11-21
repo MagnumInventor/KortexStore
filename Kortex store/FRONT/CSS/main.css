@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Kanit;
+    font-family: "Kanit";
     background-color: rgb(41, 41, 41);
     color: rgb(228, 235, 232);
 
@@ -152,12 +152,6 @@ nav ul li a:hover {
     0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5); }
     50% { text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.6); }
     100% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5); }
-}
-
-.green-line {
-    background-color: green;
-    height: 5px;
-    width: auto;
 }
 
 .black-line {
@@ -328,7 +322,7 @@ nav ul li a:hover {
         width: 100%;
         height: 100%;
 
-        background-image: linear-gradient(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
+        background-image: r-gradienlineat(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
 
         text-align: center;
         font-family: "Dela Gothic One";
@@ -752,6 +746,8 @@ font-family: "IBM Plex Mono";
 
                     /* CATALOGUE */
 
+        catalo
+
         /*SEARCH BAR*/
 
                     .search-filter-bar {
@@ -784,7 +780,7 @@ font-family: "IBM Plex Mono";
                     
                     .filter-button,
                     .sort-button {
-                        background-color: #1f7a1f; /* зелений колір */
+                        background-color: #275f45; /* зелений колір */
                         color: white;
 
                         font-size: 16px;
@@ -799,7 +795,7 @@ font-family: "IBM Plex Mono";
                     
                     .filter-button:hover,
                     .sort-button:hover {
-                        background-color: #1f7a1f; /* темніший зелений */
+                        background-color: #20382a; /* темніший зелений */
                         font-weight: bolder;
                     }
                     
