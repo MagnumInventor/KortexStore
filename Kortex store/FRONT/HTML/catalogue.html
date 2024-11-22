@@ -56,8 +56,8 @@
     <!-- Header -->
 
     <!-- Main Banner -->
-
 <main>
+
     <section class="search-section">
         <div class="search-container">
             <input type="text" placeholder="Search for products, categories, or brands..." id="search-input">
@@ -68,8 +68,17 @@
     <section class="results-section">
 
     </section>
-</main>
 
+    <div class="dropdown">
+        <button class="dropdown-button">Вибір опції</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="filterOption('опція1')">Опція 1</a>
+          <a href="#" onclick="filterOption('опція2')">Опція 2</a>
+          <a href="#" onclick="filterOption('опція3')">Опція 3</a>
+        </div>
+      </div>      
+
+</main>
     <!-- RECOMENDED -->
 
 <section class="search-products-section">
@@ -115,6 +124,16 @@
 
         </div>
     </section>
+
+ <!--SCRIPT-->
+
+<script>
+     function filterOption(option) {
+    console.log("Вибрана опція: " + option);
+  }
+</script>
+
+ <!--SCRIPT-->
 
     <footer>
         <div>
