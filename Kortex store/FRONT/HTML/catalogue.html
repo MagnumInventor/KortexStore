@@ -131,6 +131,11 @@
 
 <script>
 
+document.querySelector('.checkmark-container').addEventListener('click', function() {
+  const checkmark = document.querySelector('.checkmark');
+  checkmark.style.transform = checkmark.style.transform === 'rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
+});
+
 document.getElementById('search-button').addEventListener('click', () => {
     const query = document.getElementById('search-input').value.trim();
     const resultsList = document.getElementById('results-list');
