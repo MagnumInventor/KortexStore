@@ -128,9 +128,39 @@
  <!--SCRIPT-->
 
 <script>
+
+document.getElementById('search-button').addEventListener('click', () => {
+    const query = document.getElementById('search-input').value.trim();
+    const resultsList = document.getElementById('results-list');
+    
+    // Очистити старі результати
+    resultsList.innerHTML = '';
+
+    if (query) {
+        // Сюди можна додати реальний алгоритм пошуку
+        const mockResults = [
+            `Result for "${query}" - Item 1`,
+            `Result for "${query}" - Item 2`,
+            `Result for "${query}" - Item 3`
+        ];
+
+        mockResults.forEach(result => {
+            const listItem = document.createElement('li');
+            listItem.textContent = result;
+            resultsList.appendChild(listItem);
+        });
+    } else {
+        const noResult = document.createElement('li');
+        noResult.textContent = 'Please enter a valid search term.';
+        resultsList.appendChild(noResult);
+    }
+});
+
+
      function filterOption(option) {
     console.log("Вибрана опція: " + option);
   }
+
 </script>
 
  <!--SCRIPT-->
