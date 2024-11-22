@@ -881,13 +881,13 @@ font-family: "IBM Plex Mono";
                                     cursor: pointer;
 
                                     transition: background-color 0.3s ease, transform 0.2s ease;
-                                    box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.8);
+                                    box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.1);
                                 }
 
                                 .search-container button:hover {
                                     background: #66ffcc;
                                     transform: scale(1.05);
-                                    box-shadow: 0px 6px 15px rgba(87, 187, 154, 0.8);
+                                    box-shadow: 0px 1px 10px rgba(87, 187, 154, 0.8);
                                 }
 
                                 /* Адаптація для мобільних пристроїв */
