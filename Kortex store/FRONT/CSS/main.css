@@ -908,11 +908,11 @@ font-family: "IBM Plex Mono";
         .dropdown {
             position: relative;
             display: inline-block;
-            margin-right: 40px;
+            margin-left: 30px;
         }
         .dropdown-back {
             color: #fff;
-            background: linear-gradient(145deg, #4f9b7a, rgba(87, 187, 154, 0.8));
+            background: linear-gradient(145deg, #4f9b75b6, rgba(87, 187, 154, 0.596));
             border: none;
             border-radius: 25px;
 
@@ -920,6 +920,9 @@ font-family: "IBM Plex Mono";
             
         }
                 .checkmark {
+                    padding-left: 10px;
+                    padding-right: 10px;
+
                     display: inline-block;
                     font-size: 20px;
                     color: #dbece4;
