@@ -930,7 +930,7 @@ font-family: "IBM Plex Mono";
                     }
                     
                     /* Анімація при наведенні на контейнер */
-                    .checkmark-container:hover .checkmark {
+                    .checkmark-image:hover .check {
                     transform: rotate(90deg); /* Повертаємо на 90 градусів */
                     }
                         

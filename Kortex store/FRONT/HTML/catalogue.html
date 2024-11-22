@@ -68,7 +68,7 @@
  <div class="dropdown">
     <div class="dropdown-back">
       <div class="checkmark" id="checkmark">
-        <img src="../../MEDIA/Images/arrow_forward_ios_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="arrow-check">
+        <img src="../../MEDIA/Images/arrow_forward_ios_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="arrow-check" class="checkmark-image">
       </div>
         <button class="dropdown-button">Select type of clothes</button>
         <div class="dropdown-content">
@@ -133,8 +133,8 @@
 
 <script>
 
-document.querySelector('.checkmark-container').addEventListener('click', function() {
-  const checkmark = document.querySelector('.checkmark');
+document.querySelector('.checkmark-image').addEventListener('click', function() {
+  const checkmark = document.querySelector('.check');
   checkmark.style.transform = checkmark.style.transform === 'rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
 });
 
