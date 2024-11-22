@@ -905,11 +905,39 @@ font-family: "IBM Plex Mono";
                                     }
                                 }
                                                 /* Стилі для кнопки меню */
-                        .dropdown {
-                            position: relative;
-                            display: inline-block;
-                            margin-left: 30px;
-                        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .dropdown-back {
+            padding: 12px 30px;
+            font-size: 22px;
+            font-weight: 400;
+            font-family: "Kanit";
+
+            margin-right: 20px;
+
+            color: #fff;
+            background: linear-gradient(145deg, #1a2822, #121c1a);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.1);
+        }
+                .checkmark {
+                    display: inline-block;
+                    font-size: 20px;
+                    color: #dbece4;
+                    transition: transform 0.3s ease;
+                    }
+                    
+                    /* Анімація при наведенні на контейнер */
+                    .checkmark-container:hover .checkmark {
+                    transform: rotate(90deg); /* Повертаємо на 90 градусів */
+                    }
                         
                         .dropdown-button {
                             padding: 12px 30px;
