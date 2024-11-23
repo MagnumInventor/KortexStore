@@ -211,7 +211,7 @@ nav ul li a:hover {
     nav ul {
         display: flex;
         flex-direction: grid; 
-        width: 100%; /* Ширина ul займає 100% доступної ширини */
+        width: auto; /* Ширина ul займає 100% доступної ширини */
     }
 
     nav ul li {
