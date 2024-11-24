@@ -66,7 +66,7 @@
     </section>
 
  <div class="dropdown">
-    <div class="dropdown-back" id="burger-menu-catalogue">
+    <div class="dropdown-menu-catalogue" id="burger-menu-catalogue">
             <span></span>
             <span></span>
         <button class="dropdown-button">Select type of clothes</button>
@@ -149,14 +149,13 @@ burgerMenu.classList.toggle('active');
     const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
     const dropdownContent = document.getElementById ('dropdown-content')
     burgerCheckmark.addEventListener('click',  () => {
-        burgerCheckmark.classList.toggle('active')
-        dropdownContent.classList.toggle('active')
+        burgerCheckmark.classList.toggle('active');
+        dropdownContent.classList.toggle('active');
     });
 
-document.querySelector('.checkmark-image').addEventListener('click', function() {
-  const checkmark = document.querySelector('.check');
-  checkmark.style.transform = checkmark.style.transform === 'rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
-});
+
+
+
 
 document.getElementById('search-button').addEventListener('click', () => {
     const query = document.getElementById('search-input').value.trim();
