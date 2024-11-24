@@ -927,6 +927,11 @@ font-family: "IBM Plex Mono";
                         background-color: #dae7e2;
                         transition: all 0.3s ease;
                     }
+
+                    .burger-menu-catalogue:hover {
+                        background: rgba(255, 255, 255, 0.4); /* Додаємо ефект наведення */
+                    }
+
                     .burger-menu-catalogue.active span:nth-child(1) {
                         transform: rotate(45deg) translate(5px, 6px);
                     }
