@@ -937,7 +937,7 @@ font-family: "IBM Plex Mono";
 
                         width: 25px;
                         height: 3px;
-                        
+
                         background-color: #dae7e2;
                         transition: all 0.3s ease;
                     }
@@ -1006,7 +1006,7 @@ font-family: "IBM Plex Mono";
                         }
                         
                         /* Показати меню при наведенні на кнопку */
-                        .dropdown:hover .dropdown-content {
+                        .dropdown-content.active {
                             display: block;
                         }
                         

@@ -147,8 +147,10 @@ burgerMenu.classList.toggle('active');
 });
 
     const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
+    const dropdownContent = document.getElementById ('dropdown-content')
     burgerCheckmark.addEventListener('click',  () => {
         burgerCheckmark.classList.toggle('active')
+        dropdownContent.classList.toggle('active')
     });
 
 document.querySelector('.checkmark-image').addEventListener('click', function() {
