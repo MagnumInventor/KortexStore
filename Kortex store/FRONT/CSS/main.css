@@ -817,8 +817,9 @@ font-family: "IBM Plex Mono";
                                     width: 80%;
                                     max-width: 800px;
 
-                                    background: linear-gradient(145deg, #1a2822, #121c1a);
                                     border-radius: 30px;
+
+                                    background: linear-gradient(145deg, rgba(26, 40, 34, 1), rgba(18, 28, 26, 1));                                   
                                     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6), inset 0px 2px 8px rgba(255, 255, 255, 0.05);
                                 }
 
@@ -894,28 +895,34 @@ font-family: "IBM Plex Mono";
             display: inline-block;
             margin-left: 30px;
         }
-        .dropdown-back {
-            text-align: left;
 
+        .dropdown-back {
+            display: flex; /* Встановлюємо контейнер як flexbox */
+            align-items: center; /* Вирівнюємо елементи по центру вертикально */
+            justify-content: space-between; /* Додаємо відстань між кнопкою та галочками */
+            
             color: #fff;
             background: linear-gradient(145deg, #4f9b75b6, rgba(87, 187, 154, 0.596));
+            
             border: none;
             border-radius: 25px;
 
             box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.1);
-            
+            padding: 10px 20px; /* Додаємо трохи внутрішнього відступу */
         }
 
                     .burger-menu-catalogue {
-                        text-align: left;
-
                         display: flex;
-                        margin-right: 20px;
-                        margin-top: 15px;
-                    
-                        cursor: pointer;
                         flex-direction: column;
+
                         gap: 5px;
+                        cursor: pointer;
+                        margin-left: 15px; /* Відступ від кнопки */
+                        background: rgba(255, 255, 255, 0.2); /* Легке затемнення для фону */
+                        padding: 10px; /* Додаємо внутрішній відступ */
+
+                        border-radius: 15px; /* Закруглені краї */
+                        transition: all 0.3s ease;
                     }
                     
                     .burger-menu-catalogue span {
@@ -969,6 +976,7 @@ font-family: "IBM Plex Mono";
                         .dropdown-content {
                             display: none;
                             position: absolute;
+                            margin-top: 340px;
 
                             background: linear-gradient(145deg, #2a4238, #121c1a);
                             border-radius: 10px;
