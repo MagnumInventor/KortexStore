@@ -149,6 +149,7 @@ nav ul li a:hover {
     font-family: "Kanit";
     font-weight: 400;
 
+    padding-top: 8.5px;
     margin-left: 25px;
 
     color: #e9f0eb;  /* Колір самого тексту */
@@ -916,6 +917,27 @@ font-family: "IBM Plex Mono";
                     color: #dbece4;
                     transition: transform 0.3s ease;
                     }
+
+                    .burger-menu-catalogue {
+                        justify-items: left;
+                        justify-content: left;
+                        text-align: left;
+
+                        display: flex;
+                        margin-right: 20px;
+                        margin-top: 15px;
+                    
+                        cursor: pointer;
+                        flex-direction: column;
+                        gap: 5px;
+                    }
+                    
+                    .burger-menu-catalogue span {
+                        width: 25px;
+                        height: 3px;
+                        background-color: #dae7e2;
+                        transition: all 0.3s ease;
+                    }
                     
                     /* Анімація при наведенні на контейнер */
                     .checkmark-image:hover .check {
@@ -924,6 +946,8 @@ font-family: "IBM Plex Mono";
                         
                         .dropdown-button {
                             padding: 12px 30px;
+                            
+
                             font-size: 22px;
                             font-weight: 400;
                             font-family: "Kanit";
