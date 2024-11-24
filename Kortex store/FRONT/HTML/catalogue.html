@@ -146,6 +146,10 @@ burgerMenu.classList.toggle('active');
     SecondBlackLine.classList.toggle('active');
 });
 
+    const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
+    burgerCheckmark.addEventListener('click',  () => {
+        burgerCheckmark.classList.toggle('active')
+    });
 
 document.querySelector('.checkmark-image').addEventListener('click', function() {
   const checkmark = document.querySelector('.check');
