@@ -66,9 +66,11 @@
     </section>
 
  <div class="dropdown">
-    <div class="dropdown-menu-catalogue" id="burger-menu-catalogue">
+    <div class="dropdown-back">
+        <div class="burger-menu-catalogue"  id="burger-menu-catalogue">
             <span></span>
             <span></span>
+        </div>
         <button class="dropdown-button">Select type of clothes</button>
         <div class="dropdown-content">
           <a href="#" onclick="filterOption('опція1')">Shoes</a>
@@ -132,30 +134,33 @@
 
 <script>
 
-const burgerMenu = document.getElementById('burger-menu');
-const navMenu = document.getElementById('nav-menu');
-const navPoints = document.getElementById('nav-points');
-    const BlackLine = document.getElementById('black-line');
-    const SecondBlackLine = document.getElementById('second-black-line');
+            const burgerMenu = document.getElementById('burger-menu');
+            const navMenu = document.getElementById('nav-menu');
+            const navPoints = document.getElementById('nav-points');
+                const BlackLine = document.getElementById('black-line');
+                const SecondBlackLine = document.getElementById('second-black-line');
 
-burgerMenu.addEventListener('click', () => {
-navMenu.classList.toggle('active');
-navPoints.classList.toggle('active');
-burgerMenu.classList.toggle('active');
-    BlackLine.classList.toggle('active');
-    SecondBlackLine.classList.toggle('active');
-});
+            burgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navPoints.classList.toggle('active');
+            burgerMenu.classList.toggle('active');
+                BlackLine.classList.toggle('active');
+                SecondBlackLine.classList.toggle('active');
+            });
 
-    const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
-    const dropdownContent = document.getElementById ('dropdown-content')
-    burgerCheckmark.addEventListener('click',  () => {
-        burgerCheckmark.classList.toggle('active');
-        dropdownContent.classList.toggle('active');
+        const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
+        const dropdownContent = document.getElementById ('dropdown-content')
+
+        burgerCheckmark.addEventListener('click', () => {
+    burgerCheckmark.classList.toggle('active');
+    dropdownContent.classList.toggle('active');
     });
 
 
-
-
+document.querySelector('.checkmark-image').addEventListener('click', function() {
+  const checkmark = document.querySelector('.check');
+  checkmark.style.transform = checkmark.style.transform === 'rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
+});
 
 document.getElementById('search-button').addEventListener('click', () => {
     const query = document.getElementById('search-input').value.trim();
