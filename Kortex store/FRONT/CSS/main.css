@@ -18,6 +18,18 @@ body {
     overflow-x: hidden; /* Приховуємо горизонтальну прокрутку */
     display: block;
 }
+.secondary-body {
+    font-family: "Kanit";
+    background-image: linear-gradient(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
+    color: rgb(228, 235, 232);
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    overflow-x: hidden; /* Приховуємо горизонтальну прокрутку */
+    display: block;
+}
 
 header {
     display: flex;
@@ -774,20 +786,8 @@ font-family: "IBM Plex Mono";
     font-family: IBM Plex Mono;
 }
 
-                    /* CATALOGUE */
 
-    body {
-        font-family: "Kanit";
-        background-image: linear-gradient(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
-        color: rgb(228, 235, 232);
-    
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    
-        overflow-x: hidden; /* Приховуємо горизонтальну прокрутку */
-        display: block;
-    }
+                    /* CATALOGUE */
 
         /*SEARCH BAR*/
                     .filter-button,
