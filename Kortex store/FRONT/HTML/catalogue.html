@@ -66,11 +66,9 @@
     </section>
 
  <div class="dropdown">
-    <div class="dropdown-back">
-        <div class="burger-menu-catalogue" id="burger-menu-catalogue">
-            <span></span>
-            <span></span>
-        </div>
+    <div class="dropdown-back" id="burger-menu-catalogue">
+            <span>fff</span>
+            <span>fff</span>
         <button class="dropdown-button">Select type of clothes</button>
         <div class="dropdown-content">
           <a href="#" onclick="filterOption('опція1')">Shoes</a>
@@ -133,6 +131,21 @@
  <!--SCRIPT-->
 
 <script>
+
+const burgerMenu = document.getElementById('burger-menu');
+const navMenu = document.getElementById('nav-menu');
+const navPoints = document.getElementById('nav-points');
+    const BlackLine = document.getElementById('black-line');
+    const SecondBlackLine = document.getElementById('second-black-line');
+
+burgerMenu.addEventListener('click', () => {
+navMenu.classList.toggle('active');
+navPoints.classList.toggle('active');
+burgerMenu.classList.toggle('active');
+    BlackLine.classList.toggle('active');
+    SecondBlackLine.classList.toggle('active');
+});
+
 
 document.querySelector('.checkmark-image').addEventListener('click', function() {
   const checkmark = document.querySelector('.check');

@@ -895,6 +895,8 @@ font-family: "IBM Plex Mono";
             margin-left: 30px;
         }
         .dropdown-back {
+            text-align: left;
+
             color: #fff;
             background: linear-gradient(145deg, #4f9b75b6, rgba(87, 187, 154, 0.596));
             border: none;
@@ -919,8 +921,6 @@ font-family: "IBM Plex Mono";
                     }
 
                     .burger-menu-catalogue {
-                        justify-items: left;
-                        justify-content: left;
                         text-align: left;
 
                         display: flex;
@@ -946,7 +946,7 @@ font-family: "IBM Plex Mono";
                         
                         .dropdown-button {
                             padding: 12px 30px;
-                            margin-left: 25px;
+                            margin-left: 45px;
 
                             font-size: 22px;
                             font-weight: 400;
