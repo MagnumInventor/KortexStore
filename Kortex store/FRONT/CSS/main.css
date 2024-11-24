@@ -919,7 +919,6 @@ font-family: "IBM Plex Mono";
                         gap: 5px;
                         cursor: pointer;
                         margin-left: 10px; /* Відступ від кнопки */
-                        background: rgba(255, 255, 255, 0.2); /* Легке затемнення для фону */
                         padding: 10px; /* Додаємо внутрішній відступ */
 
                         border-radius: 15px; /* Закруглені краї */
@@ -928,20 +927,25 @@ font-family: "IBM Plex Mono";
                     
                     .burger-menu-catalogue span {
                         display: block;
-                        width: 20px; /* Ширина прямокутника */
-                        height: 4px; /* Товщина прямокутника */
-                        background-color: #4f9b75; /* Колір */
+                        width: 18px; /* Ширина прямокутника */
+                        height: 3.5px; /* Товщина прямокутника */
+                        background-color: #c3dbcf; /* Колір */
                         border-radius: 2px; /* Згладжені краї */
                         transition: all 0.3s ease;
                     }
-                    
+        .check1 {
+            rotate: 45deg;
+        }
+        .check2 {
+            rotate: -45deg;
+        }
                     /* Стан при активному меню */
                     .burger-menu-catalogue.active span:nth-child(1) {
-                        transform: rotate(90deg); /* Поворот першої галочки вниз */
+                        transform: rotate(45deg); /* Поворот першої галочки вниз */
                     }
                     
                     .burger-menu-catalogue.active span:nth-child(2) {
-                        transform: rotate(-90deg); /* Поворот другої галочки в інший бік */
+                        transform: rotate(-45deg); /* Поворот другої галочки в інший бік */
                     }
                     
                     /* Ефект наведення */
