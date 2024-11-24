@@ -819,7 +819,7 @@ font-family: "IBM Plex Mono";
 
                                     border-radius: 30px;
 
-                                    background: linear-gradient(145deg, rgba(26, 40, 34, 1), rgba(18, 28, 26, 1));                                   
+                                    background: linear-gradient(145deg, rgba(26, 40, 34, 0.3), rgba(18, 28, 26, 0.3));                                   
                                     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6), inset 0px 2px 8px rgba(255, 255, 255, 0.05);
                                 }
 
@@ -893,6 +893,8 @@ font-family: "IBM Plex Mono";
         .dropdown {
             position: relative;
             display: inline-block;
+
+            margin-top: 5px;
             margin-left: 30px;
         }
 
@@ -902,12 +904,11 @@ font-family: "IBM Plex Mono";
             justify-content: space-between; /* Додаємо відстань між кнопкою та галочками */
             
             color: #fff;
-            background: linear-gradient(145deg, #4f9b75b6, rgba(87, 187, 154, 0.596));
+            background: linear-gradient(145deg, rgba(26, 40, 34, 0.3), rgba(18, 28, 26, 0.3)); 
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6), inset 0px 2px 8px rgba(255, 255, 255, 0.05); 
             
             border: none;
             border-radius: 25px;
-
-            box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.1);
             padding: 10px 20px; /* Додаємо трохи внутрішнього відступу */
         }
 
@@ -917,7 +918,7 @@ font-family: "IBM Plex Mono";
 
                         gap: 5px;
                         cursor: pointer;
-                        margin-left: 15px; /* Відступ від кнопки */
+                        margin-left: 10px; /* Відступ від кнопки */
                         background: rgba(255, 255, 255, 0.2); /* Легке затемнення для фону */
                         padding: 10px; /* Додаємо внутрішній відступ */
 
@@ -927,30 +928,31 @@ font-family: "IBM Plex Mono";
                     
                     .burger-menu-catalogue span {
                         display: block;
-
-                        width: 25px;
-                        height: 3px;
-
-                        background-color: #dae7e2;
+                        width: 20px; /* Ширина прямокутника */
+                        height: 4px; /* Товщина прямокутника */
+                        background-color: #4f9b75; /* Колір */
+                        border-radius: 2px; /* Згладжені краї */
                         transition: all 0.3s ease;
                     }
-
+                    
+                    /* Стан при активному меню */
+                    .burger-menu-catalogue.active span:nth-child(1) {
+                        transform: rotate(90deg); /* Поворот першої галочки вниз */
+                    }
+                    
+                    .burger-menu-catalogue.active span:nth-child(2) {
+                        transform: rotate(-90deg); /* Поворот другої галочки в інший бік */
+                    }
+                    
+                    /* Ефект наведення */
                     .burger-menu-catalogue:hover {
                         background: rgba(255, 255, 255, 0.4); /* Додаємо ефект наведення */
-                    }
-
-                    .burger-menu-catalogue.active span:nth-child(1) {
-                        transform: rotate(45deg) translate(5px, 6px);
-                    }
-                
-                    .burger-menu-catalogue.active span:nth-child(2) {
-                        opacity: 0;
                     }
                 
                         
                         .dropdown-button {
                             padding: 12px 30px;
-                            margin-left: 45px;
+                            margin-left: 25px;
 
                             font-size: 22px;
                             font-weight: 400;
@@ -967,16 +969,16 @@ font-family: "IBM Plex Mono";
                         }
                         
                         .dropdown-button:hover {
-                            background: #66ffcc;
+                            background: #1e7745;
                             transform: scale(1.05);
-                            box-shadow: 0px 1px 10px rgba(87, 187, 154, 0.8);
+                            box-shadow: 0px 1px 10px #1e7745;
                         }
                         
                         /* Стилі для випадаючого меню */
                         .dropdown-content {
                             display: none;
                             position: absolute;
-                            margin-top: 340px;
+                            margin-top: 365px;
 
                             background: linear-gradient(145deg, #2a4238, #121c1a);
                             border-radius: 10px;
