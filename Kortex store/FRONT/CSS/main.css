@@ -941,11 +941,15 @@ font-family: "IBM Plex Mono";
         }
                     /* Стан при активному меню */
                     .burger-menu-catalogue.active span:nth-child(1) {
-                        transform: rotate(45deg); /* Поворот першої галочки вниз */
+                        transform: rotate(0deg); /* Поворот першої галочки вниз */
+                      
+                        margin-right: 5px;
                     }
                     
                     .burger-menu-catalogue.active span:nth-child(2) {
-                        transform: rotate(-45deg); /* Поворот другої галочки в інший бік */
+                        transform: rotate(180deg); /* Поворот другої галочки в інший бік */
+                    
+                        margin-left: 10px;
                     }
                     
                     /* Ефект наведення */
