@@ -905,20 +905,6 @@ font-family: "IBM Plex Mono";
             box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.1);
             
         }
-                .checkmark {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    margin-top: 16px;
-                    padding-bottom: 0px;
-
-                    display: inline-block;
-                    justify-content: center;
-                    align-items: center;
-
-                    font-size: 20px;
-                    color: #dbece4;
-                    transition: transform 0.3s ease;
-                    }
 
                     .burger-menu-catalogue {
                         text-align: left;
@@ -948,11 +934,7 @@ font-family: "IBM Plex Mono";
                     .burger-menu-catalogue.active span:nth-child(2) {
                         opacity: 0;
                     }
-                    
-                    /* Анімація при наведенні на контейнер */
-                    .checkmark-image:hover .check {
-                    transform: rotate(90deg); /* Повертаємо на 90 градусів */
-                    }
+                
                         
                         .dropdown-button {
                             padding: 12px 30px;
