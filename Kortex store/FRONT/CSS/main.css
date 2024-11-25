@@ -709,6 +709,7 @@ font-family: "IBM Plex Mono";
 
     width: 400px;
     padding: 20px;
+    margin-bottom: 20px;
 
     text-align: center;
     display: flex;
