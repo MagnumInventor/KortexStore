@@ -169,6 +169,39 @@ document.getElementById('search-button').addEventListener('click', () => {
     const resultsList = document.getElementById('results-list');
     
 
+                                // PRODUCTS CREATING
+
+    // Завантаження JSON-файлу
+    fetch('products.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('products-container');
+            
+            data.forEach(category => {
+                // Додаємо категорію
+                const categoryTitle = document.createElement('h2');
+                categoryTitle.textContent = category.category;
+                categoryTitle.style.textAlign = "center";
+                container.appendChild(categoryTitle);
+
+                // Додаємо товари
+                category.items.forEach(item => {
+                    const productCard = document.createElement('div');
+                    productCard.classList.add('product-card');
+                    
+                    productCard.innerHTML = `
+                        <div class="product-name">${item.name}</div>
+                        <div class="product-brand">${item.brand}</div>
+                        <div class="product-price">${item.price} грн</div>
+                        <div class="product-delivery">Доставка: ${item.delivery}</div>
+                    `;
+                    
+                    container.appendChild(productCard);
+                });
+            });
+        })
+        .catch(error => console.error('Помилка завантаження JSON:', error));
+
 
 
                                         // SEARCH SYSTEM 
