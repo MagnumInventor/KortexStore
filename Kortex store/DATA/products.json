@@ -1,67 +1,53 @@
 [
     {
-        "id": 1,
-        "name": "Товар 1",
-        "price": 100
+        "category": "Pants",
+        "items": [
+            { "name": "Slim Fit Jeans", "brand": "Levi's", "price": 1200, "delivery": "2-4 дні" },
+            { "name": "Chino Pants", "brand": "H&M", "price": 800, "delivery": "25-30 днів" },
+            { "name": "Cargo Pants", "brand": "Zara", "price": 1500, "delivery": "2-4 дні" },
+            { "name": "Jogger Pants", "brand": "Nike", "price": 1800, "delivery": "25-30 днів" },
+            { "name": "Formal Trousers", "brand": "Marks & Spencer", "price": 2000, "delivery": "2-4 дні" }
+        ]
     },
     {
-        "id": 2,
-        "name": "Товар 2",
-        "price": 150
+        "category": "Shoes",
+        "items": [
+            { "name": "Running Shoes", "brand": "Adidas", "price": 2200, "delivery": "2-4 дні" },
+            { "name": "Leather Boots", "brand": "Timberland", "price": 3200, "delivery": "25-30 днів" },
+            { "name": "Casual Sneakers", "brand": "Converse", "price": 1800, "delivery": "2-4 дні" },
+            { "name": "Formal Shoes", "brand": "Clarks", "price": 2500, "delivery": "2-4 дні" },
+            { "name": "Sandals", "brand": "Birkenstock", "price": 900, "delivery": "25-30 днів" }
+        ]
     },
     {
-        "id": 3,
-        "name": "Товар 3",
-        "price": 200
+        "category": "Accessories",
+        "items": [
+            { "name": "Leather Belt", "brand": "Gucci", "price": 3500, "delivery": "25-30 днів" },
+            { "name": "Sunglasses", "brand": "Ray-Ban", "price": 4500, "delivery": "2-4 дні" },
+            { "name": "Wrist Watch", "brand": "Casio", "price": 5000, "delivery": "25-30 днів" },
+            { "name": "Wallet", "brand": "Tommy Hilfiger", "price": 2000, "delivery": "2-4 дні" },
+            { "name": "Backpack", "brand": "Nike", "price": 3000, "delivery": "2-4 дні" }
+        ]
     },
     {
-        "id": 4,
-        "name": "Товар 3",
-        "price": 200
+        "category": "Headwear",
+        "items": [
+            { "name": "Baseball Cap", "brand": "New Era", "price": 1200, "delivery": "2-4 дні" },
+            { "name": "Beanie", "brand": "Carhartt", "price": 1000, "delivery": "25-30 днів" },
+            { "name": "Bucket Hat", "brand": "Adidas", "price": 1500, "delivery": "2-4 дні" },
+            { "name": "Wide-Brim Hat", "brand": "Stetson", "price": 2500, "delivery": "25-30 днів" },
+            { "name": "Visor", "brand": "Under Armour", "price": 900, "delivery": "2-4 дні" }
+        ]
     },
     {
-        "id": 5,
-        "name": "Товар 3",
-        "price": 200
-    },
-    {
-        "id": 6,
-        "name": "Товар 3",
-        "price": 200
-    },
-    {
-        "id": 7,
-        "name": "Товар 3",
-        "price": 200
-    },
-    {
-        "id": 8,
-        "name": "Товар 3",
-        "price": 200
-    },
-    {
-        "id": 9,
-        "name": "Товар 3",
-        "price": 200
-    },
-    {
-        "id": 10,
-        "name": "Товар 3",
-        "price": 200
-    },
-    {
-        "id": 11,
-        "name": "Товар 3",
-        "price": 200
-    },
-    {
-        "id": 12,
-        "name": "Товар 3",
-        "price": 200
-    },
-    {
-        "id": 13,
-        "name": "Товар 3",
-        "price": 200
+        "category": "Upper",
+        "items": [
+            { "name": "T-Shirt", "brand": "Hanes", "price": 500, "delivery": "2-4 дні" },
+            { "name": "Hoodie", "brand": "Champion", "price": 1500, "delivery": "25-30 днів" },
+            { "name": "Denim Jacket", "brand": "Levi's", "price": 3000, "delivery": "2-4 дні" },
+            { "name": "Blazer", "brand": "Armani", "price": 7000, "delivery": "25-30 днів" },
+            { "name": "Sweater", "brand": "Uniqlo", "price": 1200, "delivery": "2-4 дні" }
+        ]
     }
 ]
+
