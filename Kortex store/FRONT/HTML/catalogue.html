@@ -165,44 +165,10 @@ if (productGrid) {
     console.log("Елемент .product-grid знайдено");
 }
 
-                                             // MENUS + VISUAL
 
-            const burgerMenu = document.getElementById('burger-menu');
-            const navMenu = document.getElementById('nav-menu');
-            const navPoints = document.getElementById('nav-points');
-                const BlackLine = document.getElementById('black-line');
-                const SecondBlackLine = document.getElementById('second-black-line');
+                               // PRODUCTS CREATING
 
-            burgerMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            navPoints.classList.toggle('active');
-            burgerMenu.classList.toggle('active');
-                BlackLine.classList.toggle('active');
-                SecondBlackLine.classList.toggle('active');
-            });
-
-        const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
-        const dropdownContent = document.getElementById ('dropdown-content')
-
-        burgerCheckmark.addEventListener('click', () => {
-    burgerCheckmark.classList.toggle('active');
-    dropdownContent.classList.toggle('active');
-    });
-
-
-document.querySelector('.checkmark-image').addEventListener('click', function() {
-  const checkmark = document.querySelector('.check');
-  checkmark.style.transform = checkmark.style.transform === 'rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
-});
-
-document.getElementById('search-button').addEventListener('click', () => {
-    const query = document.getElementById('search-input').value.trim();
-    const resultsList = document.getElementById('results-list');
-    
-
-                                // PRODUCTS CREATING
-
-                            fetch('products.json') // Вкажіть правильний шлях
+                               fetch('products.json') // Вкажіть правильний шлях
     .then(response => {
         console.log('Статус відповіді:', response.status); // Перевіряємо статус відповіді
         return response.json();
@@ -238,6 +204,40 @@ document.getElementById('search-button').addEventListener('click', () => {
 
 
 
+                                             // MENUS + VISUAL
+
+            const burgerMenu = document.getElementById('burger-menu');
+            const navMenu = document.getElementById('nav-menu');
+            const navPoints = document.getElementById('nav-points');
+                const BlackLine = document.getElementById('black-line');
+                const SecondBlackLine = document.getElementById('second-black-line');
+
+            burgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navPoints.classList.toggle('active');
+            burgerMenu.classList.toggle('active');
+                BlackLine.classList.toggle('active');
+                SecondBlackLine.classList.toggle('active');
+            });
+
+        const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
+        const dropdownContent = document.getElementById ('dropdown-content')
+
+        burgerCheckmark.addEventListener('click', () => {
+    burgerCheckmark.classList.toggle('active');
+    dropdownContent.classList.toggle('active');
+    });
+
+
+document.querySelector('.checkmark-image').addEventListener('click', function() {
+  const checkmark = document.querySelector('.check');
+  checkmark.style.transform = checkmark.style.transform === 'rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
+});
+
+document.getElementById('search-button').addEventListener('click', () => {
+    const query = document.getElementById('search-input').value.trim();
+    const resultsList = document.getElementById('results-list');
+    
 
 
                                         // SEARCH SYSTEM 
