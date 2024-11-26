@@ -736,7 +736,7 @@ font-family: "IBM Plex Mono";
 
 .order-button {
     background-color: transparent;
-    border: 1.5px solid #e4e4e4;
+    border: 2px solid #e4e4e4;
     border-radius: 5px;
     padding: 10px 20px;
     color: #ffffff;
@@ -759,8 +759,9 @@ font-family: "IBM Plex Mono";
 }
 
 .order-button:hover {
+    border: 3px solid #e4e4e4;
     background-color: gray;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .delivery-info {
