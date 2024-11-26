@@ -1064,6 +1064,8 @@ font-family: "IBM Plex Mono";
         
 
         .search-reminder {
+            display: none;
+
             font-family: "Kanit";
             font-size: 19px;
 
