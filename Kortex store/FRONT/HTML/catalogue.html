@@ -176,7 +176,7 @@ document.getElementById('search-button').addEventListener('click', () => {
 
                                 // PRODUCTS CREATING
 
-                                fetch('Kortex%20store/DATA/products.json') // Вкажіть правильний шлях
+                                fetch('products.json') // Вкажіть правильний шлях
     .then(response => {
         console.log('Статус відповіді:', response.status); // Перевіряємо статус відповіді
         return response.json();
