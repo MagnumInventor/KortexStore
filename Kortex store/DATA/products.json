@@ -1,53 +1,39 @@
 [
-    {
-        "category": "Pants",
-        "items": [
-            { "name": "Slim Fit Jeans", "brand": "Levi's", "price": 1200, "delivery": "2-4 дні" },
-            { "name": "Chino Pants", "brand": "H&M", "price": 800, "delivery": "25-30 днів" },
-            { "name": "Cargo Pants", "brand": "Zara", "price": 1500, "delivery": "2-4 дні" },
-            { "name": "Jogger Pants", "brand": "Nike", "price": 1800, "delivery": "25-30 днів" },
-            { "name": "Formal Trousers", "brand": "Marks & Spencer", "price": 2000, "delivery": "2-4 дні" }
-        ]
-    },
-    {
-        "category": "Shoes",
-        "items": [
-            { "name": "Running Shoes", "brand": "Adidas", "price": 2200, "delivery": "2-4 дні" },
-            { "name": "Leather Boots", "brand": "Timberland", "price": 3200, "delivery": "25-30 днів" },
-            { "name": "Casual Sneakers", "brand": "Converse", "price": 1800, "delivery": "2-4 дні" },
-            { "name": "Formal Shoes", "brand": "Clarks", "price": 2500, "delivery": "2-4 дні" },
-            { "name": "Sandals", "brand": "Birkenstock", "price": 900, "delivery": "25-30 днів" }
-        ]
-    },
-    {
-        "category": "Accessories",
-        "items": [
-            { "name": "Leather Belt", "brand": "Gucci", "price": 3500, "delivery": "25-30 днів" },
-            { "name": "Sunglasses", "brand": "Ray-Ban", "price": 4500, "delivery": "2-4 дні" },
-            { "name": "Wrist Watch", "brand": "Casio", "price": 5000, "delivery": "25-30 днів" },
-            { "name": "Wallet", "brand": "Tommy Hilfiger", "price": 2000, "delivery": "2-4 дні" },
-            { "name": "Backpack", "brand": "Nike", "price": 3000, "delivery": "2-4 дні" }
-        ]
-    },
-    {
-        "category": "Headwear",
-        "items": [
-            { "name": "Baseball Cap", "brand": "New Era", "price": 1200, "delivery": "2-4 дні" },
-            { "name": "Beanie", "brand": "Carhartt", "price": 1000, "delivery": "25-30 днів" },
-            { "name": "Bucket Hat", "brand": "Adidas", "price": 1500, "delivery": "2-4 дні" },
-            { "name": "Wide-Brim Hat", "brand": "Stetson", "price": 2500, "delivery": "25-30 днів" },
-            { "name": "Visor", "brand": "Under Armour", "price": 900, "delivery": "2-4 дні" }
-        ]
-    },
-    {
-        "category": "Upper",
-        "items": [
-            { "name": "T-Shirt", "brand": "Hanes", "price": 500, "delivery": "2-4 дні" },
-            { "name": "Hoodie", "brand": "Champion", "price": 1500, "delivery": "25-30 днів" },
-            { "name": "Denim Jacket", "brand": "Levi's", "price": 3000, "delivery": "2-4 дні" },
-            { "name": "Blazer", "brand": "Armani", "price": 7000, "delivery": "25-30 днів" },
-            { "name": "Sweater", "brand": "Uniqlo", "price": 1200, "delivery": "2-4 дні" }
-        ]
-    }
+ 
+{
+    "category": "Shoes",
+    "items": [
+        {
+            "name": "Nike TN (red)",
+            "price": 53.50,
+            "image": "Product/Shoes/DV7513001_8.jpg",
+            "link": "Product/Shoes/Shoes1.html"
+        },
+        {
+            "name": "Adidas Sneakers",
+            "price": 75.00,
+            "image": "Product/Shoes/adidas-sneakers.jpg",
+            "link": "Product/Shoes/Shoes2.html"
+        }
+    ]
+},
+{
+    "category": "Upper",
+    "items": [
+        {
+            "name": "Street Smart Hoodie",
+            "price": 25.00,
+            "image": "Product/Upper/s-l400.jpg",
+            "link": "Product/Upper/Shirt1.html"
+        },
+        {
+            "name": "Urban Sweat Shirt",
+            "price": 30.00,
+            "image": "Product/Upper/carhartt-wip-demy-jacket-black-1000x1000.jpg",
+            "link": "Product/Upper/Shirt2.html"
+        }
+    ]
+}    
+
 ]
 
