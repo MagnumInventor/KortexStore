@@ -13,7 +13,7 @@
             "name": "Adidas Sneakers",
             "price": 75.00,
             "image": "Product/Shoes/adidas-sneakers.jpg",
-            "link": "Product/Shoes/Shoes2.html"
+            "link": "Product/Shoes/Shoes.html"
         }
     ]
 },
@@ -24,13 +24,13 @@
             "name": "Street Smart Hoodie",
             "price": 25.00,
             "image": "Product/Upper/s-l400.jpg",
-            "link": "Product/Upper/Shirt1.html"
+            "link": "Product/Upper/Shirt.html"
         },
         {
             "name": "Urban Sweat Shirt",
             "price": 30.00,
             "image": "Product/Upper/carhartt-wip-demy-jacket-black-1000x1000.jpg",
-            "link": "Product/Upper/Shirt2.html"
+            "link": "Product/Upper/Jacket.html"
         }
     ]
 }    

@@ -177,7 +177,7 @@ document.getElementById('search-button').addEventListener('click', () => {
                                 // PRODUCTS CREATING
 
 // Завантаження JSON-файлу
-fetch('Kortex store\DATA\products.json') // Вкажіть відносний шлях до JSON-файлу
+fetch('Kortex store/DATA/products.json') // Вкажіть відносний шлях до JSON-файлу
     .then(response => response.json())
     .then(data => {
         const productGrid = document.querySelector('.product-grid'); // Знаходимо контейнер для товарів
