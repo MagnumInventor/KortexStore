@@ -176,15 +176,22 @@ document.getElementById('search-button').addEventListener('click', () => {
 
                                 // PRODUCTS CREATING
 
-// Завантаження JSON-файлу
-fetch('Kortex store/DATA/products.json') // Вкажіть відносний шлях до JSON-файлу
-    .then(response => response.json())
+                                fetch('Kortex%20store/DATA/products.json') // Вкажіть правильний шлях
+    .then(response => {
+        console.log('Статус відповіді:', response.status); // Перевіряємо статус відповіді
+        return response.json();
+    })
     .then(data => {
+        console.log('Завантажені дані:', data); // Вивід даних у консоль
         const productGrid = document.querySelector('.product-grid'); // Знаходимо контейнер для товарів
+
+        if (!productGrid) {
+            console.error('Елемент .product-grid не знайдено!');
+            return;
+        }
 
         data.forEach(category => {
             category.items.forEach(item => {
-                // Створюємо карточку товару
                 const productCard = document.createElement('div');
                 productCard.classList.add('product-card');
 
@@ -202,6 +209,7 @@ fetch('Kortex store/DATA/products.json') // Вкажіть відносний ш
         });
     })
     .catch(error => console.error('Помилка завантаження JSON:', error));
+
 
 
 
