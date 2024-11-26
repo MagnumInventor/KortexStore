@@ -73,12 +73,12 @@
         </div>
         <button class="dropdown-button">Select type of clothes</button>
         <div class="dropdown-content" id="dropdown-content">
-          <a href="#" onclick="filterOption('опція1')">Shoes</a>
-          <a href="#" onclick="filterOption('опція2')">Pants</a>
-          <a href="#" onclick="filterOption('опція3')">Jacket</a>
-          <a href="#" onclick="filterOption('опція3')">T-Shirts</T-Shirts></a>
-          <a href="#" onclick="filterOption('опція3')">Headwear</a>
-          <a href="#" onclick="filterOption('опція3')">Accesories</a>
+          <a href="#" onclick="filterOption('shoes')">Shoes</a>
+          <a href="#" onclick="filterOption('pants')">Pants</a>
+          <a href="#" onclick="filterOption('shirt')">T-Shirts</T-Shirts></a>
+          <a href="#" onclick="filterOption('headwear')">Headwear</a>
+          <a href="#" onclick="filterOption('accersories')">Accesories</a>
+          <a href="#" onclick="filterOption('jacket')">Jacket</a>
         </div>
       </div>  
  </div>    
@@ -88,6 +88,7 @@
 
 <section class="search-products-section">
     <h1 class="search-section-title">SEARCH RESULTS</h1>
+
     <div class="product-grid">
 
         <div class="results-container">
@@ -172,7 +173,7 @@ document.getElementById('search-button').addEventListener('click', () => {
                                 // PRODUCTS CREATING
 
 // Завантаження JSON-файлу
-fetch('assets/data/products.json') // Вкажіть відносний шлях до JSON-файлу
+fetch('Kortex store\DATA\products.json') // Вкажіть відносний шлях до JSON-файлу
     .then(response => response.json())
     .then(data => {
         const productGrid = document.querySelector('.product-grid'); // Знаходимо контейнер для товарів
