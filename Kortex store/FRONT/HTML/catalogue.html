@@ -139,6 +139,18 @@
 
 <script>
 
+            // DOM CHECKER
+
+document.addEventListener('DOMContentLoaded', () => {
+        const productGrid = document.querySelector('.product-grid');
+        if (productGrid) {
+            // Ваш код для роботи з продуктами
+            console.log("Елемент .product-grid знайдено");
+        } else {
+            console.error("Елемент .product-grid не знайдено");
+        }
+    });
+
                                              // MENUS + VISUAL
 
             const burgerMenu = document.getElementById('burger-menu');
