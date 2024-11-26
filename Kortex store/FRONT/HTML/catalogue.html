@@ -151,6 +151,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    const productGrid = document.querySelector('.product-grid');
+        if (productGrid) {
+            console.log("Елемент .product-grid знайдено");
+        } else {
+            console.error("Елемент .product-grid не знайдено");
+        }
+
                                              // MENUS + VISUAL
 
             const burgerMenu = document.getElementById('burger-menu');
