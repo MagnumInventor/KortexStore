@@ -171,36 +171,33 @@ document.getElementById('search-button').addEventListener('click', () => {
 
                                 // PRODUCTS CREATING
 
-    // Завантаження JSON-файлу
-    fetch('products.json')
-        .then(response => response.json())
-        .then(data => {
-            const container = document.getElementById('products-container');
-            
-            data.forEach(category => {
-                // Додаємо категорію
-                const categoryTitle = document.createElement('h2');
-                categoryTitle.textContent = category.category;
-                categoryTitle.style.textAlign = "center";
-                container.appendChild(categoryTitle);
+// Завантаження JSON-файлу
+fetch('assets/data/products.json') // Вкажіть відносний шлях до JSON-файлу
+    .then(response => response.json())
+    .then(data => {
+        const productGrid = document.querySelector('.product-grid'); // Знаходимо контейнер для товарів
 
-                // Додаємо товари
-                category.items.forEach(item => {
-                    const productCard = document.createElement('div');
-                    productCard.classList.add('product-card');
-                    
-                    productCard.innerHTML = `
-                        <div class="product-name">${item.name}</div>
-                        <div class="product-brand">${item.brand}</div>
-                        <div class="product-price">${item.price} грн</div>
-                        <div class="product-delivery">Доставка: ${item.delivery}</div>
-                    `;
-                    
-                    container.appendChild(productCard);
-                });
+        data.forEach(category => {
+            category.items.forEach(item => {
+                // Створюємо карточку товару
+                const productCard = document.createElement('div');
+                productCard.classList.add('product-card');
+
+                productCard.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" class="product-image">
+                    <div class="product-details">
+                        <p class="product-name">${item.name}</p>
+                        <p class="product-price">$${item.price}</p>
+                    </div>
+                    <a class="order-button" href="${item.link}">Замовити</a>
+                `;
+
+                productGrid.appendChild(productCard); // Додаємо карточку в сітку товарів
             });
-        })
-        .catch(error => console.error('Помилка завантаження JSON:', error));
+        });
+    })
+    .catch(error => console.error('Помилка завантаження JSON:', error));
+
 
 
 
