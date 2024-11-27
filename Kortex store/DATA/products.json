@@ -1,39 +1,175 @@
 [
- 
-{
-    "category": "Shoes",
-    "items": [
-        {
-            "name": "Nike TN (red)",
-            "price": 53.50,
-            "image": "Product/Shoes/DV7513001_8.jpg",
-            "link": "Product/Shoes/Shoes1.html"
-        },
-        {
-            "name": "Adidas Sneakers",
-            "price": 75.00,
-            "image": "Product/Shoes/adidas-sneakers.jpg",
-            "link": "Product/Shoes/Shoes.html"
-        }
-    ]
-},
-{
-    "category": "Upper",
-    "items": [
-        {
-            "name": "Street Smart Hoodie",
-            "price": 25.00,
-            "image": "Product/Upper/s-l400.jpg",
-            "link": "Product/Upper/Shirt.html"
-        },
-        {
-            "name": "Urban Sweat Shirt",
-            "price": 30.00,
-            "image": "Product/Upper/carhartt-wip-demy-jacket-black-1000x1000.jpg",
-            "link": "Product/Upper/Jacket.html"
-        }
-    ]
-}    
-
+    {
+        "category": "Shoes",
+        "items": [
+            {
+                "name": "Nike TN (red)",
+                "price": 53.5,
+                "image": "Product/Shoes/DV7513001_8.jpg",
+                "link": "Product/Shoes/Shoes1.html"
+            },
+            {
+                "name": "Adidas Sneakers",
+                "price": 75,
+                "image": "Product/Shoes/adidas-sneakers.jpg",
+                "link": "Product/Shoes/Shoes.html"
+            },
+            {
+                "name": "Puma Running Shoes",
+                "price": 60,
+                "image": "Product/Shoes/puma-running.jpg",
+                "link": "Product/Shoes/PumaRunning.html"
+            },
+            {
+                "name": "Reebok Classic Leather",
+                "price": 80,
+                "image": "Product/Shoes/reebok-classic.jpg",
+                "link": "Product/Shoes/ReebokClassic.html"
+            },
+            {
+                "name": "Converse Chuck Taylor",
+                "price": 50,
+                "image": "Product/Shoes/converse-chuck.jpg",
+                "link": "Product/Shoes/ConverseChuck.html"
+            },
+            {
+                "name": "Reebok Training Shoes",
+                "price": 85,
+                "image": "Product/Sportswear/reebok-training.jpg",
+                "link": "Product/Sportswear/ReebokTrainingShoes.html"
+            }
+        ]
+    },
+    {
+        "category": "Upper",
+        "items": [
+            {
+                "name": "Street Smart Hoodie",
+                "price": 25,
+                "image": "Product/Upper/s-l400.jpg",
+                "link": "Product/Upper/Shirt.html"
+            },
+            {
+                "name": "Nike Pro Compression Shirt",
+                "price": 40,
+                "image": "Product/Sportswear/nike-pro-shirt.jpg",
+                "link": "Product/Sportswear/NikeProCompression.html"
+            },
+            {
+                "name": "Urban Sweat Shirt",
+                "price": 30,
+                "image": "Product/Upper/carhartt-wip-demy-jacket-black-1000x1000.jpg",
+                "link": "Product/Upper/Jacket.html"
+            },
+            {
+                "name": "Levi's Denim Jacket",
+                "price": 70,
+                "image": "Product/Upper/levis-denim-jacket.jpg",
+                "link": "Product/Upper/LevisJacket.html"
+            },
+            {
+                "name": "H&M Basic T-shirt",
+                "price": 15,
+                "image": "Product/Upper/hm-basic-tshirt.jpg",
+                "link": "Product/Upper/HMTshirt.html"
+            },
+            {
+                "name": "Zara Knit Sweater",
+                "price": 40,
+                "image": "Product/Upper/zara-knit.jpg",
+                "link": "Product/Upper/ZaraSweater.html"
+            },
+            
+            {
+                "name": "Under Armour Hoodie",
+                "price": 55,
+                "image": "Product/Sportswear/under-armour-hoodie.jpg",
+                "link": "Product/Sportswear/UnderArmourHoodie.html"
+            }
+        ]
+    },
+    {
+        "category": "Accessories",
+        "items": [
+            {
+                "name": "Ray-Ban Sunglasses",
+                "price": 120,
+                "image": "Product/Accessories/rayban-sunglasses.jpg",
+                "link": "Product/Accessories/RayBanSunglasses.html"
+            },
+            {
+                "name": "Adidas Backpack",
+                "price": 45,
+                "image": "Product/Accessories/adidas-backpack.jpg",
+                "link": "Product/Accessories/AdidasBackpack.html"
+            },
+            {
+                "name": "Nike Sports Watch",
+                "price": 90,
+                "image": "Product/Accessories/nike-sports-watch.jpg",
+                "link": "Product/Accessories/NikeWatch.html"
+            },
+            {
+                "name": "Under Armour Cap",
+                "price": 25,
+                "image": "Product/Accessories/under-armour-cap.jpg",
+                "link": "Product/Accessories/UnderArmourCap.html"
+            },
+            {
+                "name": "Gucci Belt",
+                "price": 200,
+                "image": "Product/Accessories/gucci-belt.jpg",
+                "link": "Product/Accessories/GucciBelt.html"
+            }
+        ]
+    },
+    {
+        "category": "Pants",
+        "items": [
+            
+            {
+                "name": "Adidas Tracksuit Bottoms",
+                "price": 60,
+                "image": "Product/Sportswear/adidas-tracksuit.jpg",
+                "link": "Product/Sportswear/AdidasTracksuit.html"
+            },
+            {
+                "name": "Puma Sport Shorts",
+                "price": 30,
+                "image": "Product/Sportswear/puma-sport-shorts.jpg",
+                "link": "Product/Sportswear/PumaShorts.html"
+            }
+        ]
+    },
+    {
+        "category": "Headwear",
+        "items": [
+            {
+                "name": "Ray-Ban Sunglasses",
+                "price": 120,
+                "image": "Product/Headwear/rayban-sunglasses.jpg",
+                "link": "Product/Headwear/RayBanSunglasses.html"
+            },
+            {
+                "name": "Adidas cap",
+                "price": 45,
+                "image": "Product/Headwear/adidas-cap.jpg",
+                "link": "Product/Headwear/AdidasCap.html"
+            },
+            {
+                "name": "Nike Sports Headwear",
+                "price": 90,
+                "image": "Product/Headwear/nike-sports-head.jpg",
+                "link": "Product/Headwear/NikeHead.html"
+            },
+            {
+                "name": "Under Armour Cap",
+                "price": 25,
+                "image": "Product/Headwear/under-armour-cap.jpg",
+                "link": "Product/Headwear/UnderArmourCap.html"
+            }
+        ]
+    }
 ]
+
 
