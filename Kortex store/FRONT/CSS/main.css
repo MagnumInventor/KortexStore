@@ -997,6 +997,18 @@ font-family: "IBM Plex Mono";
                             min-width: 160px;
                             z-index: 1;
                         }
+                        .dropdown-sorting {
+                            display: none;
+                            position: absolute;
+                            margin-top: 365px;
+
+                            background: linear-gradient(145deg, #2a4238, #121c1a);
+                            border-radius: 10px;
+
+                            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+                            min-width: 160px;
+                            z-index: 1;
+                        }
                         
                         .dropdown-content a {
                             color: #fff;
@@ -1007,13 +1019,22 @@ font-family: "IBM Plex Mono";
                             border-radius: 10px;
                             transition: background-color 0.3s ease;
                         }
+                        .dropdown-sorting a {
+                            color: #fff;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+
+                            border-radius: 10px;
+                            transition: background-color 0.3s ease;
+                        }
                         
-                        .dropdown-content a:hover {
+                        .dropdown-content, .dropdown-sorting a:hover {
                             background-color: rgb(62, 204, 157);
                         }
                         
                         /* Показати меню при наведенні на кнопку */
-                        .dropdown-content.active {
+                        .dropdown-content.active, .dropdown-sorting.nav-points.active {
                             display: block;
                         }
                         

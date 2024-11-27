@@ -84,7 +84,7 @@
  
  <div class="dropdown">
     <div class="dropdown-back">
-        <div class="burger-menu-catalogue"  id="burger-menu-catalogue">
+        <div class="burger-menu-catalogue"  id="burger-menu-catalogue-sorting">
             <span class="check1"></span>
             <span class="check2"></span>
         </div>
@@ -228,11 +228,17 @@ if (productGrid) {
             });
 
         const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
-        const dropdownContent = document.getElementById ('dropdown-content')
+        const dropdownContent = document.getElementById ('dropdown-content');
+        const burgerCheckmarkS = document.getElementById ('burger-menu-catalogue-sorting');
+        const dropdownSorting = document.getElementById ('dropdown-sorting');
 
         burgerCheckmark.addEventListener('click', () => {
     burgerCheckmark.classList.toggle('active');
     dropdownContent.classList.toggle('active');
+    });
+        burgerCheckmarkS.addEventListener('click', () => {
+    burgerCheckmarkS.classList.toggle('active');
+    dropdownSorting.classList.toggle('active');
     });
 
 
