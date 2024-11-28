@@ -296,8 +296,8 @@ document.getElementById('search-button').addEventListener('click', function() {
     const results = searchProducts(query);
 
     // Виведення результатів
-    const resultsContainer = document.getElementById('search-results');
-    resultsContainer.innerHTML = '';  // Очищаємо попередні результати
+    const productsSection = document.querySelector('.product-grid');
+    productsSection.innerHTML = '';  // Очищаємо попередні результати
 
     if (results.length > 0) {
         results.forEach(product => {
