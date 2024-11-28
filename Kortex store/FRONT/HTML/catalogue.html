@@ -310,7 +310,7 @@ document.getElementById('search-button').addEventListener('click', function() {
     if (results.length > 0) {
         results.forEach(product => {
             const resultItem = document.createElement('div');
-            resultItem.textContent = `${product.name} - ${product.category}`;
+            resultItem.textContent = `${product.name}`;
             resultsContainer.appendChild(resultItem);
         });
     } else {
