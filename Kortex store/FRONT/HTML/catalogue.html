@@ -226,16 +226,19 @@ if (productGrid) {
             SecondBlackLine.classList.toggle('active');
         });
 
+
     const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
     const dropdownContent = document.getElementById ('dropdown-content');
-    const burgerCheckmarkS = document.getElementById ('burger-menu-catalogue-sorting');
+
+    const burgerCheckmarkSorting = document.getElementById ('burger-menu-catalogue-sorting');
     const dropdownSorting = document.getElementById ('dropdown-sorting');
+
 
     burgerCheckmark.addEventListener('click', () => {
 burgerCheckmark.classList.toggle('active');
 dropdownContent.classList.toggle('active');
 });
-    burgerCheckmarkS.addEventListener('click', () => {
+    burgerCheckmarkSorting.addEventListener('click', () => {
 burgerCheckmarkS.classList.toggle('active');
 dropdownSorting.classList.toggle('active');
 });

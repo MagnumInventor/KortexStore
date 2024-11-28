@@ -1039,7 +1039,7 @@ font-family: "IBM Plex Mono";
                         .dropdown-sorting.nav-points.active {
                             display: block;
                         }
-                        .dropdown-content.active {
+                        .dropdown-content.nav-points.active {
                             display: block;
                         }
                         
