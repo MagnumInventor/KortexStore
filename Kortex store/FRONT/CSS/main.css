@@ -987,7 +987,7 @@ font-family: "IBM Plex Mono";
                         .dropdown-content {
                             display: none;
                             position: absolute;
-                            margin-top: 365px;
+                            top: 100%; /* Відразу під кнопкою */
 
                             background: linear-gradient(145deg, #2a4238, #121c1a);
                             border-radius: 10px;
@@ -999,7 +999,7 @@ font-family: "IBM Plex Mono";
                         .dropdown-sorting {
                             display: none;
                             position: absolute;
-                            margin-top: 365px;
+                            top: 100%; /* Відразу під кнопкою */
 
                             background: linear-gradient(145deg, #2a4238, #121c1a);
                             border-radius: 10px;
