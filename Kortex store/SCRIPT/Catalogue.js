@@ -44,8 +44,7 @@ const resultsList = document.getElementById('results-list');
 
 
                                     // SEARCH SYSTEM 
-
-// Очистити старі результати
+/* Очистити старі результати
 resultsList.innerHTML = '';
 
 if (query) {
@@ -75,7 +74,7 @@ console.log("Вибрана опція: " + option);
 
 
 
-export class Categories extends Component {
+ export class Categories extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -118,4 +117,4 @@ export class Categories extends Component {
     }
 }
 
-export default Categories
+export default Categories*\
