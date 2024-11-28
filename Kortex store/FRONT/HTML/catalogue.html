@@ -519,24 +519,6 @@ window.onload = () => loadProducts('all');
 
             // Сортування товарів
 
-function sortProducts(option, products) {
-            if (option === 'expensive-to-cheap') {
-                return products.sort((a, b) => b.price - a.price);
-            } else if (option === 'cheap-to-expensive') {
-                return products.sort((a, b) => a.price - b.price);
-            } else if (option === 'shipping') {
-                return products.sort((a, b) => a.deliveryTime - b.deliveryTime);
-            }
-            return products;
-        }
-
-        // Обробник вибору сортування
-        function filterOption(option) {
-            // Отримати всі товари з JSON
-            const allProducts = data.flatMap(category => category.items);
-            const sortedProducts = sortProducts(option, allProducts);
-            displayProducts(sortedProducts); // Вивести відсортовані товари
-        }
 
 </script>
 
