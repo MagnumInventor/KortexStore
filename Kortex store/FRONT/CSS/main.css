@@ -891,7 +891,15 @@ font-family: "IBM Plex Mono";
                                     }
                                 }
                                                 /* Стилі для кнопки меню */
-        .dropdown {
+        .dropdown-con {
+            position: relative;
+            display: inline-block;
+
+            margin-top: 5px;
+            margin-left: 30px;
+            padding-bottom: 10px;
+        }
+        .dropdown-sor {
             position: relative;
             display: inline-block;
 
