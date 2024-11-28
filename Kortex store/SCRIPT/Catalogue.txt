@@ -86,3 +86,7 @@ export default Categories
           <a href="Product/Shoes/all-headwear.html" onclick="filterOption('Headwear')">Headwear</a>
           <a href="Product/Shoes/all-accesories.html" onclick="filterOption('Accersories')">Accesories</a>
           <a href="Product/Shoes/all-jackets.html" onclick="filterOption('Jacket')">Jacket</a>
+
+          <a href="Search/expensive-to-cheap.html" onclick="filterOption('expensive-to-cheap')">From expensive to cheap</a>
+          <a href="Search/cheap-to-expensive.html" onclick="filterOption('cheap-to-expensive')">From cheap to expensive</a>
+          <a href="Search/shipping.html" onclick="filterOption('shipping')">Shipping time</a>
