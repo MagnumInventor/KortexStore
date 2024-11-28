@@ -1029,12 +1029,18 @@ font-family: "IBM Plex Mono";
                             transition: background-color 0.3s ease;
                         }
                         
-                        .dropdown-content, .dropdown-sorting a:hover {
+                        .dropdown-content a:hover {
+                            background-color: rgb(62, 204, 157);
+                        }
+                        .dropdown-sorting a:hover {
                             background-color: rgb(62, 204, 157);
                         }
                         
                         /* Показати меню при наведенні на кнопку */
-                        .dropdown-content.active, .dropdown-sorting.nav-points.active {
+                        .dropdown-sorting.nav-points.active {
+                            display: block;
+                        }
+                        .dropdown-content.active {
                             display: block;
                         }
                         
