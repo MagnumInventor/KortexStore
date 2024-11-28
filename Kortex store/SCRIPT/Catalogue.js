@@ -1,47 +1,3 @@
-import React, { Component } from 'React'
-
-
-                                         // MENUS + VISUAL
-
-        const burgerMenu = document.getElementById('burger-menu');
-        const navMenu = document.getElementById('nav-menu');
-        const navPoints = document.getElementById('nav-points');
-            const BlackLine = document.getElementById('black-line');
-            const SecondBlackLine = document.getElementById('second-black-line');
-
-        burgerMenu.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        navPoints.classList.toggle('active');
-        burgerMenu.classList.toggle('active');
-            BlackLine.classList.toggle('active');
-            SecondBlackLine.classList.toggle('active');
-        });
-
-    const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
-    const dropdownContent = document.getElementById ('dropdown-content');
-    const burgerCheckmarkS = document.getElementById ('burger-menu-catalogue-sorting');
-    const dropdownSorting = document.getElementById ('dropdown-sorting');
-
-    burgerCheckmark.addEventListener('click', () => {
-burgerCheckmark.classList.toggle('active');
-dropdownContent.classList.toggle('active');
-});
-    burgerCheckmarkS.addEventListener('click', () => {
-burgerCheckmarkS.classList.toggle('active');
-dropdownSorting.classList.toggle('active');
-});
-
-
-document.querySelector('.checkmark-image').addEventListener('click', function() {
-const checkmark = document.querySelector('.check');
-checkmark.style.transform = checkmark.style.transform === 'rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
-});
-
-document.getElementById('search-button').addEventListener('click', () => {
-const query = document.getElementById('search-input').value.trim();
-const resultsList = document.getElementById('results-list');
-
-
 
                                     // SEARCH SYSTEM 
 /* Очистити старі результати
@@ -117,4 +73,4 @@ console.log("Вибрана опція: " + option);
     }
 }
 
-export default Categories*\
+export default Categories
