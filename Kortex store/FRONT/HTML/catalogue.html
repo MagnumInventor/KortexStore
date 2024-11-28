@@ -290,15 +290,17 @@ function searchProducts(query) {
     return products.filter(product => product.name.toLowerCase().includes(query.toLowerCase()));
 }
 
-// Обробник кліку на кнопку пошуку
 document.getElementById('search-button').addEventListener('click', function() {
     const query = document.getElementById('search-input').value;
     const results = searchProducts(query);
 
-    // Виведення результатів
-    const productsSection = document.querySelector('.product-grid');
-    productsSection.innerHTML = '';  // Очищаємо попередні результати
+    // Get the results container
+    const resultsContainer = document.querySelector('.search-products-section .product-grid'); // Modify this selector if needed
+    
+    // Clear previous results
+    resultsContainer.innerHTML = '';  
 
+    // If results are found, display them
     if (results.length > 0) {
         results.forEach(product => {
             const resultItem = document.createElement('div');
@@ -309,6 +311,7 @@ document.getElementById('search-button').addEventListener('click', function() {
         resultsContainer.textContent = 'No products found';
     }
 });
+
 
 // SEARCH INPUT
 
