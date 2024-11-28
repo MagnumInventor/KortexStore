@@ -1,7 +1,7 @@
 import React, { Component } from 'React'
 
 
-fetch('products.json') // Вкажіть правильний шлях
+fetch('Kortex store/DATA/products.json') // Вкажіть правильний шлях
 .then(response => {
     console.log('Статус відповіді:', response.status); // Перевіряємо статус відповіді
     return response.json();
