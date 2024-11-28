@@ -246,10 +246,6 @@ const checkmark = document.querySelector('.check');
 checkmark.style.transform = checkmark.style.transform === 'rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
 });
 
-document.getElementById('search-button').addEventListener('click', () => {
-const query = document.getElementById('search-input').value.trim();
-const resultsList = document.getElementById('results-list');
-
         // Функція для завантаження товарів відповідно до вибраної категорії
 
 function loadProducts(categoryKey) {
