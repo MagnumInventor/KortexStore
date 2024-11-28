@@ -207,7 +207,7 @@ if (productGrid) {
         });
     });
 })
-.catch(error => console.error('Помилка завантаження JSON:', error));
+//.catch(error => console.error('Помилка завантаження JSON:', error));
 
 
                                          // MENUS + VISUAL
@@ -518,7 +518,7 @@ window.onload = () => loadProducts('all');
 
 
             // Сортування товарів
-            
+
 function sortProducts(option, products) {
             if (option === 'expensive-to-cheap') {
                 return products.sort((a, b) => b.price - a.price);
