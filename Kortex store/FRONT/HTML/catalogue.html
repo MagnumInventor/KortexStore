@@ -160,7 +160,7 @@
 
             // DOM CHECKER
 
-document.addEventListener('DOMContentLoaded', () => {
+            document.addEventListener('DOMContentLoaded', () => {
         const productGrid = document.querySelector('.product-grid');
         if (productGrid) {
             // Ваш код для роботи з продуктами
@@ -177,7 +177,7 @@ if (productGrid) {
 
 
                                // PRODUCTS CREATING
-                               fetch('Kortex store/DATA/products.json') // Вкажіть правильний шлях
+        fetch('Kortex store/DATA/products.json') // Вкажіть правильний шлях
 .then(response => {
     console.log('Статус відповіді:', response.status); // Перевіряємо статус відповіді
     return response.json();
