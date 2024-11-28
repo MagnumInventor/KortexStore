@@ -89,6 +89,28 @@
         ]
     },
     {
+        "category": "Jacket",
+        "items": [
+            {
+                "name": "Levi's Denim Jacket",
+                "price": 70,
+                "image": "Product/Upper/levis-denim-jacket.jpg",
+                "link": "Product/Upper/LevisJacket.html"
+            }
+        ]
+    },
+    {
+        "category": "Shirt",
+        "items": [
+            {
+                "name": "H&M Basic T-shirt",
+                "price": 15,
+                "image": "Product/Upper/hm-basic-tshirt.jpg",
+                "link": "Product/Upper/HMTshirt.html"
+            }
+        ]
+    },
+    {
         "category": "Accessories",
         "items": [
             {
