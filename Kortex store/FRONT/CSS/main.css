@@ -1036,10 +1036,10 @@ font-family: "IBM Plex Mono";
                         }
                         
                         /* Показати меню при наведенні на кнопку */
-                        .dropdown-sorting.nav-points.active {
+                        .dropdown-sorting.active {
                             display: block;
                         }
-                        .dropdown-content.nav-points.active {
+                        .dropdown-content.active {
                             display: block;
                         }
                         
