@@ -67,7 +67,7 @@
 
  <div class="dropdown">
     <div class="dropdown-back">
-        <div class="burger-menu-catalogue"  id="burger-menu-catalogue">
+        <div class="burger-menu-catalogue">
             <span class="check1"></span>
             <span class="check2"></span>
         </div>
@@ -85,7 +85,7 @@
  
  <div class="dropdown">
     <div class="dropdown-back">
-        <div class="burger-menu-catalogue"  id="burger-menu-catalogue-sorting">
+        <div class="burger-menu-catalogue">
             <span class="check1"></span>
             <span class="check2"></span>
         </div>
@@ -226,23 +226,25 @@ if (productGrid) {
             SecondBlackLine.classList.toggle('active');
         });
 
+        //CATALOGUE 
 
-    const burgerCheckmark = document.getElementById ('burger-menu-catalogue');
+    const buttonCheckmark = document.getElementById ('burger-menu-catalogue');
     const dropdownContent = document.getElementById ('dropdown-content');
 
-    const burgerCheckmarkSorting = document.getElementById ('burger-menu-catalogue-sorting');
+    const buttonCheckmarkSorting = document.getElementById ('burger-menu-catalogue-sorting');
     const dropdownSorting = document.getElementById ('dropdown-sorting');
 
 
-    burgerCheckmark.addEventListener('click', () => {
-burgerCheckmark.classList.toggle('active');
+    buttonCheckmark.addEventListener('click', () => {
+buttonCheckmark.classList.toggle('active');
 dropdownContent.classList.toggle('active');
 });
-    burgerCheckmarkSorting.addEventListener('click', () => {
-burgerCheckmarkSorting.classList.toggle('active');
+    buttonCheckmarkSorting.addEventListener('click', () => {
+buttonCheckmarkSorting.classList.toggle('active');
 dropdownSorting.classList.toggle('active');
 });
 
+//CATALOGUE 
 
 document.querySelector('.checkmark-image').addEventListener('click', function() {
 const checkmark = document.querySelector('.check');
@@ -510,51 +512,6 @@ function filterOption(option) {
 window.onload = () => loadProducts('all');
 
 
-
-        // Функція, яка буде обробляти вибір сортування
-        function filterOption(option) {
-        // Отримуємо список товарів
-        const items = document.querySelectorAll('.product-item');
-        
-        switch(option) {
-            case 'expensive-to-cheap':
-            // Сортуємо товари від найдорожчих до найдешевших
-            sortItems(items, 'price', 'desc');
-            break;
-            
-            case 'cheap-to-expensive':
-            // Сортуємо товари від найдешевших до найдорожчих
-            sortItems(items, 'price', 'asc');
-            break;
-            
-            case 'shipping':
-            // Сортуємо товари за терміном доставки
-            sortItems(items, 'shipping-time', 'asc');
-            break;
-        }
-        }
-
-        // Функція для сортування товарів за зазначеним критерієм
-        function sortItems(items, key, order) {
-        // Перетворюємо NodeList в масив для зручності
-        const itemsArray = Array.from(items);
-        
-        // Сортуємо за обраним критерієм
-        itemsArray.sort((a, b) => {
-            const aValue = a.querySelector(`[data-${key}]`).getAttribute(`data-${key}`);
-            const bValue = b.querySelector(`[data-${key}]`).getAttribute(`data-${key}`);
-            
-            // Якщо сортуємо за ціною або терміном доставки, перетворюємо значення в числа
-            const compareA = key === 'price' ? parseFloat(aValue) : parseInt(aValue);
-            const compareB = key === 'price' ? parseFloat(bValue) : parseInt(bValue);
-
-            return order === 'asc' ? compareA - compareB : compareB - compareA;
-        });
-
-        // Переміщаємо елементи на сторінці в новому порядку
-        const container = document.querySelector('.product-list');
-        itemsArray.forEach(item => container.appendChild(item));
-        }
 </script>
 
  <!--SCRIPT-->
