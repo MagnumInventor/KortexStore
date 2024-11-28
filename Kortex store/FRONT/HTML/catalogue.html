@@ -250,6 +250,46 @@ dropdownBurgerSorting.classList.toggle('active');
 
 //CATALOGUE 
 
+
+// SEARCH INPUT
+
+// Симуляція даних у prodict.json
+const products = [
+    { "name": "Laptop", "category": "Electronics" },
+    { "name": "Smartphone", "category": "Electronics" },
+    { "name": "Shirt", "category": "Clothing" },
+    { "name": "Coffee Maker", "category": "Home Appliances" },
+    { "name": "Headphones", "category": "Electronics" }
+];
+
+// Функція пошуку
+function searchProducts(query) {
+    // Фільтруємо продукти, де name містить введений текст (не чутливий до регістру)
+    return products.filter(product => product.name.toLowerCase().includes(query.toLowerCase()));
+}
+
+// Обробник кліку на кнопку пошуку
+document.getElementById('search-button').addEventListener('click', function() {
+    const query = document.getElementById('search-input').value;
+    const results = searchProducts(query);
+
+    // Виведення результатів
+    const resultsContainer = document.getElementById('search-results');
+    resultsContainer.innerHTML = '';  // Очищаємо попередні результати
+
+    if (results.length > 0) {
+        results.forEach(product => {
+            const resultItem = document.createElement('div');
+            resultItem.textContent = `${product.name} - ${product.category}`;
+            resultsContainer.appendChild(resultItem);
+        });
+    } else {
+        resultsContainer.textContent = 'No products found';
+    }
+});
+
+// SEARCH INPUT
+
 document.querySelector('.checkmark-image').addEventListener('click', function() {
 const checkmark = document.querySelector('.check');
 checkmark.style.transform = checkmark.style.transform === 'rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
