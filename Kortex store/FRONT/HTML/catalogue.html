@@ -115,12 +115,12 @@
 </section>
 
 
-        <div class="results-container">
+     <!--   <div class="results-container">
             <div class="search-reminder"> System is waiting for search...</div>
             <ul class="results-list" id="results-list">
-                <!-- Динамічно додані результати -->
+                Динамічно додані результати 
             </ul>
-        </div>
+        </div> -->
 
 </section>
     
@@ -211,6 +211,51 @@ if (productGrid) {
 })
 .catch(error => console.error('Помилка завантаження JSON:', error));
 
+
+
+        // Функція для завантаження товарів відповідно до вибраної категорії
+
+function loadProducts(categoryKey) {
+    const productsSection = document.querySelector('.product-grid');
+    productsSection.innerHTML = ''; // Очистити попередні результати
+
+    // Отримати дані з JSON
+    const jsonData = [
+        // Ваш JSON повністю вставити сюди
+    ];
+
+    // Знайти відповідну категорію
+    const category = jsonData.find(cat => cat.category.toLowerCase() === categoryKey.toLowerCase() || categoryKey === 'all');
+
+    if (category) {
+        // Вивести товари
+        category.items.forEach(item => {
+            const productCard = document.createElement('div');
+            productCard.classList.add('product-card');
+            productCard.innerHTML = `
+                <img src="${item.image}" alt="${item.name}" class="product-image">
+                <h3 class="product-name">${item.name}</h3>
+                <p class="product-price">$${item.price}</p>
+                <a href="${item.link}" class="product-link">View More</a>
+            `;
+            productsSection.appendChild(productCard);
+        });
+    } else {
+        // Якщо товарів немає
+        const noProductsMessage = document.createElement('div');
+        noProductsMessage.textContent = 'No products found for this category.';
+        productsSection.appendChild(noProductsMessage);
+    }
+}
+
+// Функція для обробки вибору категорії
+function filterOption(option) {
+    console.log("Вибрана опція: " + option);
+    loadProducts(option);
+}
+
+// Завантажити всі товари за замовчуванням
+window.onload = () => loadProducts('all');
 
 </script>
 
