@@ -302,11 +302,12 @@ document.getElementById('search-button').addEventListener('click', async functio
         results.forEach(product => {
             const resultItem = document.createElement('div');
             resultItem.innerHTML = `
-                <a href="${product.link}">
-                    <img src="${product.image}" alt="${product.name}" />
-                    <p>${product.name}</p>
-                    <p>$${product.price.toFixed(2)}</p>
-                </a>
+                <img src="${item.image}" alt="${item.name}" class="product-image">
+                <div class="product-details">
+                    <p class="product-name">${item.name}</p>
+                    <p class="product-price">$${item.price}</p>
+                </div>
+                <a class="order-button" href="${item.link}">Замовити</a>
             `;
             resultsContainer.appendChild(resultItem);
         });
