@@ -693,58 +693,41 @@ font-family: "IBM Plex Mono";
         text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
     }
 
-.product-grid {
-    display: flex;
-    gap: 15px;
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Автоматичне створення колонок */
+       
+        gap: 15px; /* Відстань між картками */
+        padding: 15px; /* Відступи з усіх боків */
+    }
+    
+    .product-card {
+        background-color: #1a1a1a;
+        border: 2px solid #161616;
+        border-radius: 8px;
 
-    flex-wrap: wrap;
-}
+        padding: 20px;
 
-.product-card {
-    background-color: #1a1a1a;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    border: 2px solid #161616;
-    border-radius: 8px;
-
-    padding: 20px;
-    margin-bottom: 20px;
-    width: fit-content;
-
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-        @media (max-width: 1100px) {
-            .product-grid {
-                display: flex;
-                gap: 15px;
-            
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-            }
-            .product-card {
-                background-color: #1a1a1a;
-            
-                border: 2px solid #161616;
-                border-radius: 8px;
-            
-                padding: 20px;
-                margin-bottom: 20px;
-                width: auto;
-            
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-            }
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .product-card img {
+        width: 100%; /* Забезпечуємо, щоб картинка займала всю ширину картки */
+        height: auto;
+    }
+    
+    /* Для меншого екрану, наприклад, мобільних пристроїв */
+    @media (max-width: 768px) {
+        .product-grid {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Відображення 1-2 товарів в рядку */
         }
-
+    }
+    
 
 .product-image {
     max-width: 100%;
