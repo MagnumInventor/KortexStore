@@ -696,7 +696,8 @@ font-family: "IBM Plex Mono";
 .product-grid {
     display: flex;
     gap: 15px;
-    justify-content: center;
+    
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -708,6 +709,7 @@ font-family: "IBM Plex Mono";
 
     padding: 20px;
     margin-bottom: 20px;
+    width: 33%;
 
     text-align: center;
     display: flex;

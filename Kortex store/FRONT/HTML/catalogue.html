@@ -233,6 +233,19 @@ dropdownSorting.classList.toggle('active');
 dropdownBurgerSorting.classList.toggle('active');
 });
 
+//Closing option
+
+    const closingOptionContent = document.getElementById ('dropdown-content')
+    const closingOptionSorting = document.getElementById ('dropdown-sorting')
+
+    closingOptionContent.addEventListener('click', () => {
+dropdownContent.classList.remove('active');
+ });
+    closingOptionSorting.addEventListener('click', () => {
+dropdownSorting.classList.remove('active');
+ });
+
+
     //CATALOGUE 
 
 
