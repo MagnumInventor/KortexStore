@@ -253,8 +253,9 @@ dropdownBurgerSorting.classList.toggle('active');
 
 // SEARCH INPUT
 function searchProducts(query) {
+    let products = [];
 // Симуляція даних у prodict.json
-const products = [
+const fetchproducts = [
     { "name": "Nike TN (red)", "price": 53.5, "image": "Product/Shoes/DV7513001_8.jpg", "link": "Product/Shoes/Shoes1.html", "deliveryTime": 4 },
     { "name": "Adidas Sneakers", "price": 75, "image": "Product/Shoes/adidas-sneakers.jpg", "link": "Product/Shoes/Shoes.html", "deliveryTime": 30 },
     { "name": "Puma Running Shoes", "price": 60, "image": "Product/Shoes/puma-running.jpg", "link": "Product/Shoes/PumaRunning.html", "deliveryTime": 4 },
@@ -282,6 +283,7 @@ const products = [
     { "name": "Nike Sports Headwear", "price": 90, "image": "Product/Headwear/nike-sports-head.jpg", "link": "Product/Headwear/NikeHead.html", "deliveryTime": 4 },
     { "name": "Under Armour Cap", "price": 25, "image": "Product/Headwear/under-armour-cap.jpg", "link": "Product/Headwear/UnderArmourCap.html", "deliveryTime": 30 }
 ];
+fetchProducts();
 // Filter products based on the search query
 return products.filter(product => 
         product.name.toLowerCase().includes(query.toLowerCase()) ||
