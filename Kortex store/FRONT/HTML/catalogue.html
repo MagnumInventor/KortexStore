@@ -539,7 +539,7 @@ function loadProducts(categoryKey) {
 
 // Знайти відповідну категорію
 function loadProducts(categoryKey) {
-    const productsSection = document.getElementById('productsSection'); // Ensure you have this element in your HTML
+    const productsSection = document.querySelector('.product-grid'); // Ensure you have this element in your HTML
     productsSection.innerHTML = ''; // Clear previous products
 
     // Якщо categoryKey - 'all', то вивести всі товари
