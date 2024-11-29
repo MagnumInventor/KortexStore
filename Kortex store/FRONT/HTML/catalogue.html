@@ -306,12 +306,7 @@ document.getElementById('search-button').addEventListener('click', function () {
 
 
 
-            // FILTERING
-
-document.querySelector('.checkmark-image').addEventListener('click', function() {
-const checkmark = document.querySelector('.check');
-checkmark.style.transform = checkmark.style.transform === 'rotate(90deg)' ? 'rotate(0deg)' : 'rotate(90deg)';
-});
+              // FILTERING
         // Функція для завантаження товарів відповідно до вибраної категорії
 
 function loadProducts(categoryKey) {
@@ -539,27 +534,52 @@ function loadProducts(categoryKey) {
     }
 ]
 
-    // Знайти відповідну категорію
-    const category = jsonData.find(cat => cat.category.toLowerCase() === categoryKey.toLowerCase() || categoryKey === 'all');
 
-    if (category) {
-        // Вивести товари
-        category.items.forEach(item => {
-            const productCard = document.createElement('div');
-            productCard.classList.add('product-card');
-            productCard.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" class="product-image">
-                <h3 class="product-name">${item.name}</h3>
-                <p class="product-price">$${item.price}</p>
-                <a href="${item.link}" class="product-link">View More</a>
-            `;
-            productsSection.appendChild(productCard);
+            // SORTING
+
+// Знайти відповідну категорію
+function loadProducts(categoryKey) {
+    const productsSection = document.getElementById('productsSection'); // Ensure you have this element in your HTML
+    productsSection.innerHTML = ''; // Clear previous products
+
+    // Якщо categoryKey - 'all', то вивести всі товари
+    if (categoryKey === 'all') {
+        jsonData.forEach(category => {
+            category.items.forEach(item => {
+                const productCard = document.createElement('div');
+                productCard.classList.add('product-card');
+                productCard.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" class="product-image">
+                    <h3 class="product-name">${item.name}</h3>
+                    <p class="product-price">$${item.price}</p>
+                    <a href="${item.link}" class="product-link">View More</a>
+                `;
+                productsSection.appendChild(productCard);
+            });
         });
     } else {
-        // Якщо товарів немає
-        const noProductsMessage = document.createElement('div');
-        noProductsMessage.textContent = 'No products found for this category.';
-        productsSection.appendChild(noProductsMessage);
+        // Вибір відповідної категорії
+        const category = jsonData.find(cat => cat.category.toLowerCase() === categoryKey.toLowerCase());
+
+        if (category) {
+            // Вивести товари з цієї категорії
+            category.items.forEach(item => {
+                const productCard = document.createElement('div');
+                productCard.classList.add('product-card');
+                productCard.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" class="product-image">
+                    <h3 class="product-name">${item.name}</h3>
+                    <p class="product-price">$${item.price}</p>
+                    <a href="${item.link}" class="product-link">View More</a>
+                `;
+                productsSection.appendChild(productCard);
+            });
+        } else {
+            // Якщо категорія не знайдена
+            const noProductsMessage = document.createElement('div');
+            noProductsMessage.textContent = 'No products found for this category.';
+            productsSection.appendChild(noProductsMessage);
+        }
     }
 }
 
@@ -572,9 +592,7 @@ function filterOption(option) {
 // Завантажити всі товари за замовчуванням
 window.onload = () => loadProducts('all');
 
-
-
-            // Сортування товарів
+            // SORTING
 
 
 </script>
