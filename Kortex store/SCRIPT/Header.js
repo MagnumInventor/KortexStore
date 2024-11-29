@@ -1,4 +1,5 @@
 
+        // HEADER MENU
 
 const burgerMenu = document.getElementById('burger-menu');
 const navMenu = document.getElementById('nav-menu');

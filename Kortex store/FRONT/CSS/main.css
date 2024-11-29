@@ -926,9 +926,7 @@ font-family: "IBM Plex Mono";
 
                         gap: 5px;
                         cursor: pointer;
-                        margin-left: 10px; /* Відступ від кнопки */
-                        padding: 10px; /* Додаємо внутрішній відступ */
-
+                
                         border-radius: 15px; /* Закруглені краї */
                         transition: all 0.3s ease;
                     }
@@ -959,7 +957,7 @@ font-family: "IBM Plex Mono";
                         
                         .dropdown-button {
                             padding: 12px 30px;
-                            margin-left: 25px;
+                            margin-left: 15px;
 
                             font-size: 22px;
                             font-weight: 400;
