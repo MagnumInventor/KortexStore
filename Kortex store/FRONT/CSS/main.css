@@ -935,34 +935,25 @@ font-family: "IBM Plex Mono";
                     
                     .burger-menu-catalogue span {
                         display: block;
-                        width: 18px; /* Ширина прямокутника */
-                        height: 3.5px; /* Товщина прямокутника */
-                        background-color: #c3dbcf; /* Колір */
-                        border-radius: 2px; /* Згладжені краї */
+        
+                        background-color: transparent; /* Колір */
                         transition: all 0.3s ease;
                     }
         .check1 {
-            rotate: 45deg;
-        }
-        .check2 {
-            rotate: -45deg;
+            rotate: 180deg;
+            font-size: 50px;
+            
         }
                     /* Стан при активному меню */
                     .burger-menu-catalogue.active span:nth-child(1) {
-                        transform: rotate(0deg); /* Поворот першої галочки вниз */
+                        transform: rotate(90deg); /* Поворот першої галочки вниз */
                       
                         margin-right: 5px;
                     }
                     
-                    .burger-menu-catalogue.active span:nth-child(2) {
-                        transform: rotate(180deg); /* Поворот другої галочки в інший бік */
-                    
-                        margin-left: 10px;
-                    }
-                    
                     /* Ефект наведення */
                     .burger-menu-catalogue:hover {
-                        background: rgba(255, 255, 255, 0.4); /* Додаємо ефект наведення */
+                        background: rgba(255, 255, 255, 0.3); /* Додаємо ефект наведення */
                     }
                 
                         
