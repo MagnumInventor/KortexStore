@@ -910,7 +910,7 @@ font-family: "IBM Plex Mono";
 
             margin-top: 5px;
             margin-left: 30px;
-            padding-bottom: 10px;
+            padding-bottom: 7.5px;
         }
         .dropdown-sor {
             position: relative;
@@ -918,6 +918,7 @@ font-family: "IBM Plex Mono";
 
             margin-top: 5px;
             margin-left: 30px;
+            padding-bottom: 7.5px;
         }
 
         .dropdown-back {
