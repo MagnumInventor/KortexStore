@@ -75,6 +75,7 @@
           <a href="#" onclick="filterOption('Shoes')">Shoes</a>
           <a href="#" onclick="filterOption('Pants')">Pants</a>
           <a href="#" onclick="filterOption('Shirt')">T-Shirts</a>
+          <a href="#" onclick="filterOption('Upper')">Upper</a>
           <a href="#" onclick="filterOption('Headwear')">Headwear</a>
           <a href="#" onclick="filterOption('Accessories')">Accesories</a>
           <a href="#" onclick="filterOption('Jacket')">Jacket</a>
@@ -274,32 +275,11 @@ const jsonData = [
                 "deliveryTime": 4
             },
             {
-                "name": "Nike Pro Compression Shirt",
-                "price": 40,
-                "image": "Product/Sportswear/nike-pro-shirt.jpg",
-                "link": "Product/Sportswear/NikeProCompression.html",
-                "deliveryTime": 30
-            },
-            {
-                "name": "Urban Sweat Shirt",
-                "price": 30,
-                "image": "Product/Upper/carhartt-wip-demy-jacket-black-1000x1000.jpg",
-                "link": "Product/Upper/Jacket.html",
-                "deliveryTime": 4
-            },
-            {
                 "name": "Levi's Denim Jacket",
                 "price": 70,
                 "image": "Product/Upper/levis-denim-jacket.jpg",
                 "link": "Product/Upper/LevisJacket.html",
                 "deliveryTime": 30
-            },
-            {
-                "name": "H&M Basic T-shirt",
-                "price": 15,
-                "image": "Product/Upper/hm-basic-tshirt.jpg",
-                "link": "Product/Upper/HMTshirt.html",
-                "deliveryTime": 4
             },
             {
                 "name": "Zara Knit Sweater",
@@ -338,7 +318,28 @@ const jsonData = [
                 "image": "Product/Upper/hm-basic-tshirt.jpg",
                 "link": "Product/Upper/HMTshirt.html",
                 "deliveryTime": 4
-            }
+            },
+            {
+                "name": "H&M Basic T-shirt",
+                "price": 15,
+                "image": "Product/Upper/hm-basic-tshirt.jpg",
+                "link": "Product/Upper/HMTshirt.html",
+                "deliveryTime": 4
+            },
+            {
+                "name": "Urban Sweat Shirt",
+                "price": 30,
+                "image": "Product/Upper/carhartt-wip-demy-jacket-black-1000x1000.jpg",
+                "link": "Product/Upper/Jacket.html",
+                "deliveryTime": 4
+            },
+            {
+                "name": "Nike Pro Compression Shirt",
+                "price": 40,
+                "image": "Product/Sportswear/nike-pro-shirt.jpg",
+                "link": "Product/Sportswear/NikeProCompression.html",
+                "deliveryTime": 30
+            },
         ]
     },
     {
@@ -448,7 +449,6 @@ function displayProducts(products) {
             const productCard = document.createElement('div');
             productCard.classList.add('product-card');
             productCard.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" class="product-image">
                 <div class="product-details">
                     <p class="product-name">${item.name}</p>
                     <p class="product-price">${item.price}$</p>
