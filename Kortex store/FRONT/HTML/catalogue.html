@@ -90,9 +90,9 @@
         </div>
         <button class="dropdown-button" id="button-menu-catalogue-sorting">Select sorting</button>
         <div class="dropdown-sorting" id="dropdown-sorting">
-          <a href="#" onclick="filterOption('expensive-to-cheap')">From expensive to cheap</a>
-          <a href="#" onclick="filterOption('cheap-to-expensive')">From cheap to expensive</a>
-          <a href="#" onclick="filterOption('shipping')">Shipping time</a>
+            <button data-sort="expensive-to-cheap">Expensive to Cheap</button>
+            <button data-sort="cheap-to-expensive">Cheap to Expensive</button>
+            <button data-sort="shipping">Fastest Shipping</button>
         </div>
       </div>  
  </div>  
@@ -475,7 +475,9 @@ function searchProducts(query) {
     return products;
 }
 
-// 2. Фільтрація
+
+        //FILTERING
+
 function filterProducts(categoryKey) {
     if (categoryKey === 'all') {
         const allProducts = jsonData.flatMap(category => category.items);
@@ -486,7 +488,9 @@ function filterProducts(categoryKey) {
     }
 }
 
-// 3. Сортування
+
+        // SORTING
+
 function sortProducts(products, criteria) {
     switch (criteria) {
         case 'expensive-to-cheap':
