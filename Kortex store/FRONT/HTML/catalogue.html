@@ -172,42 +172,6 @@ if (productGrid) {
 }
 
 
-                               // PRODUCTS CREATING
-        fetch('products.json') // Вкажіть правильний шлях
-.then(response => {
-    console.log('Статус відповіді:', response.status); // Перевіряємо статус відповіді
-    return response.json();
-})
-.then(data => {
-    console.log('Завантажені дані:', data); // Вивід даних у консоль
-    const productGrid = document.querySelector('.product-grid'); // Знаходимо контейнер для товарів
-
-    if (!productGrid) {
-        console.error('Елемент .product-grid не знайдено!');
-        return;
-    }
-
-    data.forEach(category => {
-        category.items.forEach(item => {
-            const productCard = document.createElement('div');
-            productCard.classList.add('product-card');
-
-            productCard.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" class="product-image">
-                <div class="product-details">
-                    <p class="product-name">${item.name}</p>
-                    <p class="product-price">$${item.price}</p>
-                </div>
-                <a class="order-button" href="${item.link}">Замовити</a>
-            `;
-
-            productGrid.appendChild(productCard); // Додаємо карточку в сітку товарів
-        });
-    });
-})
-//.catch(error => console.error('Помилка завантаження JSON:', error));
-
-
                                          // MENUS + VISUAL
 
 
@@ -470,6 +434,9 @@ const jsonData = [
         ]
     }
 ];
+
+
+          // PRODUCTS CREATING
 
 // Функція для відображення продуктів
 function displayProducts(products) {
