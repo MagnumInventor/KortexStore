@@ -484,8 +484,8 @@ function displayProducts(products) {
                 <img src="${item.image}" alt="${item.name}" class="product-image">
                 <div class="product-details">
                     <p class="product-name">${item.name}</p>
-                    <p class="product-price">${item.price}</p>
-                    <p class="product-price">"Приблизний термін доставки: "${item.deliveryTime}" днів"</p>
+                    <p class="product-price">${item.price}$</p>
+                    <p class="product-shipping">Приблизний термін доставки: ${item.deliveryTime} днів</p>
                 </div>
                 <a class="order-button" href="${item.link}">Замовити</a>
             `;

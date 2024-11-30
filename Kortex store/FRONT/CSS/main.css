@@ -502,44 +502,43 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.left-arrow {
-    left: 10px;
-}
-
-.right-arrow {
-    right: 10px;
-}
-
 .product-info {
     max-width: 400px;
 }
 
-.product-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-family: "Montserrat";
-    font-weight: bold;
-}
+    .product-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: "Montserrat";
+        font-weight: bold;
+    }
 
-.product-description {
-    padding-bottom: 50px;
-}
+        .product-description {
+            padding-bottom: 50px;
+        }
 
-.product-description ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    font-family: "IBM Plex Mono";
-}
-.product-description p {
-    font-family: "IBM Plex Mono";
-}
+        .product-description ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-family: "IBM Plex Mono";
+        }
+        .product-description p {
+            font-family: "IBM Plex Mono";
+        }
 
-.product-price {
-    font-size: 22px;
-    font-family: "Montserrat";
+    .product-price {
+        font-size: 22px;
+        font-family: "Montserrat";
 
-    margin: 12.5px, 0;
-}
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .product-shipping {
+        font-size: 18px;
+        font-family: "Montserrat";
+
+        padding: 10px;
+    }
 
 .product-options {
     display: flex;
@@ -740,6 +739,7 @@ font-family: "IBM Plex Mono";
 .product-details {
     margin-top: 10px;
     margin-bottom: 15px;
+    gap: 15px;
 }
 
 .product-name, .product-price {
@@ -1143,5 +1143,6 @@ font-family: "IBM Plex Mono";
     .results-list li:hover {
         background: rgba(255, 255, 255, 0.2);
     }
+
 
         /* CATALOGUE */
