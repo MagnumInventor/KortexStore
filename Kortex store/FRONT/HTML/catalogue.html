@@ -189,34 +189,49 @@ if (productGrid) {
     const dropdownContent = document.getElementById ('dropdown-content');
     const dropdownBurgerContent = document.getElementById ('burger-menu-catalogue-content');
 
-    const buttonCheckmarkSorting = document.getElementById ('button-menu-catalogue-sorting');
-    const dropdownSorting = document.getElementById ('dropdown-sorting');
-    const dropdownBurgerSorting = document.getElementById ('burger-menu-catalogue-sorting');
-
     buttonCheckmark.addEventListener('click', () => {
 buttonCheckmark.classList.toggle('active');
 dropdownContent.classList.toggle('active');
 dropdownBurgerContent.classList.toggle('active');
 });
-    buttonCheckmarkSorting.addEventListener('click', () => {
-buttonCheckmarkSorting.classList.toggle('active');
-dropdownSorting.classList.toggle('active');
-dropdownBurgerSorting.classList.toggle('active');
+
+const buttonCheckmarkSorting = document.getElementById('button-menu-catalogue-sorting');
+const dropdownSorting = document.getElementById('dropdown-sorting');
+const dropdownBurgerSorting = document.getElementById('burger-menu-catalogue-sorting');
+
+// Відкриття/закриття меню при натисканні на кнопку
+buttonCheckmarkSorting.addEventListener('click', () => {
+    dropdownSorting.classList.toggle('active');
+    buttonCheckmarkSorting.classList.toggle('active'); 
+    dropdownBurgerSorting.classList.toggle('active');
 });
+
+// Логіка для кожної кнопки в меню
+const sortingButtons = document.querySelectorAll('.dropdown-sorting button');
+
+sortingButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Видаляємо клас active з усіх кнопок
+        sortingButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Додаємо клас active до натиснутої кнопки
+        button.classList.add('active');
+
+        // Додаткова логіка (наприклад, виклик функції сортування)
+        console.log(`Selected sorting: ${button.getAttribute('data-sort')}`);
+    });
+});
+
 
 //Closing option
 
     const closingOptionContent = document.getElementById ('dropdown-content')
-    const closingOptionSorting = document.getElementById ('dropdown-sorting')
 
     closingOptionContent.addEventListener('click', () => {
 dropdownContent.classList.remove('active');
 dropdownBurgerContent.classList.remove('active');
  });
-    closingOptionSorting.addEventListener('click', () => {
-dropdownSorting.classList.remove('active');
-dropdownBurgerSorting.classList.remove('active');
- });
+
 
 
     //CATALOGUE 
