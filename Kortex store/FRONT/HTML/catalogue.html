@@ -250,6 +250,132 @@ dropdownBurgerSorting.classList.remove('active');
 
     //CATALOGUE 
 
+// Глобальні дані продуктів
+const jsonData = [
+    {
+        "category": "Shoes",
+        "items": [
+            {
+                "name": "Nike TN (red)",
+                "price": 53.5,
+                "image": "Product/Shoes/DV7513001_8.jpg",
+                "link": "Product/Shoes/Shoes1.html",
+                "deliveryTime": 4
+            },
+            {
+                "name": "Adidas Sneakers",
+                "price": 75,
+                "image": "Product/Shoes/adidas-sneakers.jpg",
+                "link": "Product/Shoes/Shoes.html",
+                "deliveryTime": 30
+            }
+        ]
+    },
+    {
+        "category": "Headwear",
+        "items": [
+            {
+                "name": "Under Armour Cap",
+                "price": 25,
+                "image": "Product/Headwear/under-armour-cap.jpg",
+                "link": "Product/Headwear/UnderArmourCap.html",
+                "deliveryTime": 15
+            }
+        ]
+    }
+];
+
+// Функція для відображення продуктів
+function displayProducts(products) {
+    const productsSection = document.querySelector('.product-grid');
+    productsSection.innerHTML = ''; // Очистити попередні товари
+
+    if (products.length > 0) {
+        products.forEach(item => {
+            const productCard = document.createElement('div');
+            productCard.classList.add('product-card');
+            productCard.innerHTML = `
+                <img src="${item.image}" alt="${item.name}" class="product-image">
+                <div class="product-details">
+                    <p class="product-name">${item.name}</p>
+                    <p class="product-price">$${item.price}</p>
+                </div>
+                <a class="order-button" href="${item.link}">Замовити</a>
+            `;
+            productsSection.appendChild(productCard);
+        });
+    } else {
+        productsSection.innerHTML = '<p>No products found.</p>';
+    }
+}
+
+// 1. Пошук
+function searchProducts(query) {
+    const products = [];
+    jsonData.forEach(category => {
+        const filteredItems = category.items.filter(item =>
+            item.name.toLowerCase().includes(query.toLowerCase())
+        );
+        products.push(...filteredItems);
+    });
+    return products;
+}
+
+// 2. Фільтрація
+function filterProducts(categoryKey) {
+    if (categoryKey === 'all') {
+        const allProducts = jsonData.flatMap(category => category.items);
+        return allProducts;
+    } else {
+        const category = jsonData.find(cat => cat.category.toLowerCase() === categoryKey.toLowerCase());
+        return category ? category.items : [];
+    }
+}
+
+// 3. Сортування
+function sortProducts(products, criteria) {
+    switch (criteria) {
+        case 'expensive-to-cheap':
+            return products.sort((a, b) => b.price - a.price);
+        case 'cheap-to-expensive':
+            return products.sort((a, b) => a.price - b.price);
+        case 'shipping':
+            return products.sort((a, b) => a.deliveryTime - b.deliveryTime);
+        default:
+            return products;
+    }
+}
+
+// Обробка змін
+function handleUpdates({ query = '', category = 'all', sort = null }) {
+    let products = filterProducts(category); // Фільтрація
+    if (query) {
+        products = searchProducts(query); // Пошук
+    }
+    if (sort) {
+        products = sortProducts(products, sort); // Сортування
+    }
+    displayProducts(products);
+}
+
+// Події
+document.getElementById('search-button').addEventListener('click', () => {
+    const query = document.getElementById('search-input').value;
+    handleUpdates({ query });
+});
+
+document.getElementById('dropdown-content').addEventListener('click', event => {
+    const category = event.target.textContent.toLowerCase();
+    handleUpdates({ category });
+});
+
+document.getElementById('dropdown-sorting').addEventListener('click', event => {
+    const sort = event.target.textContent.replace(/\s/g, '-').toLowerCase();
+    handleUpdates({ sort });
+});
+
+// Завантаження всіх продуктів за замовчуванням
+window.onload = () => handleUpdates({});
 
 
 </script>
