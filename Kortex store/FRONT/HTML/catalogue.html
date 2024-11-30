@@ -491,18 +491,43 @@ function filterProducts(categoryKey) {
 
         // SORTING
 
-function sortProducts(products, criteria) {
+        function sortProducts(products, criteria) {
+    if (criteria === 'shipping') {
+        // Спочатку групуємо товари за часом доставки
+        let grouped = {};
+
+        // Групуємо товари за deliveryTime
+        products.forEach(product => {
+            const deliveryTime = product.deliveryTime;
+            if (!grouped[deliveryTime]) {
+                grouped[deliveryTime] = [];
+            }
+            grouped[deliveryTime].push(product);
+        });
+
+        // Тепер створюємо масив з групами, відсортованими за часом доставки
+        let sortedGroups = Object.keys(grouped).sort((a, b) => a - b);
+        
+        // Повертаємо відсортований список товарів
+        let sortedProducts = [];
+        sortedGroups.forEach(deliveryTime => {
+            sortedProducts = sortedProducts.concat(grouped[deliveryTime]);
+        });
+
+        return sortedProducts;
+    }
+
+    // Інші критерії сортування залишаються такими ж
     switch (criteria) {
         case 'expensive-to-cheap':
             return products.sort((a, b) => b.price - a.price);
         case 'cheap-to-expensive':
             return products.sort((a, b) => a.price - b.price);
-        case 'shipping':
-            return products.sort((a, b) => a.deliveryTime - b.deliveryTime);
         default:
             return products;
     }
 }
+
 
 // Обробка змін
 function handleUpdates({ query = '', category = 'all', sort = null }) {
