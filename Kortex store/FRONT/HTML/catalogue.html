@@ -407,9 +407,12 @@ document.getElementById('dropdown-content').addEventListener('click', event => {
     handleUpdates({ category });
 });
 
+// Слухач подій для сортування
 document.getElementById('dropdown-sorting').addEventListener('click', event => {
-    const sort = event.target.textContent.replace(/\s/g, '-').toLowerCase();
-    handleUpdates({ sort });
+    if (event.target.tagName === 'BUTTON') {
+        const sort = event.target.getAttribute('data-sort'); // Отримуємо критерій з атрибута
+        handleUpdates({ sort }); // Викликаємо оновлення з критерієм сортування
+    }
 });
 
 // Завантаження всіх продуктів за замовчуванням
