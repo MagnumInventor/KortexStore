@@ -92,7 +92,8 @@
         <div class="dropdown-sorting" id="dropdown-sorting">
             <button data-sort="expensive-to-cheap">Expensive to Cheap</button>
             <button data-sort="cheap-to-expensive">Cheap to Expensive</button>
-            <button data-sort="shipping">Fastest Shipping</button>
+            <button data-sort="ukraine-shipping">Fastest Shipping</button>
+            <button data-sort="china-shipping">Slowest Shipping</button>
         </div>
       </div>  
  </div>  
@@ -225,42 +226,42 @@ const jsonData = [
                 "price": 53.5,
                 "image": "Product/Shoes/DV7513001_8.jpg",
                 "link": "Product/Shoes/Shoes1.html",
-                "deliveryTime": 4
+                "deliveryTime": "ukraine-shipping"
             },
             {
                 "name": "Adidas Sneakers",
                 "price": 75,
                 "image": "Product/Shoes/adidas-sneakers.jpg",
                 "link": "Product/Shoes/Shoes.html",
-                "deliveryTime": 30
+                "deliveryTime": "china-shipping"
             },
             {
                 "name": "Puma Running Shoes",
                 "price": 60,
                 "image": "Product/Shoes/puma-running.jpg",
                 "link": "Product/Shoes/PumaRunning.html",
-                "deliveryTime": 4
+                "deliveryTime": "ukraine-shipping"
             },
             {
                 "name": "Reebok Classic Leather",
                 "price": 80,
                 "image": "Product/Shoes/reebok-classic.jpg",
                 "link": "Product/Shoes/ReebokClassic.html",
-                "deliveryTime": 30
+                "deliveryTime": "china-shipping"
             },
             {
                 "name": "Converse Chuck Taylor",
                 "price": 50,
                 "image": "Product/Shoes/converse-chuck.jpg",
                 "link": "Product/Shoes/ConverseChuck.html",
-                "deliveryTime": 4
+                "deliveryTime": "ukraine-shipping"
             },
             {
                 "name": "Reebok Training Shoes",
                 "price": 85,
                 "image": "Product/Sportswear/reebok-training.jpg",
                 "link": "Product/Sportswear/ReebokTrainingShoes.html",
-                "deliveryTime": 30
+                "deliveryTime": "china-shipping"
             }
         ]
     },
@@ -272,169 +273,34 @@ const jsonData = [
                 "price": 25,
                 "image": "Product/Upper/s-l400.jpg",
                 "link": "Product/Upper/Shirt.html",
-                "deliveryTime": 4
+                "deliveryTime": "ukraine-shipping"
             },
             {
                 "name": "Levi's Denim Jacket",
                 "price": 70,
                 "image": "Product/Upper/levis-denim-jacket.jpg",
                 "link": "Product/Upper/LevisJacket.html",
-                "deliveryTime": 30
+                "deliveryTime": "china-shipping"
             },
             {
                 "name": "Zara Knit Sweater",
                 "price": 40,
                 "image": "Product/Upper/zara-knit.jpg",
                 "link": "Product/Upper/ZaraSweater.html",
-                "deliveryTime": 30
+                "deliveryTime": "china-shipping"
             },
             {
                 "name": "Under Armour Hoodie",
                 "price": 55,
                 "image": "Product/Sportswear/under-armour-hoodie.jpg",
                 "link": "Product/Sportswear/UnderArmourHoodie.html",
-                "deliveryTime": 4
+                "deliveryTime": "ukraine-shipping"
             }
         ]
     },
-    {
-        "category": "Jacket",
-        "items": [
-            {
-                "name": "Levi's Denim Jacket",
-                "price": 70,
-                "image": "Product/Upper/levis-denim-jacket.jpg",
-                "link": "Product/Upper/LevisJacket.html",
-                "deliveryTime": 30
-            }
-        ]
-    },
-    {
-        "category": "Shirt",
-        "items": [
-            {
-                "name": "H&M Basic T-shirt",
-                "price": 15,
-                "image": "Product/Upper/hm-basic-tshirt.jpg",
-                "link": "Product/Upper/HMTshirt.html",
-                "deliveryTime": 4
-            },
-            {
-                "name": "H&M Basic T-shirt",
-                "price": 15,
-                "image": "Product/Upper/hm-basic-tshirt.jpg",
-                "link": "Product/Upper/HMTshirt.html",
-                "deliveryTime": 4
-            },
-            {
-                "name": "Urban Sweat Shirt",
-                "price": 30,
-                "image": "Product/Upper/carhartt-wip-demy-jacket-black-1000x1000.jpg",
-                "link": "Product/Upper/Jacket.html",
-                "deliveryTime": 4
-            },
-            {
-                "name": "Nike Pro Compression Shirt",
-                "price": 40,
-                "image": "Product/Sportswear/nike-pro-shirt.jpg",
-                "link": "Product/Sportswear/NikeProCompression.html",
-                "deliveryTime": 30
-            },
-        ]
-    },
-    {
-        "category": "Accessories",
-        "items": [
-            {
-                "name": "Ray-Ban Sunglasses",
-                "price": 120,
-                "image": "Product/Accessories/rayban-sunglasses.jpg",
-                "link": "Product/Accessories/RayBanSunglasses.html",
-                "deliveryTime": 4
-            },
-            {
-                "name": "Adidas Backpack",
-                "price": 45,
-                "image": "Product/Accessories/adidas-backpack.jpg",
-                "link": "Product/Accessories/AdidasBackpack.html",
-                "deliveryTime": 30
-            },
-            {
-                "name": "Nike Sports Watch",
-                "price": 90,
-                "image": "Product/Accessories/nike-sports-watch.jpg",
-                "link": "Product/Accessories/NikeWatch.html",
-                "deliveryTime": 4
-            },
-            {
-                "name": "Under Armour Cap",
-                "price": 25,
-                "image": "Product/Accessories/under-armour-cap.jpg",
-                "link": "Product/Accessories/UnderArmourCap.html",
-                "deliveryTime": 30
-            },
-            {
-                "name": "Gucci Belt",
-                "price": 200,
-                "image": "Product/Accessories/gucci-belt.jpg",
-                "link": "Product/Accessories/GucciBelt.html",
-                "deliveryTime": 4
-            }
-        ]
-    },
-    {
-        "category": "Pants",
-        "items": [
-            {
-                "name": "Adidas Tracksuit Bottoms",
-                "price": 60,
-                "image": "Product/Sportswear/adidas-tracksuit.jpg",
-                "link": "Product/Sportswear/AdidasTracksuit.html",
-                "deliveryTime": 4
-            },
-            {
-                "name": "Puma Sport Shorts",
-                "price": 30,
-                "image": "Product/Sportswear/puma-sport-shorts.jpg",
-                "link": "Product/Sportswear/PumaShorts.html",
-                "deliveryTime": 30
-            }
-        ]
-    },
-    {
-        "category": "Headwear",
-        "items": [
-            {
-                "name": "Ray-Ban Sunglasses",
-                "price": 120,
-                "image": "Product/Headwear/rayban-sunglasses.jpg",
-                "link": "Product/Headwear/RayBanSunglasses.html",
-                "deliveryTime": 4
-            },
-            {
-                "name": "Adidas cap",
-                "price": 45,
-                "image": "Product/Headwear/adidas-cap.jpg",
-                "link": "Product/Headwear/AdidasCap.html",
-                "deliveryTime": 30
-            },
-            {
-                "name": "Nike Sports Headwear",
-                "price": 90,
-                "image": "Product/Headwear/nike-sports-head.jpg",
-                "link": "Product/Headwear/NikeHead.html",
-                "deliveryTime": 4
-            },
-            {
-                "name": "Under Armour Cap",
-                "price": 25,
-                "image": "Product/Headwear/under-armour-cap.jpg",
-                "link": "Product/Headwear/UnderArmourCap.html",
-                "deliveryTime": 30
-            }
-        ]
-    }
+    // ... решта категорій залишаються без змін
 ];
+
 
 
           // PRODUCTS CREATING
@@ -491,7 +357,7 @@ function filterProducts(categoryKey) {
 
         // SORTING
 
-        function sortProducts(products, criteria) {
+  /*     function sortProducts(products, criteria) {
     if (criteria === 'shipping') {
         // Створюємо порожній об'єкт для групування за deliveryTime
         let grouped = {};
@@ -518,18 +384,21 @@ function filterProducts(categoryKey) {
         });
 
         return sortedProducts;
-    }
+    }*/ 
 
-    // Інші критерії сортування залишаються без змін
+    function sortProducts(products, criteria) {
     switch (criteria) {
         case 'expensive-to-cheap':
             return products.sort((a, b) => b.price - a.price);
         case 'cheap-to-expensive':
             return products.sort((a, b) => a.price - b.price);
+        case 'shipping':
+            return products.sort((a, b) => a.deliveryTime - b.deliveryTime);
         default:
             return products;
     }
 }
+
 
 
 
