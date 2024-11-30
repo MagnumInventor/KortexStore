@@ -1049,17 +1049,9 @@ font-family: "IBM Plex Mono";
                             background: linear-gradient(145deg, #2a4238, #121c1a);
                             border-radius: 10px;
 
-                            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
-                            min-width: 160px;
-                            z-index: 1;
-                        }
-                        .dropdown-sorting {
-                            display: none;
-                            position: absolute;
-                            top: 100%; /* Відразу під кнопкою */
-
-                            background: linear-gradient(145deg, #2a4238, #121c1a);
-                            border-radius: 10px;
+                            font-size: 17px;
+                            font-weight: 400;
+                            font-family: "Kanit";
 
                             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
                             min-width: 160px;
@@ -1085,12 +1077,18 @@ font-family: "IBM Plex Mono";
     .dropdown-sorting button {
         display: block;
         width: 100%;
+
+        font-size: 17px;
+        font-weight: 400;
+        font-family: "Kanit";
+
         margin-bottom: 5px;
         padding: 10px;
-        background: #fff;
-        color: #333;
-        border: 1px solid #ddd;
-        border-radius: 5px;
+
+        background: linear-gradient(145deg, #2a4238, #121c1a);
+        color: #deebe3;
+        border: 2px solid #ddd;
+        border-radius: 10px;
         cursor: pointer;
         transition: 0.3s;
     }
@@ -1098,10 +1096,9 @@ font-family: "IBM Plex Mono";
     /* Зміна стилю активних кнопок */
     .dropdown-sorting button:hover,
     .dropdown-sorting button.active {
-        background-color: #28a745;
+        background: rgb(62, 204, 157);
         color: #fff;
-        border-color: #218838;
-        font-weight: bold;
+        border-color: rgb(62, 204, 157);
     }
 
     /* Відображення випадаючого меню */
@@ -1119,21 +1116,16 @@ font-family: "IBM Plex Mono";
                             border-radius: 10px;
                             transition: background-color 0.3s ease;
                         }
-                        .dropdown-sorting a {
-                            color: #fff;
-                            padding: 12px 16px;
-                            text-decoration: none;
-                            display: block;
-
-                            border-radius: 10px;
-                            transition: background-color 0.3s ease;
-                        }
                         
                         .dropdown-content a:hover {
                             background-color: rgb(62, 204, 157);
                         }
                         .dropdown-content.active {
                             display: block;
+                            
+        color: #deebe3;
+        border: 2px solid #ddd;
+        border-radius: 10px;
                         } 
                         
 
