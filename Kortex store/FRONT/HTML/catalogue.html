@@ -493,7 +493,7 @@ function filterProducts(categoryKey) {
 
         function sortProducts(products, criteria) {
     if (criteria === 'shipping') {
-        // Спочатку групуємо товари за часом доставки
+        // Створюємо порожній об'єкт для групування за deliveryTime
         let grouped = {};
 
         // Групуємо товари за deliveryTime
@@ -505,19 +505,22 @@ function filterProducts(categoryKey) {
             grouped[deliveryTime].push(product);
         });
 
-        // Тепер створюємо масив з групами, відсортованими за часом доставки
-        let sortedGroups = Object.keys(grouped).sort((a, b) => a - b);
-        
-        // Повертаємо відсортований список товарів
+        // Тепер створюємо масив з групами, відсортованими за deliveryTime
         let sortedProducts = [];
-        sortedGroups.forEach(deliveryTime => {
+        
+        // Отримуємо всі можливі значення deliveryTime і сортуємо їх
+        let deliveryTimes = Object.keys(grouped).map(Number).sort((a, b) => a - b);
+        
+        // Проходимо по кожному часу доставки і додаємо відповідні товари до sortedProducts
+        deliveryTimes.forEach(deliveryTime => {
+            // Додаємо всі товари для цього часу доставки
             sortedProducts = sortedProducts.concat(grouped[deliveryTime]);
         });
 
         return sortedProducts;
     }
 
-    // Інші критерії сортування залишаються такими ж
+    // Інші критерії сортування залишаються без змін
     switch (criteria) {
         case 'expensive-to-cheap':
             return products.sort((a, b) => b.price - a.price);
@@ -527,6 +530,7 @@ function filterProducts(categoryKey) {
             return products;
     }
 }
+
 
 
 // Обробка змін
