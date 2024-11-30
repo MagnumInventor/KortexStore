@@ -98,6 +98,12 @@
       </div>  
  </div>  
 
+<div class="dropdown-ret">
+    <div class="button-return">
+        <button class="dropdown-button-return" id="reset-filters">Return</button>
+    </div>  
+ </div> 
+
 </main>
     <!-- RECOMENDED -->
 
@@ -418,6 +424,9 @@ document.getElementById('dropdown-sorting').addEventListener('click', event => {
 // Завантаження всіх продуктів за замовчуванням
 window.onload = () => handleUpdates({});
 
+document.getElementById('reset-filters').addEventListener('click', () => {
+    renderProducts(flatProductList); // Скидаємо фільтри
+});
 
 </script>
 
