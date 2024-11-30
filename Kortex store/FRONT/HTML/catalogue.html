@@ -357,47 +357,29 @@ function filterProducts(categoryKey) {
 
         // SORTING
 
-  /*     function sortProducts(products, criteria) {
-    if (criteria === 'shipping') {
-        // Створюємо порожній об'єкт для групування за deliveryTime
-        let grouped = {};
-
-        // Групуємо товари за deliveryTime
-        products.forEach(product => {
-            const deliveryTime = product.deliveryTime;
-            if (!grouped[deliveryTime]) {
-                grouped[deliveryTime] = [];
-            }
-            grouped[deliveryTime].push(product);
-        });
-
-        // Тепер створюємо масив з групами, відсортованими за deliveryTime
-        let sortedProducts = [];
-        
-        // Отримуємо всі можливі значення deliveryTime і сортуємо їх
-        let deliveryTimes = Object.keys(grouped).map(Number).sort((a, b) => a - b);
-        
-        // Проходимо по кожному часу доставки і додаємо відповідні товари до sortedProducts
-        deliveryTimes.forEach(deliveryTime => {
-            // Додаємо всі товари для цього часу доставки
-            sortedProducts = sortedProducts.concat(grouped[deliveryTime]);
-        });
-
-        return sortedProducts;
-    }*/ 
-
-    function sortProducts(products, criteria) {
+        function sortProducts(products, criteria) {
     switch (criteria) {
         case 'expensive-to-cheap':
             return products.sort((a, b) => b.price - a.price);
         case 'cheap-to-expensive':
             return products.sort((a, b) => a.price - b.price);
-        case 'shipping':
-            return products.sort((a, b) => a.deliveryTime - b.deliveryTime);
+        case 'ukraine-shipping': // Сортування по Україні (найшвидша доставка)
+            return products.sort((a, b) => {
+                if (a.deliveryTime === 'ukraine-shipping' && b.deliveryTime !== 'ukraine-shipping') return -1;
+                if (a.deliveryTime !== 'ukraine-shipping' && b.deliveryTime === 'ukraine-shipping') return 1;
+                return 0;
+            });
+        case 'china-shipping': // Сортування по Китаю (повільніша доставка)
+            return products.sort((a, b) => {
+                if (a.deliveryTime === 'china-shipping' && b.deliveryTime !== 'china-shipping') return -1;
+                if (a.deliveryTime !== 'china-shipping' && b.deliveryTime === 'china-shipping') return 1;
+                return 0;
+            });
         default:
             return products;
     }
 }
+
 
 
 
