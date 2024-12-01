@@ -40,6 +40,13 @@ header {
 
     background-color: #2f3030;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+top: 0;
+left: 0;
+z-index: 1000;
+transition: transform 0.3s ease-in-out;
+}
+header.hidden {
+    transform: translateY(-100%);
 }
   
 .container {

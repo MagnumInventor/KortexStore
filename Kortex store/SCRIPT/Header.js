@@ -18,19 +18,23 @@ burgerMenu.classList.toggle('active');
 
 // SCROLL HEADER
 
-let lastScrollY = 0;
-const header = document.getElementById('header');
+// Отримуємо хедер
+const header = document.querySelector("header");
 
-window.addEventListener('scroll', () => {
-  const currentScrollY = window.scrollY;
+let lastScrollPosition = 0; // Зберігаємо останню позицію скролу
 
-  if (currentScrollY > lastScrollY) {
-    // Скрол вниз — ховаємо хедер
-    header.classList.add('hidden');
-  } else {
-    // Скрол вверх — показуємо хедер
-    header.classList.remove('hidden');
-  }
+window.addEventListener("scroll", () => {
+    const currentScrollPosition = window.pageYOffset; // Поточна позиція скролу
 
-  lastScrollY = currentScrollY;
+    if (currentScrollPosition > lastScrollPosition) {
+        // Скрол вниз - ховаємо хедер
+        header.classList.add("hidden");
+    } else {
+        // Скрол вверх - показуємо хедер
+        header.classList.remove("hidden");
+    }
+
+    // Оновлюємо останню позицію скролу
+    lastScrollPosition = currentScrollPosition;
 });
+
