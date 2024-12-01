@@ -318,12 +318,6 @@ nav ul li a:hover {
 
         background-color: #242724;
         border-radius: 10px;
-
-        margin-top: 20px;
-        margin-bottom: 20px;
-
-        padding-left: 30px;
-        padding-right: 30px;
     }
     
     .banner-content {
@@ -671,13 +665,17 @@ font-family: "IBM Plex Mono";
 
             margin-top: 20px;
             margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+        border-radius: 15px;
 
             color: #fff;
+            background-color: #181818;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
         }
 
     .section-title {
         width: 100%;
-        background-color: #2f3030;
 
         font-size: 2.5rem;
         color: rgb(241, 247, 243);
