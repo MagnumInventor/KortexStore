@@ -733,6 +733,7 @@ font-family: "IBM Plex Mono";
     @media (max-width: 768px) {
         .product-grid {
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Відображення 1-2 товарів в рядку */
+            display:list-item;
         }
     }
     
