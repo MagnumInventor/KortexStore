@@ -329,9 +329,10 @@ nav ul li a:hover {
     justify-content: center;
 
     height: 75vh;
+    font-size: 24px;
 
-    color: #fff;
-    background-color: #303331;
+    color: #1b1b1b;
+    background-color: #e7eeea;
 }
 
         .product-gallery {
@@ -374,7 +375,7 @@ nav ul li a:hover {
 }
 
     .product-title {
-        font-size: 24px;
+        font-size: 32px;
         margin-bottom: 10px;
         font-family: "Montserrat";
         font-weight: bold;
@@ -394,7 +395,7 @@ nav ul li a:hover {
         }
 
     .product-price {
-        font-size: 22px;
+        font-size: 30px;
         font-family: "Montserrat";
 
         margin-top: 10px;
