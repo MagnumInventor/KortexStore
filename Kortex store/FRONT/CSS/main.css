@@ -41,6 +41,7 @@ header {
     background-color: #2f3030;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
+  
 .container {
   max-width: 1200px;
   margin: 0 auto;
