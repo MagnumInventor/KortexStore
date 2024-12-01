@@ -71,7 +71,7 @@
           <img src="carhartt-wip-demy-jacket-black-3-1000x1000.png" alt="Thumbnail 4" class="thumbnail" onclick="changeImage('carhartt-wip-demy-jacket-black-3-1000x1000.png')" />
         </div>
         <div class="main-image-container">
-          <img id="mainImage" src="img1.jpg" alt="Main Image" />
+          <img id="mainImage" src="carhartt-wip-demy-jacket-black-1000x1000.jpg" alt="Main Image" />
         </div>
       </div>      
 
@@ -92,15 +92,15 @@
             </ul>
         </div>
         
-        <div class="color-options">
-            <label>Колір:</label>
-            <button class="black"></button>
-            <button class="grey"></button>
-            <button class="white"></button>
-        </div>
+            <div class="color-selection">
+        <label>Колір</label>
+            <div class="color-btn" style="background-color: #000;" onclick="changeColor('#000')"></div>
+            <div class="color-btn" style="background-color: #800000;" onclick="changeColor('#800000')"></div>
+            <div class="color-btn" style="background-color: #FFA500;" onclick="changeColor('#FFA500')"></div>
+            </div> 
 
             <div class="size-options">
-                <label>Розмір:</label>
+        <label>Розмір</label>
                 <button class="size-btn">28</button>
                 <button class="size-btn">32</button>
                 <button class="size-btn">36</button>
