@@ -36,11 +36,19 @@
 
     <!-- Main Banner -->
 <div class="product-container">
-    <div class="image-gallery">
-        <button class="arrow-btn left-arrow">&lt;</button>
-        <img src="carhartt-wip-demy-jacket-black-1000x1000.jpg" alt="Product Image" class="product-image">
-        <button class="arrow-btn right-arrow">&gt;</button>
-    </div>
+
+    <div class="product-gallery">
+        <div class="thumbnail-container">
+          <img src="thumb1.jpg" alt="Thumbnail 1" class="thumbnail" onclick="changeImage('img1.jpg')" />
+          <img src="thumb2.jpg" alt="Thumbnail 2" class="thumbnail" onclick="changeImage('img2.jpg')" />
+          <img src="thumb3.jpg" alt="Thumbnail 3" class="thumbnail" onclick="changeImage('img3.jpg')" />
+          <img src="thumb4.jpg" alt="Thumbnail 4" class="thumbnail" onclick="changeImage('img4.jpg')" />
+        </div>
+        <div class="main-image-container">
+          <img id="mainImage" src="img1.jpg" alt="Main Image" />
+        </div>
+      </div>      
+
     
     <div class="product-info">
         <h1 class="product-title">Carhart Jacket</h1>
