@@ -432,9 +432,10 @@ nav ul li a:hover {
   }
   
   .color-btn {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     border: 2px solid transparent;
@@ -444,11 +445,11 @@ nav ul li a:hover {
     border: 2px solid #333;
   }  
 
-  
+
     .size-btn {
         background-color: #333;
         color: #fff;
-        font-size: 15px;
+        font-size: 18px;
         font-family: "Kanit";
 
         padding: 5px 10px;
@@ -468,6 +469,9 @@ nav ul li a:hover {
     
         font-family: "Montserrat";
     }
+    .size-btn:hover {
+        border: 2px solid #333;
+      }
 
 .order-btn {
     background-color: #f1f1f1;
