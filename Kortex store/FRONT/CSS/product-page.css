@@ -1,0 +1,1221 @@
+/*BODY ETC.*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kanit";
+    background-color: rgb(41, 41, 41);
+    color: rgb(228, 235, 232);
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    overflow-x: hidden; /* Приховуємо горизонтальну прокрутку */
+}
+.secondary-body {
+    font-family: "Kanit";
+    background-image: linear-gradient(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
+    color: rgb(228, 235, 232);
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    overflow-x: hidden; /* Приховуємо горизонтальну прокрутку */
+    display: block;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 60px;
+
+    background-color: #2f3030;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+.h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: "Montserrat";
+}
+
+a img {
+    transition: transform 0.3s ease;
+}
+
+a img:hover {
+    transform: scale(1.1); /* Збільшує зображення при наведенні */
+}
+
+.nav-points {
+    display: inline;
+}
+
+.nav-text-bef, .nav-text-mid, .nav-text-aft {
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    font-size: 20px;
+    font-weight: 499;
+    font-family: "Rethink Sans";
+
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.nav-text-aft:hover, .nav-text-mid:hover, .nav-text-bef:hover {
+    border-bottom: 2px solid rgba(65, 107, 82, 1); /* Колір підкреслення при наведенні */
+}
+
+nav {
+    background-color: transparent; /* Фон навігації залишається прозорим */
+    
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Задаємо ширину 100% для навігації */
+    justify-content: space-between; /* Вирівнюємо елементи */
+}
+
+nav ul li {
+    margin: 0; /* Прибрано зовнішні відступи */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(221, 230, 221);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    padding: 20px 15px; /* Внутрішні відступи для всього меню */
+    background-color: rgba(90, 99, 94, 0.5); /* Напівпрозорий зелений фон */
+    transition: background-color 0.3s, color 0.3s; /* Плавний перехід */
+
+    display: flex;
+    align-items: center;
+    height: 60px; /* Висота посилань для вирівнювання */
+}
+
+nav ul li a:hover {
+    background-color: rgb(50, 85, 63); /* Непрозорий зелений фон */
+    color: rgb(33, 34, 34); /* Текст змінюється на чорний при наведенні */
+}
+
+.social-icons {
+    display: inherit;
+    margin-left: 75px;
+    margin-right: 10px;
+    padding-top: 3.75px;
+
+    gap: 25px;
+}
+
+.header-content {
+    font-family: "Kanit";
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 15px;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: "Kanit";
+    font-weight: 400;
+
+    padding-top: 8.5px;
+    margin-left: 25px;
+
+    text-decoration: none;
+    color: #e9f0eb;  /* Колір самого тексту */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5),    /* Легке світіння */
+        0 0 10px rgba(255, 255, 255, 0.5),   /* Більше світіння */
+        0 0 15px rgba(255, 255, 255, 0.5),   /* Ще більше світіння */
+        0 0 20px rgba(255, 255, 255, 0.5);   /* Найсильніше світіння */
+    animation: glow 1.5s ease-in-out infinite; /* Анімація для пульсуючого ефекту */
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5); }
+    50% { text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.6); }
+    100% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5); }
+}
+
+.black-line {
+    background-color: transparent;
+}
+
+.burger-menu {
+    display: none;
+    margin-right: 20px;
+    margin-top: 15px;
+
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #dae7e2;
+    transition: all 0.3s ease;
+}
+
+/* MEDIA REQUEST */
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; /* Робимо header вертикальним на малих екранах */
+        width: 100%;
+        height: fit-content;
+    }
+
+        .header-content {
+            width: 100%;
+        }
+    .logo {
+        margin-left: 30px;
+    }
+    .burger-menu {
+        display: flex;
+    }
+
+    .logo {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    nav {
+        display: none;
+    }
+            nav.active {
+                display: flex;
+            }
+
+    nav ul {
+        display: flex;
+        flex-direction: grid; 
+        width: auto; /* Ширина ul займає 100% доступної ширини */
+    }
+
+    nav ul li {
+        width: 100%; /* Кожен елемент li займає 100% ширини контейнера */
+        display: block; /* Робимо li блочним елементом */
+    }
+
+    nav ul li a {
+        display: block; /* Перетворюємо a на блочний елемент */
+        width: 100%; /* Ширина кожного посилання також 100% */
+       
+        text-align: center; /* Текст по центру */
+        background-color: inherit; /* Зберігаємо фон li */
+
+        background-color: rgba(90, 99, 94, 0.2.5); /* Напівпрозорий зелений фон */
+        transition: background-color 0.3s, color 0.3s; /* Плавний перехід */
+    }
+        nav ul li a:hover {
+            background-color: rgb(50, 85, 63); /* Непрозорий зелений фон */
+            color: rgb(33, 34, 34); /* Текст змінюється на чорний при наведенні */
+        }
+
+    .nav-points {
+        display: none;
+    }
+            .nav-points.active {
+                display: grid;
+                justify-content: center;
+                text-align: center;
+        
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 100%; /* Займає всю доступну ширину */
+                max-width: none; /* Забираємо max-width, щоб не обмежувати ширину */
+            }
+
+    .social-icons {
+        display: none;
+    }
+
+    .black-line {
+        background-color: transparent;
+    }
+        .black-line.active {
+            background-color: #a1ada8;
+            height: 3px;
+            width: 100%;
+
+            margin: 0%;
+            padding: 0%;
+
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+    .burger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .burger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    /*MAIN SECTION*/
+
+    .sale-banner {
+        font-size: 18px; /* Зменшуємо розмір шрифта на малих екранах */
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px; /* Розміщуємо продукти в сітці */
+    }
+
+    .product {
+        text-align: center;
+    }
+}
+
+/* MEDIA REQUEST */
+
+    /* MAIN SECTION */
+
+    .main-banner {
+        width: 100%;
+        height: 40vh;
+
+        background-color: #242724;
+        border-radius: 10px;
+    }
+    
+    .banner-content {
+        max-height: 600px;
+        max-width: 2000px;
+
+        width: 100%;
+        height: 100%;
+
+        background-image: linear-gradient(90deg, rgba(93, 129, 125, 1), rgba(65, 107, 82, 1) 50%, rgba(27, 42, 31, 1));
+
+        text-align: center;
+        font-family: "Dela Gothic One";
+
+        border-radius: 7.5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .main-banner h1 {
+        font-weight: 700;
+        font-size: 3rem;
+        
+        color: white;
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    }
+    
+    .brands {
+        margin-top: 10px;
+        height: 50px;
+        width: 50px;
+
+        display: inline;
+    }
+
+
+
+
+    /* Sale Section */
+
+    .sale-section {
+        width: 100%;
+        background: linear-gradient(#2f3030, rgba(65, 107, 82, 1));
+
+        padding: 0px 20px;
+        padding-bottom: 20px;
+
+        text-align: center;
+        flex-wrap: wrap;
+        justify-items: center;
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .sale-banner {
+        width: 100%;
+        background-color: #2f3030;
+
+        font-size: 3rem;
+        color: rgb(241, 247, 243);
+        text-align: center;
+        font-family: "Montserrat";
+
+        width: auto; 
+        height: auto;
+        padding: 7.5px;
+
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    }
+    .sale-banner-other {
+        width: 100%;
+        background: linear-gradient(rgb(47, 48, 48, 0), #2f3030);
+
+        width: auto;
+        height: 40px;
+        padding-top: 7.5px;
+    }
+
+    .products {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+
+        max-width: 1200px;
+        flex: 1;
+        flex-wrap: wrap;
+
+        gap: 20px; /* Відступи між продуктами */
+        
+    }
+
+
+    .product {
+        display: flex;
+        flex: 1 1 300px;
+
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+
+        border-radius: 10px;
+        border: 3px solid #3b3d3c;
+        background-color: #181818;
+        box-shadow: 0px -5px 25px rgba(0, 0, 0, 0.4);
+
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        border: 1px solid rgba(102, 255, 204, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .product {
+        box-shadow: 0px 4px 15px rgba(102, 255, 204, 0.6);
+    }
+    
+    .product img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+
+        border-radius: 5px;
+        margin-bottom: 15px; /* Відступ між зображенням і текстом */
+    }
+    
+    .price {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: whitesmoke;
+
+        padding: 10px;
+        margin-bottom: 10px; /* Відступ перед кнопкою */
+    }
+
+    .discount {
+        color: red;
+
+        font-size: 1.1rem;
+
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+
+
+                        /* ITEMS PAGE */
+
+            .product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+}
+
+.image-gallery {
+    position: relative;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.product-image {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.arrow-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.product-info {
+    max-width: 400px;
+}
+
+    .product-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: "Montserrat";
+        font-weight: bold;
+    }
+
+        .product-description {
+            padding-bottom: 50px;
+        }
+
+        .product-description ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-family: "IBM Plex Mono";
+        }
+        .product-description p {
+            font-family: "IBM Plex Mono";
+        }
+
+    .product-price {
+        font-size: 22px;
+        font-family: "Montserrat";
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .product-shipping {
+        font-size: 18px;
+        font-family: "Montserrat";
+
+        padding: 10px;
+    }
+
+.product-options {
+    display: flex;
+    display: block;
+
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.color-options, .size-options {
+    display: flex;
+    align-items: center;
+
+    margin-right: 20px;
+    padding-bottom: 10px;
+
+    font-family: "Montserrat";
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.blue { background-color: blue; }
+.green { background-color: green; }
+.red { background-color: red; }
+.orange { background-color: orange; }
+.black { background-color: rgb(19, 19, 19); }
+.grey { background-color: grey; }
+.white { background-color: white; }
+
+.size-btn {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.order-btn {
+    background-color: #f1f1f1;
+    color: #333;
+    border: inset;
+    padding: 10px 20px;
+    margin: 1px 0;
+    border-radius: 10px;
+
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: bold;
+
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #888;
+    font-size: larger;
+}
+
+                        /* ITEMS PAGE */
+
+    /* FOOTER */
+
+footer {
+background-color: rgb(41, 41, 41);
+
+padding: 20px;
+text-align: center;
+border-top: 2px solid #ddd;
+    width: auto;
+
+font-family: "Nova Flat";
+}
+
+footer h3 {
+margin-bottom: 10px;
+color: #e4ebe7;
+font-family: "IBM Plex Mono";
+}
+
+footer p {
+margin: 5px 0;
+color: #666;
+}
+
+footer a {
+color: #ffffff;
+text-decoration: none;
+margin: 0 10px;
+}
+footer a:hover {
+text-decoration: underline;
+}
+
+footer .footer-links {
+font-family: "IBM Plex Mono";
+margin-top: 15px;
+}
+
+footer .copyright {
+margin-top: 20px;
+font-size: 14px;
+color: #888;
+font-family: "IBM Plex Mono";
+}
+
+
+
+                /* STOCK */
+                
+        .products-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+        border-radius: 15px;
+
+            color: #fff;
+            background-color: #181818;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+        }
+
+    .section-title {
+        width: 100%;
+
+        font-size: 2.5rem;
+        color: rgb(241, 247, 243);
+        text-align: center;
+        font-family: "Montserrat";
+        font-weight: 450;
+
+        width: auto;
+        height: auto;
+        padding: 7.5px;
+
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Автоматичне створення колонок */
+        
+        gap: 15px; /* Відстань між картками */
+        padding: 15px; /* Відступи з усіх боків */
+        max-width: 1200px; /* Максимальна ширина сітки */
+        margin: 0 auto; /* Центруємо сітку */
+    }
+    
+    .product-card {
+        background-color: #1a1a1a;
+        border: 2px solid #161616;
+        border-radius: 8px;
+
+        padding: 20px;
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .product-card img {
+        width: 100%; /* Забезпечуємо, щоб картинка займала всю ширину картки */
+        height: auto;
+    }
+    
+    /* Для меншого екрану, наприклад, мобільних пристроїв */
+    @media (max-width: 768px) {
+        .product-grid {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Відображення 1-2 товарів в рядку */
+        }
+    }
+    
+
+.product-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.product-name, .product-price {
+    margin: 0;
+}
+
+.order-button {
+    background-color: transparent;
+    border: 2px solid #e4e4e4;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff;
+    
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 19px;
+
+    text-decoration: none; /* Прибрати підкреслення */
+    display: flex; /* Встановити flex-контейнер */
+    align-items: center; /* Вирівнювання по вертикалі */
+    justify-content: center; /* Вирівнювання по горизонталі */
+
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+
+    /* Фіксована ширина для кнопки */
+    width: 200px;
+    height: 60px;
+}
+
+.order-button:hover {
+    border: 3px solid #e4e4e4;
+    background-color: gray;
+    font-size: 22px;
+}
+
+.delivery-info {
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    font-size: 1.2em;
+    font-family: IBM Plex Mono;
+}
+
+
+                    /* CATALOGUE */
+
+        /*SEARCH BAR*/
+                    .filter-button,
+                    .sort-button {
+                        background-color: #275f45; /* зелений колір */
+                        color: white;
+
+                        font-size: 16px;
+                        border: none;
+
+                        padding: 8px 12px;
+                        border-radius: 5px;
+
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+                    }
+                    
+                    .filter-button:hover,
+                    .sort-button:hover {
+                        background-color: #20382a; /* темніший зелений */
+                        font-weight: bolder;
+                    }
+                    
+                    /*SEARCH BAR*/
+
+                    /* Загальний контейнер пошукової стрічки */
+
+                    .search-section {
+                        display: flex;
+                        justify-content: left;
+                        align-items: left;
+                    }
+                                .search-container {
+                                    display: flex;
+                                    justify-content: left;
+                                    align-items: left;
+                                    
+                                    margin-top: 30px;
+                                    margin-left: 30px;
+                                    margin-bottom: 15px;
+
+                                    padding: 10px 20px;
+                                    width: 80%;
+                                    max-width: 800px;
+
+                                    border-radius: 30px;
+
+                                    background: linear-gradient(145deg, rgba(26, 40, 34, 0.3), rgba(18, 28, 26, 0.3));                                   
+                                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6), inset 0px 2px 8px rgba(255, 255, 255, 0.05);
+                                }
+
+                                /* Поле для введення тексту */
+                                .search-container input[type="text"] {
+                                    flex: 1;
+                                    padding: 12px 20px;
+                                    font-size: 20px;
+
+                                    border: none;
+                                    border-radius: 30px;
+
+                                    background: rgba(255, 255, 255, 0.1);
+                                    color: #fff;
+                                    outline: none;
+
+                                    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.4);
+                                    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+                                }
+
+                                .search-container input[type="text"]::placeholder {
+                                    color: rgba(255, 255, 255, 0.6);
+                                }
+
+                                /* Ефект при фокусі на полі вводу */
+                                .search-container input[type="text"]:focus {
+                                    background: rgba(255, 255, 255, 0.2);
+                                    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.6), 0px 0px 5px rgba(102, 255, 204, 0.8);
+                                }
+
+                                /* Кнопка пошуку */
+                                .search-container button {
+                                    padding: 12px 30px;
+                                    margin-left: 10px;
+                                    font-size: 22px;
+                                    font-weight: 500;
+                                    font-family: "Kanit";
+
+                                    color: #fff;
+                                    background: #1e7745;
+
+                                    border: none;
+                                    border-radius: 30px;
+                                    cursor: pointer;
+
+                                    transition: background-color 0.3s ease, transform 0.2s ease;
+                                    box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.1);
+                                }
+
+                                .search-container button:hover {
+                                    background: #66ffcc;
+                                    transform: scale(1.05);
+                                    box-shadow: 0px 1px 10px rgba(87, 187, 154, 0.8);
+                                }
+
+                                /* Адаптація для мобільних пристроїв */
+                                @media (max-width: 768px) {
+                                    .search-container {
+                                        flex-direction: column;
+                                        width: 90%;
+                                        padding: 20px;
+                                    }
+
+                                    .search-container button {
+                                        margin-left: 0;
+                                        margin-top: 10px;
+                                        width: 100%;
+                                    }
+                                }
+                                                /* Стилі для кнопки меню */
+        .dropdown-con {
+            position: relative;
+            display: inline-block;
+
+            margin-top: 5px;
+            margin-left: 30px;
+            padding-bottom: 7.5px;
+        }
+        .dropdown-sor {
+            position: relative;
+            display: inline-block;
+
+            margin-top: 5px;
+            margin-left: 30px;
+            padding-bottom: 7.5px;
+        }
+        .dropdown-ret {
+            position: relative;
+            display: inline-block;
+
+            margin-top: 5px;
+            margin-left: 10px;
+            padding-bottom: 7.5px;
+        }
+
+        .dropdown-back {
+            display: flex; /* Встановлюємо контейнер як flexbox */
+            align-items: center; /* Вирівнюємо елементи по центру вертикально */
+            justify-content: space-between; /* Додаємо відстань між кнопкою та галочками */
+            
+            color: #fff;
+            background: linear-gradient(145deg, rgba(26, 40, 34, 0.3), rgba(18, 28, 26, 0.3)); 
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6), inset 0px 2px 8px rgba(255, 255, 255, 0.05); 
+            
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px; /* Додаємо трохи внутрішнього відступу */
+        }
+
+                    .burger-menu-catalogue {
+                        display: flex;
+                        flex-direction: column;
+
+                        gap: 5px;
+                        cursor: pointer;
+                
+                        border-radius: 15px; /* Закруглені краї */
+                        transition: all 0.3s ease;
+                    }
+                    
+                    .burger-menu-catalogue span {
+                        display: block;
+        
+                        background-color: transparent; /* Колір */
+                        transition: all 0.3s ease;
+                    }
+        .check1 {
+            rotate: 180deg;
+            font-size: 50px;
+            
+        }
+                    /* Стан при активному меню */
+                    .burger-menu-catalogue.active span:nth-child(1) {
+                        transform: rotate(90deg); /* Поворот першої галочки вниз */
+                      
+                        margin-right: 5px;
+                    }
+                    
+                    /* Ефект наведення */
+                    .burger-menu-catalogue:hover {
+                        background: rgba(255, 255, 255, 0.3); /* Додаємо ефект наведення */
+                    }
+                
+                        
+                        .dropdown-button {
+                            padding: 12px 30px;
+                            margin-left: 15px;
+
+                            font-size: 22px;
+                            font-weight: 400;
+                            font-family: "Kanit";
+
+                            color: #fff;
+                            background: linear-gradient(145deg, #1a2822, #121c1a);
+                            border: none;
+                            border-radius: 25px;
+                            cursor: pointer;
+
+                            transition: background-color 0.3s ease, transform 0.2s ease;
+                            box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.1);
+                        }
+        
+            .button-return {
+                padding: 10px 10px;
+
+                font-size: 22px;
+                font-weight: 400;
+                font-family: "Kanit";
+
+                color: #fff;
+                background: linear-gradient(145deg, #1a2822, #121c1a);
+                border: none;
+                border-radius: 34px;
+                cursor: pointer;
+
+                transition: background-color 0.3s ease, transform 0.2s ease;
+                box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.1);
+            }
+        .dropdown-button-return {
+            padding: 10px 10px;
+
+            font-size: 22px;
+            font-weight: 400;
+            font-family: "Kanit";
+
+            color: #fff;
+            background: linear-gradient(145deg, #1a2822, #121c1a);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0px 4px 10px rgba(87, 187, 154, 0.1);
+        }
+        .dropdown-button-return:hover {
+            background: #1e7745;
+            transform: scale(1.15);
+            box-shadow: 0px 1px 10px #1e7745;
+        }
+                        
+                        .dropdown-button:hover {
+                            background: #1e7745;
+                            transform: scale(1.05);
+                            box-shadow: 0px 1px 10px #1e7745;
+                        }
+                        
+                        /* Стилі для випадаючого меню */
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            top: 100%; /* Відразу під кнопкою */
+
+                            background: linear-gradient(145deg, #2a4238, #121c1a);
+                            border-radius: 10px;
+
+                            font-size: 17px;
+                            font-weight: 400;
+                            font-family: "Kanit";
+
+                            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+                            min-width: 160px;
+                            z-index: 1;
+                        }
+
+    /* Основний стиль для випадаючого меню */
+    .dropdown-sorting {
+        display: none; /* Приховуємо меню за замовчуванням */
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background: linear-gradient(145deg, #2a4238, #121c1a);
+        border-radius: 10px;
+
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+        z-index: 1;
+        padding: 10px;
+    }
+
+    /* Кнопки всередині випадаючого меню */
+    .dropdown-sorting button {
+        display: block;
+        width: 100%;
+
+        font-size: 17px;
+        font-weight: 400;
+        font-family: "Kanit";
+
+        margin-bottom: 5px;
+        padding: 10px;
+
+        background: linear-gradient(145deg, #2a4238, #121c1a);
+        color: #deebe3;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    /* Зміна стилю активних кнопок */
+    .dropdown-sorting button:hover,
+    .dropdown-sorting button.active {
+        background: rgb(62, 204, 157);
+        color: #fff;
+        border-color: rgb(62, 204, 157);
+    }
+
+    /* Відображення випадаючого меню */
+    .dropdown-sorting.active {
+        display: block;
+    }
+
+                        
+                        .dropdown-content a {
+                            color: #fff;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+
+                            border-radius: 10px;
+                            transition: background-color 0.3s ease;
+                        }
+                        
+                        .dropdown-content a:hover {
+                            background-color: rgb(62, 204, 157);
+                        }
+                        .dropdown-content.active {
+                            display: block;
+                            
+        color: #deebe3;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+                        } 
+                        
+
+                /* SEARCH RESULTS */
+
+            .search-products-section {
+                min-height: 200px;
+                height: auto;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                margin-top: 20px;
+                margin-bottom: 30px;
+                margin-left: 25px;
+                margin-right: 25px;
+
+                border-radius: 15px;
+                border-width: 10px;
+                border: 3.5px solid #181818;
+    
+                color: #fff;
+                background-color: #1b1b1b;
+            }
+
+            .search-section-title {
+                min-height: 40px;
+                min-width: 200px;
+                width: 30%;
+                height: auto;
+
+                background-color: #1b1b1b;
+        
+                font-size: 2.5rem;
+                color: rgb(241, 247, 243);
+                text-align: center;
+                font-family: "Montserrat";
+                font-weight: 450;
+
+                margin-top: 7.5px;
+
+                border-radius: 15px;
+                border: 2px solid rgb(241, 247, 243);
+        
+                text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+            }
+        
+
+        .search-reminder {
+            display: none;
+
+            font-family: "Kanit";
+            font-size: 19px;
+
+            background-color: #1b1b1b;
+
+            padding: 150px;
+        }
+
+    .results-container {
+        margin: 40px auto;
+        padding: 20px;
+        max-width: 800px;
+        background-color: #1b1b1b;
+        border-radius: 15px;
+        color: #fff;
+    }
+    
+    .results-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .results-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .results-list li {
+        padding: 10px 20px;
+        margin: 10px 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .results-list li:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+
+        /* CATALOGUE */
