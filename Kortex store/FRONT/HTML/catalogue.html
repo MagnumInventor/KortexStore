@@ -338,9 +338,9 @@ function displayProducts(products) {
                 <div class="product-details">
                     <p class="product-name">${item.name}</p>
                     <p class="product-price">${item.price}$</p>
-                    <p class="product-shipping">Приблизний термін доставки: ${item.deliveryTime} днів</p>
+                    <p class="product-shipping">Delivery option: ${item.deliveryTime}</p>
                 </div>
-                <a class="order-button" href="${item.link}">Замовити</a>
+                <a class="order-button" href="${item.link}">Order</a>
             `;
             productsSection.appendChild(productCard);
         });
