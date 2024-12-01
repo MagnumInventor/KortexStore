@@ -328,8 +328,10 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
 
-    padding: 10px;
+    height: 75vh;
+
     color: #fff;
+    background-color: #303331;
 }
 
         .product-gallery {
