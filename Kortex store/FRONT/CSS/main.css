@@ -16,7 +16,6 @@ body {
     width: 100%;
 
     overflow-x: hidden; /* Приховуємо горизонтальну прокрутку */
-    display: block;
 }
 .secondary-body {
     font-family: "Kanit";
@@ -152,6 +151,7 @@ nav ul li a:hover {
     padding-top: 8.5px;
     margin-left: 25px;
 
+    text-decoration: none;
     color: #e9f0eb;  /* Колір самого тексту */
     text-shadow: 
         0 0 5px rgba(255, 255, 255, 0.5),    /* Легке світіння */
@@ -363,9 +363,10 @@ nav ul li a:hover {
 
         padding: 0px 20px;
         padding-bottom: 20px;
+
         text-align: center;
-    
         flex-wrap: wrap;
+        justify-items: center;
 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
