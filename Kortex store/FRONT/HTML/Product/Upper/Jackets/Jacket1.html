@@ -22,7 +22,7 @@
                 <!-- Header -->
          <header>
 
-            <noscript>USE JS STUPID NIGGA!</noscript>
+            <noscript>USE JS!</noscript>
     
         <div class="header-content">
             <a href="/index.html" class="logo">Kortex Store</a>
@@ -93,14 +93,14 @@
         </div>
         
             <div class="color-selection">
-        <label>Колір</label>
+        <label class="label-option">Колір</label>
             <div class="color-btn" style="background-color: #000;" onclick="changeColor('#000')"></div>
             <div class="color-btn" style="background-color: #800000;" onclick="changeColor('#800000')"></div>
             <div class="color-btn" style="background-color: #FFA500;" onclick="changeColor('#FFA500')"></div>
             </div> 
 
             <div class="size-options">
-        <label>Розмір</label>
+        <label class="label-option">Розмір</label>
                 <button class="size-btn">28</button>
                 <button class="size-btn">32</button>
                 <button class="size-btn">36</button>
@@ -141,9 +141,37 @@
 
 <script>
 
+
+// IMAGES
+
 function changeImage(imageSrc) {
   document.getElementById('mainImage').src = imageSrc;
 }
+
+
+// COLOR OPTION
+
+function changeColor(color) {
+  const mainImageContainer = document.querySelector('.main-image-container');
+  mainImageContainer.style.backgroundColor = color;
+}
+
+
+//SIZE OPTION
+
+function selectSize(button) {
+  // Знімаємо клас "active" з усіх кнопок
+  const buttons = document.querySelectorAll('.size-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  // Додаємо клас "active" до натиснутої кнопки
+  button.classList.add('active');
+
+  // Виводимо вибраний розмір у консоль (можна використовувати для відправки на сервер)
+  console.log(`Вибраний розмір: ${button.textContent}`);
+}
+
+
 
 </script>
 
