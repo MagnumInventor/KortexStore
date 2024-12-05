@@ -224,6 +224,7 @@ nav ul li a:hover {
 
     nav {
         display: none;
+        max-width: 100%;
     }
             nav.active {
                 display: flex;
