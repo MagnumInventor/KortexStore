@@ -224,6 +224,7 @@ nav ul li a:hover {
 
     nav {
         display: none;
+        max-width: 100%;
     }
             nav.active {
                 display: flex;
@@ -309,6 +310,9 @@ nav ul li a:hover {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 15px; /* Розміщуємо продукти в сітці */
+    }
+    .main-banner {
+        height: 52hv;
     }
 
     .product {
